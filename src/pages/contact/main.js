@@ -68,7 +68,7 @@ export const Contact = () => {
 					content='Contact Go Discover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
 				/>
 			</Helmet>
-			<section className='mt-5 mb-5 contact'>
+			<section className='contact bg-light pt-4'>
 				<Container>
 					<Row>
 						<Col sm={5}>

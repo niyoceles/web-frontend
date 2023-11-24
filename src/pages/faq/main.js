@@ -253,8 +253,8 @@ export const Faq = () => {
 				/>
 			</Helmet>
 			<br />
-			<Header className='py-2 title' title='Frequently Asked Questions (FAQs)' />
-			<section className='mt-2 mb-5 faq'>
+			<Header className='py-2 title text-light' title='Frequently Asked Questions (FAQs)' />
+			<section className='faq bg-light py-5 '>
 				<Container>
 					<Row>
 						<Col sm={12}>
