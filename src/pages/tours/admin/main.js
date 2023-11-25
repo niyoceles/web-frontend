@@ -44,7 +44,6 @@ export const ToursMain = () => {
 	if (error) {
 		console.log('error');
 	}
-console.log('Data', data);
 	return (
 		<AdminLayout>
 			<Container fluid className='dashboard-content'>

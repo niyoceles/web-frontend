@@ -73,7 +73,7 @@ export const NavBar = () => {
 						</NavDropdown.Item>
 						<NavDropdown.Item>
 							<NavLink to='/about#board-of-directors'>
-								Board of Directors
+								Teams
 							</NavLink>
 						</NavDropdown.Item>
 						<NavDropdown.Item>

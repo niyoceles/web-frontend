@@ -25,7 +25,7 @@ import {
   NewsCreate,
   NewsAdminView,
   NewsComment,
-} from "./pages/news";
+} from "./pages/blogs";
 
 import {
   Tours,
@@ -68,21 +68,18 @@ export default function Routes() {
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={ServicesPage} />
         <Route exact path="/contact" component={Contact} />
-        {/* <Route exact path='/events' component={Events} /> */}
+        <Route exact path='/events' component={Events} />
         {/* this is for bukarani */}
-        <Route exact path="/events" component={EventPage} />
-        <Route exact path="/event/:slug" component={ViewEvent} />
+        <Route exact path="/event" component={EventPage} />
+        <Route exact path="/events/:slug" component={ViewEvent} />
 
         <Route exact path="/blogs" component={News} />
+        <Route exact path="/tours" component={Tours} />
+        <Route exact path="/tour/:slug" component={ToursView} />
         <Route exact path="/blog/:slug" component={NewsView} />
 
         <Route exact path="/tours" component={Tours} />
         <Route exact path="/tour/:slug" component={ToursView} />
-
-        <Route exact path="/members/benefits" component={MemberBenefits} />
-        <Route exact path="/members/join" component={MemberJoin} />
-        {/* <Route exact path='/members/info' component={MemberInfo} /> */}
-        <Route exact path="/members/list" component={MemberList} />
 
         <Route exact path="/publications" component={Publication} />
         <Route exact path="/press-releases" component={PressView} />
@@ -113,8 +110,6 @@ export default function Routes() {
           path="/account/users/view/:name"
           component={UsersView}
         />
-
-        {/* <AuthRoute exact path='/account/members' component={MembersMain} /> */}
         <AuthRoute
           exact
           path="/account/members/view/:name"

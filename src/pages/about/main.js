@@ -123,14 +123,14 @@ export const About = () => {
 			</section>
 			<section
 				className='st-about-body pt-2 background-white'
-				id={'board-of-directors'}
+				id={'team'}
 			>
 				<Container className=''>
 					<Row className='st-about-team pt-3'>
 						<Container>
 							<Row>
 								<Col sm={12}>
-									<p className='title text-center'>Board of Directors</p>
+									<p className='title text-center text-light'>Our Team</p>
 								</Col>
 							</Row>
 							<Row className='mt-0 pt-1'>

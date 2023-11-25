@@ -27,12 +27,15 @@ export const getEvent = slug => dispatch => {
 	axios
 		.get(`${REACT_APP_BACKEND}/api/events/${slug}`)
 		.then(res => {
+			console.log('Error', res);
+
 			dispatch({
 				type: types.FETCH_EVENT_REQUEST,
 				event: res.data.data,
 			});
 		})
 		.catch(error => {
+			console.log('Error', error);
 			dispatch({
 				type: types.FETCH_EVENT_FAILURE,
 				error: error.response ? error.response.data.error : null,

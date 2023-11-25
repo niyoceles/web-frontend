@@ -109,6 +109,8 @@ export const ToursCreate = () => {
 			return setErrors(['Blog Cover image is Required!']);
 		}
 
+		console.log(data);
+
 		dispatch(createOneTours(data));
 	};
 
@@ -172,7 +174,7 @@ export const ToursCreate = () => {
 											/>
 										</Form.Group>
 										<Form.Group>
-											<Form.Label>Title</Form.Label>
+											<Form.Label>Departure time</Form.Label>
 											<Form.Control
 												type='text'
 												name='departureTime'
@@ -181,7 +183,7 @@ export const ToursCreate = () => {
 											/>
 										</Form.Group>
 										<Form.Group>
-											<Form.Label>Title</Form.Label>
+											<Form.Label>Tips</Form.Label>
 											<Form.Control
 												type='text'
 												name='tips'

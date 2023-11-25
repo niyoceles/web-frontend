@@ -39,9 +39,9 @@ const TopNavBar = () => {
 
         null
       ) : (
-        <Navbar className={`top-nav ${searchVisible ? 'search-visible' : ''}`} expand="md">
+        <Navbar className={`top-nav`} expand="md">
           <Container>
-            <Nav className="mr-auto">
+            {/* <Nav className="mr-auto">
               {searchVisible && (
                 <Form inline className="">
                   <FormControl
@@ -53,7 +53,7 @@ const TopNavBar = () => {
                   />
                 </Form>
               )}
-            </Nav>
+            </Nav> */}
             <Nav className="icon-nav ">
               <div className="social-icon">
                 <img src={search} alt="" onClick={handleSearchClick} />

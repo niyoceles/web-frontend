@@ -10,6 +10,7 @@ export const getFiveTours = () => async dispatch => {
 	const tours = await API.getTours('/api/tours/five');
 	try {
 		const toursList = await tours.json();
+		console.log('All tours========', toursList);
 		if (tours.status === 200) {
 			dispatch({
 				type: types.FETCH_FIVE_TOURS_REQUEST,
@@ -28,6 +29,7 @@ export const getAllTours = () => async dispatch => {
 	try {
 		const allToursList = await allTours.json();
 		if (allTours.status === 200) {
+			console.log('All tours', allToursList);
 			dispatch({
 				type: types.FETCH_TOURS_REQUEST,
 				data: allToursList.tours,
@@ -61,6 +63,7 @@ export const createOneTours = data => async dispatch => {
 	const createATours = await API.createTours(data, '/api/tours/create');
 	try {
 		const createdTours = await createATours.json();
+		console.log('response here', createATours);
 		const theError = createdTours.Errors;
 
 		if (createATours.status === 400) {

@@ -26,44 +26,7 @@ export const PublicationsCreate = props => {
 	const handleOnUploadDocument = async e => {
 		e.preventDefault();
 		setIsUploadingDocumentStarted(true);
-		// try {
-		// 	const url = `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/upload`;
-		// 	const formData = new FormData();
-		// 	formData.append('file', files[0]);
-		// 	formData.append(
-		// 		'upload_preset',
-		// 		process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
-		// 	);
-		// 	formData.append(
-		// 		'folder',
-		// 		`${process.env.REACT_APP_CLOUDINARY_PUBLICATIONS_FOLDER}`
-		// 	);
-		// 	const response = await Axios.post(
-		// 		url,
-		// 		formData,
-		// 		{
-		// 			headers: { 'X-Requested-With': 'XMLHttpRequest' },
-		// 		},
-		// 		{
-		// 			onUploadProgress: progressEvent =>
-		// 				SetUploadDocumentPercent(
-		// 					Math.round((progressEvent.loaded * 100) / progressEvent.total)
-		// 				),
-		// 		}
-		// 	);
-
-		// 	if (response.status === 200) {
-		// 		SetUploadDocumentPercent(100);
-		// 		setUploadedDocumentUrl(response.data.secure_url);
-		// 		console.log('URRRRR', response.data.secure_url);
-		// 	}
-		// } catch (error) {
-		// 	console.log(error);
-		// 	setErrors([
-		// 		'Whoops! Unable to upload publication document. Please Try again Later',
-		// 	]);
-		// 	setIsUploadingDocumentStarted(false);
-		// }
+	
 
 		let data = new FormData();
 		data.append('file', files[0]);
@@ -208,9 +171,9 @@ export const PublicationsCreate = props => {
 												<option value='' disabled={true}>
 													select...
 												</option>
-												<option value='publication'>Publication</option>
-												<option value='Press Release'>Press Release</option>
-												<option value='Covid-19'>Covid-19</option>
+												<option value='publication'>Advertisement</option>
+												{/* <option value='Press Release'>Press Release</option>
+												<option value='Covid-19'>Covid-19</option> */}
 											</Form.Control>
 										</Form.Group>
 

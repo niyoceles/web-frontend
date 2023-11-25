@@ -29,7 +29,7 @@ export const ToursBox = () => {
 	}
 
 	return (
-		<section className='st-news'>
+		<section className='st-news bg-light'>
 			<Row>
 				<Col sm={12}>
 					{tours && !loading ? (
@@ -42,7 +42,7 @@ export const ToursBox = () => {
 											.map((oneTours, indx) => (
 												<NewsHeaderCard
 													key={indx}
-													href={`/blog/${oneTours.slug}`}
+													href={`/tour/${oneTours.slug}`}
 													thumbnail={oneTours.image}
 													title={oneTours.title}
 													author={oneTours.author.organization}
@@ -58,7 +58,7 @@ export const ToursBox = () => {
 												.map((oneTours, indx) => (
 													<NewsHeaderCard
 														key={indx}
-														href={`/blog/${oneTours.slug}`}
+														href={`/tour/${oneTours.slug}`}
 														thumbnail={oneTours.image}
 														title={oneTours.title}
 														author={oneTours.author.organization}
@@ -74,7 +74,7 @@ export const ToursBox = () => {
 												.map((oneTours, indx) => (
 													<NewsHeaderCard
 														key={indx}
-														href={`/blog/${oneTours.slug}`}
+														href={`/tour/${oneTours.slug}`}
 														thumbnail={oneTours.image}
 														title={oneTours.title}
 														author={oneTours.author.organization}

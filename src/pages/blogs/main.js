@@ -9,7 +9,7 @@ import './index.css';
 export const News = () => {
 	return (
 		<AppLayout>
-			<section className='py-5'>
+			<section className='st-about-head py-5'>
 				<Container>
 					<Row>
 						<NewsBox />

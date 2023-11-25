@@ -85,44 +85,44 @@ export const EventsView = props => {
 	const handleOnUploadImage = async e => {
 		e.preventDefault();
 		setIsUploadingImageStarted(true);
-		try {
-			const url = `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/upload`;
-			const formData = new FormData();
-			formData.append('file', files[0]);
-			formData.append(
-				'upload_preset',
-				process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
-			);
-			formData.append(
-				'folder',
-				`${process.env.REACT_APP_CLOUDINARY_EVENTCOVER_FOLDER}`
-			);
-			const response = await Axios.post(
-				url,
-				formData,
-				{
-					headers: { 'X-Requested-With': 'XMLHttpRequest' },
-				},
-				{
-					onUploadProgress: progressEvent =>
-						SetUploadImagePercent(
-							Math.round((progressEvent.loaded * 100) / progressEvent.total)
-						),
-				}
-			);
+		let data = new FormData();
+		data.append('file', files[0]);
+		data.append('tags', `celestin, image`);
+		data.append('upload_preset', process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET); // Replace the preset name with your own
+		// data.append('api_key', REACT_APP_CLOUDINARY_API_KEY); // Replace API key with your own Cloudinary key
+		data.append('timestamp', (Date.now() / 1000) | 0);
+		data.append('folder', 'QUINCAPARADI/ITEMS');
 
-			if (response.status === 200) {
+		const options = {
+			onUploadProgress: progressEvent =>
+			SetUploadImagePercent(
+				Math.round((progressEvent.loaded * 100) / progressEvent.total)
+			),
+		};
+
+		await fetch(
+			`https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/image/upload`,
+			{
+				method: 'post',
+				body: data,
+			},
+			options
+		)
+			.then(resp => resp.json())
+			.then(data => {
 				SetUploadImagePercent(100);
-				setUploadedImageUrl(response.data.secure_url);
-			}
-		} catch (error) {
-			setErrors([
-				'Whoops! Unable to upload blog cover. Please Try again Later',
-			]);
-			setIsUploadingImageStarted(false);
-		}
+				setUploadedImageUrl(data.secure_url);
+				localStorage.removeItem('imageUrl');
+				localStorage.setItem('imageUrl', data.secure_url);
+				console.log('UPLOADED', data.secure_url);
+			})
+			.catch(err =>{ 
+				setIsUploadingImageStarted(false);
+				console.log(err);});
+		
 	};
 
+	
 	useEffect(() => {
 		setVariables({
 			title: event.title,

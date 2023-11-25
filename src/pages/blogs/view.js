@@ -29,7 +29,7 @@ export const NewsView = props => {
 
 	return (
 		<AppLayout>
-			<section className='st-read-news py-4 mt-5 mb-5'>
+			<section className='st-read-news bg-light py-4 mt-5 mb-5'>
 				<Container>
 					<Row>
 						<Col sm={8}>

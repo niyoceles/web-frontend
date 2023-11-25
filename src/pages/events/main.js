@@ -33,8 +33,8 @@ export const Events = () => {
 				<link rel='canonical' href='https://godiscoverafrica.rw//events' />
 				<meta name='description' content='Go Discover Africa Events' />
 			</Helmet>
-			<section>
-				<Container className='mt-2 mb-5'>
+			<section className='bg-light'>
+				<Container className='mt-2'>
 					<Row>
 						<Col sm={12}>
 							<h1 className='text-title text-bold mt-3 py-4'>Events</h1>
@@ -55,7 +55,7 @@ export const Events = () => {
 														.slice(0, 4)
 														.map((event, idx) => (
 															<Col lg={6} md={6} sm={12} xs={12} key={idx}>
-																<Link to={`/event/${event.slug}`}>
+																<Link to={`/events/${event.slug}`}>
 																	<div className='events-box background-white-light mb-5'>
 																		<div className='event-img-box'>
 																			<img

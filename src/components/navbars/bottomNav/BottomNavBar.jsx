@@ -36,38 +36,17 @@ const BottomNavBar = () => {
               Home
             </NavLink>
           </Nav.Link>
-          <NavDropdown title="About" alignLeft className="dropdown fade-up">
-            <NavDropdown.Item>
-              <NavLink
-                to="/about#who-we-are"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("who-we-are")}
-              >
-                Who We Are
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/about#board-of-directors"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("board-of-directors")}
-              >
-                Board of Directors
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/about#gala-dinner"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("gala-dinner")}
-              >
-                Tourism Award
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown>
+          <Nav.Link>
+            <NavLink
+           to="/about"
+           className="sub-link"
+           activeClassName="active"
+           onClick={() => onUpdateActiveLink("who-we-are")}
+            >
+              About us
+            </NavLink>
+          </Nav.Link>
+     
           <Nav.Link>
             <NavLink
               to="/services"
@@ -75,6 +54,25 @@ const BottomNavBar = () => {
               onClick={() => onUpdateActiveLink("services")}
             >
               Services
+            </NavLink>
+          </Nav.Link>
+          <Nav.Link>
+          <NavLink
+                to="/events"
+                className="sub-link"
+                activeClassName="active"
+                onClick={() => onUpdateActiveLink("events")}
+              >
+                Events
+              </NavLink>
+          </Nav.Link>
+          <Nav.Link>
+            <NavLink
+              to="/tours"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("tours")}
+            >
+              tours
             </NavLink>
           </Nav.Link>
           <NavDropdown title="Media" alignLeft className="dropdown fade-up">
@@ -85,17 +83,7 @@ const BottomNavBar = () => {
                 activeClassName="active"
                 onClick={() => onUpdateActiveLink("publications")}
               >
-                Publications
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/press-releases"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("press-releases")}
-              >
-                Press Releases
+                Advertisement
               </NavLink>
             </NavDropdown.Item>
             <NavDropdown.Item>
@@ -108,17 +96,8 @@ const BottomNavBar = () => {
                 Blogs
               </NavLink>
             </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-                Events
-              </NavLink>
-            </NavDropdown.Item>
           </NavDropdown>
+     
           <NavDropdown
             title="Membership"
             alignLeft
@@ -174,13 +153,6 @@ const BottomNavBar = () => {
             </NavLink>
           </Nav.Link>
         </Nav>
-        <Form inline>
-          <Nav.Link className="btn btn-covid">
-            <NavLink to="/covid-19">
-              <b>COVID-19</b>
-            </NavLink>
-          </Nav.Link>{" "}
-        </Form>
       </Navbar.Collapse>
     </Navbar>
   );
