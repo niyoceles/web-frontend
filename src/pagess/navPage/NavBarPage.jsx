@@ -22,7 +22,7 @@ const NavBarPage = () => {
   }, []);
   return (
     <div className="navBars">
-      <MostTopNav />
+      {/* <MostTopNav /> */}
       <Navbar className={scrolled ? "scrolled" : ""} expand="md">
         <Container fluid className="navBars-container">
           <Navbar.Brand className="brand">

@@ -36,17 +36,17 @@ export const ViewEvent = props => {
 
 	return (
 		<AppLayout>
-			<Helmet>
+			{/* <Helmet>
 				<meta charSet='utf-8' />
 				<title>event | {event.title} | Go Discover Africa</title>
-				<link rel='canonical' href={`https://godiscoverafrica.rw//event/${event.slug}`} />
+				<link rel='canonical' href={`https://godiscoverafrica.rw//events/${event.slug}`} />
 				<meta
 					name='description'
 					content={`Go Discover Africa Event | ${event.title}`}
 				/>
-			</Helmet>
+			</Helmet> */}
 			<div className='events-header'></div>
-			<div className='events-view'>
+			<div className='events-view bg-light'>
 				<div className='container background-white-light pb-5'>
 					<div className='row'>
 						<div className='col-lg-7'>
@@ -134,7 +134,7 @@ export const ViewEvent = props => {
 				</div>
 			</div>
 			{/* lastest event */}
-			<div className='color-black events-section mt-5'>
+			<div className='color-black events-section bg-light'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-12'>

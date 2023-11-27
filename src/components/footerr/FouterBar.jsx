@@ -13,9 +13,9 @@ const FouterBar = () => {
         <Col md={4}>
           <div className="p-4 footer-element">
             <h3 className="text-light">Contact Us</h3>
-            <p className="text-light">Email: info@rwandaevents@gmail.com</p>
-            <p className="text-light">Phone: +250 788 647 871</p>
-            <p className="text-light">PO BOX 88</p>
+            <p className="text-light">Email: info@godiscoverafrica.rw</p>
+            <p className="text-light">Phone: ‎+250 791 349 744</p>
+            <p className="text-light">P.O. Box : 4270</p>
             <p className="text-light">Kigali Rwanda</p>
           </div>
         </Col>

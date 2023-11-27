@@ -18,11 +18,11 @@ export const Publication = () => {
 					content='Publications of Go Discover Africa'
 				/>
 			</Helmet>
-			<section>
+			<section className='about-screen'>
 				<Container className='py-4'>
 					<Row>
 						<Col sm={12}>
-							<h1 className='text-title text-bold py-1'>Publications</h1>
+							<h1 className='text-title text-bold py-1'>Advertisement</h1>
 						</Col>
 					</Row>
 

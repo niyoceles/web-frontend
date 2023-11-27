@@ -1,7 +1,7 @@
 import React from "react";
 import HomeBody from "../components/homee/HomeBody";
 import NavBarPage from "./navPage/NavBarPage";
-import FouterBar from "../components/footerr/FouterBar";
+import {Footer} from "../components/footer";
 import { Container, Row, Col } from 'react-bootstrap';
 
 const HomePage = (props) => {
@@ -81,7 +81,7 @@ const HomePage = (props) => {
 			</div>
       <NavBarPage />
       {props.children}
-      <FouterBar />
+      <Footer/>
     </div>
   );
 };

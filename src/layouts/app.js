@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import NavBarPage from '../pagess/navPage/NavBarPage';
 import { Partner } from '../components/partner';
-import FouterPage from "../components/footerr/FouterBar"
 import './index.css';
-import FouterBar from '../components/footerr/FouterBar';
+import {Footer} from '../components/footer';
 
 export const AppLayout = props => {
 	useEffect(() => {
@@ -91,7 +90,7 @@ export const AppLayout = props => {
 			<main>{props.children}</main>
 
 			<Partner />
-			<FouterBar />
+			<Footer />
 		</div>
 	);
 };

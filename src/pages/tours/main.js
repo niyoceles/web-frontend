@@ -9,7 +9,7 @@ import './index.css';
 export const Tours = () => {
 	return (
 		<AppLayout>
-			<section className='py-5'>
+			<section className='py-5 about-screen'>
 				<Container>
 					<Row>
 						<ToursBox />

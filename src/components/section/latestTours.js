@@ -31,8 +31,9 @@ export const LatestTours = () => {
 		console.clear();
 	}
 
+
 	return (
-		<section className='st-news'>
+		<section className='st-news bg-light'>
 			<Container>
 				<Row>
 					<Col sm={12}>

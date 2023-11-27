@@ -74,23 +74,15 @@ export const Contact = () => {
 						<Col sm={5}>
 							<h1 className='text-title text-bold mt-3 py-4'>Contact us</h1>
 							<p className='mt-4'>
-								Kigali, Rwanda <br />
-								Gishushu, KG 8 Avenue N.6 <br />
-								M&M Plaza 5th Floor
+							<br />
+								P.O. Box : 4270 Kigali, Rwanda<br />
+								Kicukiro KK 366 Street
 							</p>
 							<p className='mt-4'>
 								<i className='fa fa-phone mr-2'></i> ‎+250 791 349 744 <br />
 								<i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw <br />
-								{/* <i className='fab fa-google-plus mr-2'></i>{' '}
-								rchamberoftourism@gmail.com */}
 							</p>
 
-							<p className='mt-5'>GODISCOVER AFRICAHOTLINE</p>
-
-							<p className='mt-3 contact-covid-large'>
-								{' '}
-								<i className='fa fa-phone mr-2'></i>8181
-							</p>
 						</Col>
 						<Col sm={7}>
 							<Form noValidate validated={validated} onSubmit={handleSubmit}>
