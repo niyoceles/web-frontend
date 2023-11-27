@@ -6,7 +6,7 @@ export const Header = (props) => {
 	return (
 		<Container>
 			<Row className='col-sm-12'>
-				<h2 className='bold'>{props.title}</h2>
+				<h2 className='bold text-light'>{props.title}</h2>
 			</Row>
 		</Container>
 	);

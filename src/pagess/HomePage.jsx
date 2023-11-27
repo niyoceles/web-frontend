@@ -1,19 +1,13 @@
-import React, { useEffect } from 'react';
+import React from "react";
+import HomeBody from "../components/homee/HomeBody";
+import NavBarPage from "./navPage/NavBarPage";
+import FouterBar from "../components/footerr/FouterBar";
 import { Container, Row, Col } from 'react-bootstrap';
-import NavBarPage from '../pagess/navPage/NavBarPage';
-import { Partner } from '../components/partner';
-import FouterPage from "../components/footerr/FouterBar"
-import './index.css';
-import FouterBar from '../components/footerr/FouterBar';
 
-export const AppLayout = props => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
-	return (
-		<div className='home-styles'>
-			{/* <div
+const HomePage = (props) => {
+  return (
+    <div className="home-styles">
+      			<div
 				className='top-bar-navbar'
 				style={{ backgroundColor: 'red', color: '#fff' }}
 			>
@@ -84,14 +78,12 @@ export const AppLayout = props => {
 						</Col>
 					</Row>
 				</Container>
-			</div> */}
-
-			<NavBarPage />
-
-			<main>{props.children}</main>
-
-			<Partner />
-			<FouterBar />
-		</div>
-	);
+			</div>
+      <NavBarPage />
+      {props.children}
+      <FouterBar />
+    </div>
+  );
 };
+
+export default HomePage;

@@ -222,3 +222,185 @@ table tr td {
   .parallax-two::after {
     background-image: url('https://res.cloudinary.com/rcot/image/upload/v1610092786/COT-WEBSITE/ASSOCIATIONS/maountain_qcq0gq.jpg');
   }
+
+
+  /* mine  */
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("../src/assets/assetss/event-image2.jpeg");
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+:global(nav.navbar.scrolled) {
+  padding: 0px 0;
+  background-color: #186645;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000;
+  top: 0;
+  border: none;
+}
+.custom-dropdown {
+  color: black !important;
+}
+
+/*topnav*/
+.search{
+  border-bottom: 1px solid rgb(113, 112, 112);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0px 0px 0px 10px;
+  position: absolute;
+  color: white;
+  background-color: transparent;
+}
+.logo {
+  width: 150px;
+  margin-left: 50%;
+}
+.animate-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animate-button:hover {
+  transform: scale(1.1);
+}
+
+
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.ev-1:hover,
+.ev-2:hover,
+.ev-3:hover,
+.ev-4:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-body {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card .card-body .back {
+  transform: rotateY(180deg);
+}
+.sub-link {
+  color: black;
+}
+/*events cards css */
+.events-parent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("../src/assets/assetss/event-image2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.custom-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-cards .btn-primary {
+  background-color: transparent;
+  color: #555;
+}
+.custom-cards .card-text {
+  font-size: 11px;
+}
+.event-container {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.608),
+      rgba(8, 8, 8, 0.544)
+    ),
+    url("../src/assets/assetss/image-events.jpeg");
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.event-container div {
+  max-width: 80%;
+}
+.event-container div .btn-primary {
+  background-color: rgb(68, 37, 15);
+  border: 1px solid white;
+  border-radius: 10px 50px 10px 10px;
+}
+.event-container div .btn-primary:hover {
+  background-color: transparent;
+}
+
+.partners-header {
+  color: white;
+  text-align: center;
+}
+
+/* design for home Page */
+.home-styles {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("../src/assets/assetss/event-image2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #856404;
+}
+
+
+/*carousel*/
+.carousel-caption {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  transform: translateY(-50%);
+  color: #fff !important;
+  text-align: left;
+  width: 50%;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  margin-left: auto;
+}
+.navbar a.active {
+  color: #2d8952 !important;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+.footer {
+  background-color: #186645;
+  color: white;
+}
+
+
+
+  
