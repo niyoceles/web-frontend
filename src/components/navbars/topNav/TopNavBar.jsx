@@ -56,7 +56,6 @@ const TopNavBar = () => {
             </Nav> */}
             <Nav className="icon-nav ">
               <div className="social-icon">
-                <img src={search} alt="" onClick={handleSearchClick} />
                 <a href="#">
                   <img src={facebook} alt="" />
                 </a>

@@ -56,7 +56,7 @@ export default function ImageUpload({
 						src={
 							edit
 								? coverURL
-								: 'https://res.cloudinary.com/rcot/image/upload/v1610094246/COT-WEBSITE/DEFAULT-IMAGES/default_Image_rgcqj7.jpg'
+								: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701413117/WEBS/godiscover/default_Image_rgcqj7_jdxotc.jpg'
 						}
 					/>
 				)}

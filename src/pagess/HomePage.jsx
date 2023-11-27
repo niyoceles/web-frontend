@@ -39,7 +39,7 @@ const HomePage = (props) => {
 						<Col lg={4} xs={5} sm={5}>
 							<div className='social-top float-right'>
 								<a
-									href='https://web.facebook.com/TourismChamberRW/?_rdc=1&_rdr'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -48,7 +48,7 @@ const HomePage = (props) => {
 									<i className='fab fa-facebook'></i>
 								</a>
 								<a
-									href='https://twitter.com/tourismchamber?lang=en'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -57,7 +57,7 @@ const HomePage = (props) => {
 									<i className='fab fa-twitter'></i>
 								</a>
 								<a
-									href='https://www.instagram.com/tourismchamber_rw/?hl=en'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -66,7 +66,7 @@ const HomePage = (props) => {
 									<i className='fab fa-instagram'></i>
 								</a>
 								<a
-									href='https://www.linkedin.com/company/rwanda-chamber-of-tourism'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'

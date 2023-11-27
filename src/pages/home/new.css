@@ -59,15 +59,6 @@
     display: none;
   }
 
-  .phone-responsive-welcome {
-    background: url('https://res.cloudinary.com/rcot/image/upload/v1614330455/COT-WEBSITE/slide33_eo09gv.png');
-    display: block;
-    width: 100%;
-    padding: 120px 15px;
-    object-fit: cover;
-    color: #ffffff;
-  }
-
   .phone-responsive-welcome h2 {
     color: #ffffff !important;
     font-weight: bold !important;
@@ -83,11 +74,11 @@
 }
 
 .btn-custom-primary {
-  border: 2px solid #F29F05;
+  border: 2px solid #F29F05 !important;
 }
 
 .btn-custom-primary:hover {
-  background: #F29F05;
+  background: #F29F05 !important;
   color: #ffffff;
 }
 
@@ -162,7 +153,7 @@
 }
 
 .about-news .news-block {
-  background:url('https://res.cloudinary.com/rcot/image/upload/v1610094220/COT-WEBSITE/DEFAULT-IMAGES/news-banner1_ducsyi.jpg') no-repeat;
+  background:url('../../assets/assetss/111.jpg') no-repeat;
   background-blend-mode: overlay;
   box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
   background-size: cover;
@@ -170,7 +161,7 @@
 }
 
 .about-news .about-block {
-  background:url('https://res.cloudinary.com/rcot/image/upload/v1610094434/COT-WEBSITE/DEFAULT-IMAGES/gala-dinner_vgq8ia.png') no-repeat;
+  background:url('../../assets/assetss/222.jpg') no-repeat;
   background-blend-mode: overlay;
   box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
   background-size: cover;
@@ -374,11 +365,11 @@ section.pt-block-association img {
 
 
 .association-bg{
-  background-image: url('https://res.cloudinary.com/rcot/image/upload/v1610092786/COT-WEBSITE/ASSOCIATIONS/maountain_qcq0gq.jpg');
+  background-image: url('../../assets/assetss/maountain.jpeg');
 }
 
 .gala-dinner{
-  background-image: url('https://res.cloudinary.com/rcot/image/upload/v1610091933/COT-WEBSITE/Gala-dinner/bg1-gala_dru4og.png');
+  background-image: url('../../assets/assetss/bg-work.jpg');
   box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5) !important;
 }
 

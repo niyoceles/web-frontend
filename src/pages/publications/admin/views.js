@@ -5,7 +5,6 @@ import jwtDecode from 'jwt-decode';
 import Modal from 'react-bootstrap/Modal';
 import { Container, Row, Col, Button, Form, Alert } from 'react-bootstrap';
 import { useDropzone } from 'react-dropzone';
-import Axios from 'axios';
 import { AdminLayout } from '../../../layouts';
 
 import {
@@ -225,8 +224,8 @@ export const PublicationsView = props => {
 											<DocumentUpload
 												documentURL={
 													variables.pubDocument !== ''
-														? 'https://res.cloudinary.com/rcot/image/upload/v1610094246/COT-WEBSITE/DEFAULT-IMAGES/document_j4pw8l.png'
-														: 'https://res.cloudinary.com/rcot/image/upload/v1610094246/COT-WEBSITE/DEFAULT-IMAGES/document_j4pw8l.png'
+														? 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
+														: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701412926/WEBS/godiscover/document_ppeg6r.png'
 												}
 												edit={edit}
 												files={files}

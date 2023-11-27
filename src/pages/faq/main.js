@@ -59,11 +59,6 @@ export const Faq = () => {
 			answer: `The Government of Rwanda has negotiated special rates at the designated hotels for the waiting period. Should a guest wish to remain in the hotel after receiving a negative test result, they are welcome to extend their stay at the hotel’s regular rates; however, they will be assigned a new room.`,
 		},
 		{
-			key: 34,
-			question: `What has been the role of CoT in helping out member Associations during COVID 19  period?`,
-			answer: `The CoT carried out various advocacies for member Associations either to the Government (establishment of economic recovery fund, negotiation with banks for loan rescheduling…) or other international supporters in order to revive the industry (various projects).`,
-		},
-		{
 			key: 35,
 			question: `Is there any support related to HR management during this pandemic?`,
 			answer: `COVID 19 period should not be taken as a useless period, a lot can be done with regards to staff in the T & H sector. Most importantly,  employers should not just lay them down  without considering other options like training, rotations...`,
@@ -100,7 +95,7 @@ export const Faq = () => {
 				<link rel='canonical' href='https://godiscoverafrica.rw//faq' />
 				<meta
 					name='description'
-					content='Go Discover Africa (COT) Frequently Asked Questions (FAQs)'
+					content='Go Discover Africa Frequently Asked Questions (FAQs)'
 				/>
 			</Helmet>
 			<br />

@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Container, Row, Col, Button, ResponsiveEmbed } from 'react-bootstrap';
 import { AppLayout } from '../../layouts';
-import { OurAssociations } from '../../components/section';
 import { getPublications } from '../../redux/actions';
 import { Subscribe } from '../maillist';
 import './new.css';
@@ -130,7 +129,6 @@ export const Home = () => {
 					</Row>
 				</Container>
 			</section>
-			<OurAssociations />
 			<section className='about-screen mt-0'>
 				<Container className='py-4'>
 					<p className='title text-center'>GODISCOVER AFRICAOFFICE</p>
@@ -158,7 +156,7 @@ export const Home = () => {
 
 								<div className='menu social-icon py-4'>
 									<a
-										href='https://web.facebook.com/TourismChamberRW/?_rdc=1&_rdr'
+										href='#'
 										className='mr-3'
 										target='_blank'
 										rel='noopener noreferrer'
@@ -167,7 +165,7 @@ export const Home = () => {
 										<i className='fab fa-facebook'></i>
 									</a>
 									<a
-										href='https/twitter/TourismChamber'
+										href='#'
 										className='mr-3'
 										target='_blank'
 										rel='noopener noreferrer'
@@ -176,7 +174,7 @@ export const Home = () => {
 										<i className='fab fa-twitter'></i>
 									</a>
 									<a
-										href='https://www.instagram.com/tourismchamber_rw/?hl=en'
+										href='#'
 										className='mr-3'
 										target='_blank'
 										rel='noopener noreferrer'
@@ -186,7 +184,7 @@ export const Home = () => {
 									</a>
 
 									<a
-										href='https://www.linkedin.com/company/rwanda-chamber-of-tourism'
+										href='#'
 										className='mr-3'
 										target='_blank'
 										rel='noopener noreferrer'

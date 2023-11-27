@@ -104,24 +104,6 @@ export const NavBar = () => {
 							<Link to='/events'>Events</Link>
 						</NavDropdown.Item>
 					</NavDropdown>
-					<NavDropdown
-						title='Membership'
-						alignLeft
-						className='dropdown fade-up'
-						onMouseOver={handleNavMenuOpen3}
-						onMouseLeave={handleNavMenuClose3}
-						show={isHovered3}
-					>
-						<NavDropdown.Item>
-							<Link to='/members/benefits'>Membership Benefits</Link>
-						</NavDropdown.Item>
-						<NavDropdown.Item>
-							<Link to='/members/list'>OUR MEMBERS</Link>
-						</NavDropdown.Item>
-						<NavDropdown.Item>
-							<Link to='/members/join'>Become a Member</Link>
-						</NavDropdown.Item>
-					</NavDropdown>
 					<Nav.Link>
 						<Link to='/contact'>Contact Us</Link>
 					</Nav.Link>

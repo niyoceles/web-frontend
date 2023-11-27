@@ -3,6 +3,7 @@ import { Container, Navbar } from "react-bootstrap";
 import TopNavBar from "../../components/navbars/topNav/TopNavBar";
 import BottomNavBar from "../../components/navbars/bottomNav/BottomNavBar";
 import MostTopNav from "../../components/navbars/topMostNav/MostTopNav";
+import { Link } from "react-router-dom";
 import logo from "../../assets/assetss/official-logo.svg";
 import "./index.css"
 const NavBarPage = () => {
@@ -26,7 +27,7 @@ const NavBarPage = () => {
       <Navbar className={scrolled ? "scrolled" : ""} expand="md">
         <Container fluid className="navBars-container">
           <Navbar.Brand className="brand">
-            <img className="logo" src={logo} alt="" />
+           <Link to="/"> <img className="logo" src={logo} alt="" /></Link>
           </Navbar.Brand>
           <div className="d-flex flex-column navs">
             <TopNavBar />

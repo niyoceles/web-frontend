@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
+import {Partner} from '../partner'
 import './index.css';
 export class Footer extends Component {
 	render() {
 		return (
 			<footer>
+				<Partner/>
 				<div className='ft-top py-2'>
 					<Container fluid className='pl-5 pr-5'>
 						<Row className='py-3 justify-content-center text-center'>

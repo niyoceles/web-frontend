@@ -5,8 +5,8 @@
 #### How should this be manually tested?
 1. Run the following commands in Terminal
 ```
-git clone https://github.com/niyoceles/cot-website.git
-cd cot-website
+git clone https://github.com/niyoceles/web-frontend.git
+cd web-frontend
 git checkout branch name
 ```
 2. run `npm install` and `npm start`

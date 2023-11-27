@@ -40,7 +40,7 @@ export const Terms = () => {
 								(collectively referred to as “website,” “our website,” or “this
 								website”). <br />
 								<br />
-								This Privacy Policy is a binding agreement between you and COT.
+								This Privacy Policy is a binding agreement between you and GODISCOVER.
 								We regularly review and update this Privacy Policy (also
 								referred to in this agreement as “this policy”). This Privacy
 								Policy may be amended, so we recommend that you check it

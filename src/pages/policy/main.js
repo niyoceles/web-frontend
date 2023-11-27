@@ -27,7 +27,7 @@ export class Policy extends Component {
 							<Col sm={10}>
 								<h1 className='text-title text-bold mt-3 py-4'>Privacy Commitment</h1>
 								<p>
-									Go Discover Africa Inc. (“COT,” “we,” or “us”) knows
+									Go Discover Africa Inc. (“GODISCOVER,” “we,” or “us”) knows
 									your personal data privacy is important. We are committed to
 									respecting your privacy, and we take the responsibility of
 									protecting your privacy seriously.
@@ -42,7 +42,7 @@ export class Policy extends Component {
 									“this website”). <br />
 									<br />
 									This Privacy Policy is a binding agreement between you and
-									COT. We regularly review and update this Privacy Policy (also
+									GODISCOVER. We regularly review and update this Privacy Policy (also
 									referred to in this agreement as “this policy”). This Privacy
 									Policy may be amended, so we recommend that you check it
 									regularly. Your continued use of this website after the
@@ -90,7 +90,7 @@ export class Policy extends Component {
 								</p>
 								<ul>
 									<li>
-										<span className='bold'>Survey Data: </span> The COT
+										<span className='bold'>Survey Data: </span> The GODISCOVER
 										occasionally conducts industry and customer surveys. Your
 										survey responses are linked to an IP address and ID number.
 										When survey results are reported, they are always aggregated

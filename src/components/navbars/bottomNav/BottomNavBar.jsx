@@ -57,24 +57,27 @@ const BottomNavBar = () => {
             </NavLink>
           </Nav.Link>
           <Nav.Link>
-          <NavLink
-                to="/events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-                Events
-              </NavLink>
-          </Nav.Link>
-          <Nav.Link>
             <NavLink
-              to="/tours"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("tours")}
+                 to="/events"
+                 className="sub-link"
+                 activeClassName="active"
+                 onClick={() => onUpdateActiveLink("events")}
             >
-              tours
+              Events
             </NavLink>
           </Nav.Link>
+
+          <Nav.Link>
+            <NavLink
+                     to="/tours"
+                     className="sub-link"
+                     activeClassName="active"
+                     onClick={() => onUpdateActiveLink("tours")}
+            >
+              Tours
+            </NavLink>
+          </Nav.Link>
+          
           <NavDropdown title="Media" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
@@ -97,43 +100,16 @@ const BottomNavBar = () => {
               </NavLink>
             </NavDropdown.Item>
           </NavDropdown>
-     
-          <NavDropdown
-            title="Membership"
-            alignLeft
-            className="dropdown fade-up"
-          >
-            <NavDropdown.Item>
-              <NavLink
-                to="/members/benefits"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("membership-benefits")}
-              >
-                Membership Benefits
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/members/list"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("our-members")}
-              >
-                OUR MEMBERS
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/members/join"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("become-a-member")}
-              >
-                Become a Member
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown>
+         
+          <Nav.Link>
+            <NavLink
+              to="/ticket"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("ticket")}
+            >
+              request ticket
+            </NavLink>
+          </Nav.Link>
           <Nav.Link>
             <NavLink
               to="/contact"

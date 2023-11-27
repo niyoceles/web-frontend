@@ -10,7 +10,7 @@ export class Partner extends Component {
 					<Row>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/rdb_ejfo4m.jpg'
+								src='../../assets/assetss/rdb.jpeg'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
@@ -18,7 +18,7 @@ export class Partner extends Component {
 						</Col>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1613209017/COT-WEBSITE/ASSOCIATIONS/psf4_odqk0s.png'
+								src='../../assets/assetss/rtta.png'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
@@ -26,22 +26,12 @@ export class Partner extends Component {
 						</Col>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/mastercard_pmzwpa.png'
+								src='../../assets/assetss/cot.png'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
 							/>
 						</Col>
-						<Col>
-							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/giz_xwqgve.jpg'
-								title='Logo'
-								alt='Image'
-								className='img-fluid'
-							/>
-						</Col>
-
-				
 					</Row>
 				</Container>
 			</section>
