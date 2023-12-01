@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
 				<Container fluid>
 					<Row>
 						<Col sm={12}>
-							Copyright © {new Date().getFullYear()} COT. All rights reserved
+							Copyright © {new Date().getFullYear()} GODISCOVER. All rights reserved
 						</Col>
 					</Row>
 				</Container>

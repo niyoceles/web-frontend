@@ -215,12 +215,12 @@ table tr td {
   
   /* Different background images */
   .parallax-one::after {
-    background-image: url('https://res.cloudinary.com/rcot/image/upload/v1610091933/COT-WEBSITE/Gala-dinner/bg1-gala_dru4og.png');
+    background-image: url('../src/assets/assetss/bg-work.jpg');
     box-shadow: inset 0 0 0 50vw rgba(0,0,0,0.5);
   }
   
   .parallax-two::after {
-    background-image: url('https://res.cloudinary.com/rcot/image/upload/v1610092786/COT-WEBSITE/ASSOCIATIONS/maountain_qcq0gq.jpg');
+    background-image: url('../src/assets/assetss/maountain.jpeg');
   }
 
 
@@ -361,8 +361,8 @@ table tr td {
 
 /* design for home Page */
 .home-styles {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../src/assets/assetss/event-image2.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/assets/assetss/Akagera-Hippos.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -401,6 +401,9 @@ table tr td {
   color: white;
 }
 
+.carousel-image{
+  border: 2px solid black;
+}
 
 
   

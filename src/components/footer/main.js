@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
+import {Partner} from '../partner'
 import './index.css';
 export class Footer extends Component {
 	render() {
 		return (
 			<footer>
+				<Partner/>
 				<div className='ft-top py-2'>
 					<Container fluid className='pl-5 pr-5'>
 						<Row className='py-3 justify-content-center text-center'>
 							<h2 className='mb-4 mt-3'>Useful Links</h2>
 							<Col lg={12}>
 								<a
-									href='https://gov.rw/'
+									href='https:/gov.rw/'
 									className='ft-link'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -22,7 +24,7 @@ export class Footer extends Component {
 								</a>
 								&nbsp; | &nbsp;{' '}
 								<a
-									href='https://www.visitrwanda.com/'
+									href='https:/www.visitrwanda.com/'
 									className='ft-link'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -31,16 +33,7 @@ export class Footer extends Component {
 									Visit Rwanda
 								</a>
 								&nbsp; | &nbsp;{' '}
-								<a
-									href='https://www.rbc.gov.rw/index.php?id=188'
-									className='ft-link'
-									target='_blank'
-									rel='noopener noreferrer'
-									aria-label='Rwanda Biomedical Centre'
-								>
-									Rwanda Biomedical Centre
-								</a>
-								&nbsp; | &nbsp;{' '}
+						
 								<a
 									href='https://rdb.rw/'
 									className='ft-link'
@@ -49,16 +42,6 @@ export class Footer extends Component {
 									aria-label='Rwanda Development Board'
 								>
 									Rwanda Development Board
-								</a>
-								&nbsp; | &nbsp;{' '}
-								<a
-									href='https://www.caa.gov.rw/index.php?id=2'
-									className='ft-link'
-									target='_blank'
-									rel='noopener noreferrer'
-									aria-label='Rwanda Civil Aviation Authority'
-								>
-									Rwanda Civil Aviation Authority
 								</a>
 								&nbsp; | &nbsp;{' '}
 								<a

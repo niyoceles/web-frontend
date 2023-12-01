@@ -10,7 +10,7 @@ export class Partner extends Component {
 					<Row>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/rdb_ejfo4m.jpg'
+								src='https://res.cloudinary.com/dfsai53mw/image/upload/v1701630148/WEBS/godiscover/rdb_pc8cs9.jpg'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
@@ -18,7 +18,7 @@ export class Partner extends Component {
 						</Col>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1613209017/COT-WEBSITE/ASSOCIATIONS/psf4_odqk0s.png'
+								src='https://res.cloudinary.com/dfsai53mw/image/upload/v1701630150/WEBS/godiscover/rtta_xkdojf.png'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
@@ -26,22 +26,12 @@ export class Partner extends Component {
 						</Col>
 						<Col>
 							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/mastercard_pmzwpa.png'
+								src='https://res.cloudinary.com/dfsai53mw/image/upload/v1701630117/WEBS/godiscover/cot_q1mvxg.png'
 								title='Logo'
 								alt='Image'
 								className='img-fluid'
 							/>
 						</Col>
-						<Col>
-							<Image
-								src='https://res.cloudinary.com/rcot/image/upload/v1610090242/COT-WEBSITE/PARTNERS/giz_xwqgve.jpg'
-								title='Logo'
-								alt='Image'
-								className='img-fluid'
-							/>
-						</Col>
-
-				
 					</Row>
 				</Container>
 			</section>

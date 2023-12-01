@@ -272,7 +272,7 @@ export const EventsView = props => {
 												coverURL={
 													variables.image !== ''
 														? variables.image
-														: 'https://res.cloudinary.com/rcot/image/upload/v1610094247/COT-WEBSITE/DEFAULT-IMAGES/event_ca6zd8.png'
+														: '../../assets/assetss/event.png'
 												}
 												edit={edit}
 												files={files}
@@ -371,7 +371,7 @@ export const EventsView = props => {
 								src={
 									event.image
 										? event.image
-										: 'https://res.cloudinary.com/rcot/image/upload/v1610094247/COT-WEBSITE/DEFAULT-IMAGES/event_ca6zd8.png'
+										: '../../assets/assetss/event.png'
 								}
 								className='img-fluid'
 							/>

@@ -100,7 +100,7 @@ export const EventsMain = () => {
 															src={
 																event.image
 																	? event.image
-																	: 'https://res.cloudinary.com/rcot/image/upload/v1610094247/COT-WEBSITE/DEFAULT-IMAGES/event_ca6zd8.png'
+																	: '../../assets/assetss/event.png'
 															}
 															className='img-fluid'
 															width={50}

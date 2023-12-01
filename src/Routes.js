@@ -1,18 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AuthRoute from "./utils/AuthRoute";
-import { Home, Dashboard } from "./pages/home";
+import { Dashboard } from "./pages/home";
 import { About } from "./pages/about";
-import { Services } from "./pages/services";
 import { Subscribers, Unsubscribe } from "./pages/maillist";
 import { Contact } from "./pages/contact";
 import { UsersMain, UsersCreate, UsersView } from "./pages/users";
 import HomeBody from "./components/homee/HomeBody";
 import ServicesPage from "./pagess/ServicesPage";
 import EventPage from "./pagess/EventPage";
-import HomePage from "./pagess/HomePage";
 import {
-  Events,
   ViewEvent,
   EventsMain,
   EventsCreate,
@@ -59,18 +56,22 @@ import {
   ForgotPassword,
   ResetAccount,
 } from "./pages/users";
+import TicketForm from "./components/TicketForm/TicketForm";
+import { RentCar } from "./pages/rentcar/main";
+import EventForm from "./components/requestform/EventFrom";
 
 export default function Routes() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={HomeBody} />
+        <Route exact path="/ticket" component={TicketForm} />
+        <Route exact path="/eventform" component={EventForm} />
+        <Route exact path="/rentcar" component={RentCar} />
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={ServicesPage} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path='/events' component={Events} />
-        {/* this is for bukarani */}
-        <Route exact path="/event" component={EventPage} />
+        <Route exact path='/events' component={EventPage} />
         <Route exact path="/events/:slug" component={ViewEvent} />
 
         <Route exact path="/blogs" component={News} />

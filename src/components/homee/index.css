@@ -5,8 +5,12 @@
 }
 .carousel-item {
   position: relative;
-  height: 60%;
+  height: 80vh;
   width: 100%;
+}
+.carousel-item img{
+  height: 100%;
+  width: 100vw;
 }
 .carousel-overlay {
   position: absolute;
@@ -16,7 +20,7 @@
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.608),
+    rgba(0, 0, 0, 0.692),
     rgba(255, 255, 255, 0)
   );
   z-index: 1;
@@ -80,6 +84,23 @@
 .danger {
   background-color: #186645;
   color: #fff;
+}
+.blog-card {
+  overflow: hidden; /* Ensure the overflow is hidden to contain the grayscale effect */
+}
+
+.blog-image {
+  transition: filter 0.3s ease;
+  width: 100%; /* Ensure the image fills the container */
+}
+
+.blog-card:hover .blog-image {
+  filter: grayscale(100%);
+}
+
+.blog-card:hover .card-body,
+.blog-card:hover{
+  background-color: #f1e080; /* Yellow background on hover */
 }
 @media (max-width: 480px) {
   .carousel-caption{
