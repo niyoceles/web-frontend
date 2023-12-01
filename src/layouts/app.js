@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import NavBarPage from '../pagess/navPage/NavBarPage';
-import { Partner } from '../components/partner';
 import './index.css';
 import {Footer} from '../components/footer';
+import ScrollToTop from "react-scroll-to-top";
 
 export const AppLayout = props => {
 	useEffect(() => {
@@ -44,7 +44,7 @@ export const AppLayout = props => {
 						<Col lg={4} xs={5} sm={5}>
 							<div className='social-top float-right'>
 								<a
-									href='https://web.facebook.com/TourismChamberRW/?_rdc=1&_rdr'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -53,7 +53,7 @@ export const AppLayout = props => {
 									<i className='fab fa-facebook'></i>
 								</a>
 								<a
-									href='https://twitter.com/tourismchamber?lang=en'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -62,7 +62,7 @@ export const AppLayout = props => {
 									<i className='fab fa-twitter'></i>
 								</a>
 								<a
-									href='https://www.instagram.com/tourismchamber_rw/?hl=en'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -71,7 +71,7 @@ export const AppLayout = props => {
 									<i className='fab fa-instagram'></i>
 								</a>
 								<a
-									href='https://www.linkedin.com/company/rwanda-chamber-of-tourism'
+									href='#'
 									className='p-2'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -84,12 +84,12 @@ export const AppLayout = props => {
 					</Row>
 				</Container>
 			</div> */}
-
+			<ScrollToTop smooth color="#fff" style={{backgroundColor:"#186645"}}/>
 			<NavBarPage />
 
 			<main>{props.children}</main>
 
-			<Partner />
+			{/* <Partner /> */}
 			<Footer />
 		</div>
 	);

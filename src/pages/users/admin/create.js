@@ -193,7 +193,7 @@ export const UsersCreate = () => {
 												<Button
 													type='submit'
 													variant='primary'
-													className='float-right'
+													className=''
 												>
 													<i className='fa fa-save'></i> Create user
 												</Button>

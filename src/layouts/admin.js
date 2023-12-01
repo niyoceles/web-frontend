@@ -18,7 +18,7 @@ export const AdminLayout = props => {
 					<section className='footer'>
 						<Container fluid>
 							<Row>
-								<Col sm={12}>Copyright ©2021 COT. All rights reserved</Col>
+								<Col sm={12}>Copyright ©2023 GODISCOVER. All rights reserved</Col>
 							</Row>
 						</Container>
 					</section>

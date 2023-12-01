@@ -158,7 +158,7 @@ export const ToursAdminView = props => {
 				<Row>
 					<Col sm={8}>
 						<div className='page-header'>
-							<h2 className='pageheader-title'>Blogs | {oneTours.title}</h2>
+							<h2 className='pageheader-title'>Tours | {oneTours.title}</h2>
 							<div className='page-breadcrumb'>
 								<nav aria-label='breadcrumb'>
 									<ol className='breadcrumb'>
@@ -169,7 +169,7 @@ export const ToursAdminView = props => {
 										</li>
 										<li className='breadcrumb-item'>
 											<Link to='/account/tours' className='breadcrumb-link'>
-												Blogs
+												Tours
 											</Link>
 										</li>
 										<li className='breadcrumb-item'>View</li>
@@ -181,14 +181,14 @@ export const ToursAdminView = props => {
 							</div>
 						</div>
 					</Col>
-					<Col sm={2}>
+					{/* <Col sm={2}>
 						<Link
 							to={`/account/tours/comment/${slug}`}
 							className='btn btn-block btn-light'
 						>
 							<i className='fa fa-comment mr-1'></i>Comments
 						</Link>
-					</Col>
+					</Col> */}
 					<Col sm={2}>
 						<Link to='/account/tours' className='btn btn-block btn-light'>
 							<i className='fa fa-arrow-left mr-1'></i> Go Back
@@ -217,12 +217,12 @@ export const ToursAdminView = props => {
 												coverURL={
 													variables.image !== ''
 														? variables.image
-														: 'https://res.cloudinary.com/rcot/image/upload/v1610094246/COT-WEBSITE/DEFAULT-IMAGES/default_Image_rgcqj7.jpg'
+														: 'https://res.cloudinary.com/dfsai53mw/image/upload/v1701413117/WEBS/godiscover/default_Image_rgcqj7_jdxotc.jpg'
 												}
 												edit={edit}
 												files={files}
 												setFiles={setFiles}
-												text='Blog Cover '
+												text='Tour Cover '
 												useDropzone={useDropzone}
 												handleOnUploadImage={handleOnUploadImage}
 												uploadImagePercent={uploadImagePercent}
@@ -248,7 +248,7 @@ export const ToursAdminView = props => {
 								<div className='card-footer'>
 									<div>{error && <Alert variant='danger'>{error}</Alert>}</div>
 
-									<div className='float-right'>
+									<div className=''>
 										<div>
 											{errors &&
 												errors.map((value, indx) => (

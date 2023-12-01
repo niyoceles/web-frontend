@@ -55,7 +55,7 @@ export const ViewEvent = props => {
 									src={
 										event.image
 											? event.image
-											: 'https://res.cloudinary.com/rcot/image/upload/v1610094247/COT-WEBSITE/DEFAULT-IMAGES/event_ca6zd8.png'
+											: '../../assets/assetss/event.png'
 									}
 									alt={event.title}
 									width='100%'
@@ -169,7 +169,7 @@ export const ViewEvent = props => {
 														src={
 															event.image
 																? event.image
-																: 'https://res.cloudinary.com/rcot/image/upload/v1610094247/COT-WEBSITE/DEFAULT-IMAGES/event_ca6zd8.png'
+																: '../../assets/assetss/event.png'
 														}
 														className='img-fluid'
 														alt=''

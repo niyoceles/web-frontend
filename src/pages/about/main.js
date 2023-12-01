@@ -52,7 +52,7 @@ export const About = () => {
 				<link rel='canonical' href='https://godiscoverafrica.rw//about' />
 				<meta
 					name='description'
-					content='Go Discover Africa is one of the 10 professional chambers that currently exist under the umbrella of the Private Sector Federation (PSF)'
+					content='Go Discover Africa'
 				/>
 			</Helmet>
 			<section className='st-about-head' id={'who-we-are'}>
@@ -61,7 +61,7 @@ export const About = () => {
 				<Container>
 					<Row>
 						<Col lg={12}>
-							<p className='text-center head-title'>Our Organization</p>
+							<p className='text-center head-title'>About us</p>
 						</Col>
 					</Row>
 					<Row className='mt-3'>
@@ -70,7 +70,14 @@ export const About = () => {
 						</Col>
 						<Col lg={8}>
 							<p className='about-description text-justify'>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							GoDiscover Africa is a premium Tours and Travel company with its headquarters in Kigali Rwanda and company representatives in Nairobi, Kenya operating inbound and outbound tours within the region and Africa as a whole.
+ <br/>
+ <br/>
+ <br/>
+We specialize in creating exceptional tourism experiences and our service is anchored on the root mandate which is to cater for all our client travel expectations by developing and facilitating tourism packages that offer adventure, mystery, tranquility, excitement, education and most important safety.
+<br/>
+<br/>
+We invite you to come to join the exciting GoDiscover Africa adventure as we spread our wings across the continent of Africa with our professional tour operators who will guide you in discovering the mystery of the African continent, explore our detailed packages and itineraries which lead you to pre-arranged adventures or request for customized adventures and we will develop one for you that meets all your requirements. Discover our beautiful continent by partnering with GoDiscover Africa- we will take you there in comfort and style
 							</p>
 						</Col>
 					</Row>
@@ -79,8 +86,8 @@ export const About = () => {
 							<p className='sub-head-title'>Mission</p>
 						</Col>
 						<Col lg={8}>
-							<p className='about-description text-justify'>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+							<p className='about-description text-justify'>	
+							GoDiscover Africa undertakes to provide our valued clients with top range exclusive service and end to end travel solutions right from airport pickups, transportation, accommodations, tours and all other aspects of your travel to ensure your peace and your comfort
 							</p>
 						</Col>
 					</Row>
@@ -90,35 +97,35 @@ export const About = () => {
 						</Col>
 						<Col lg={8}>
 							<p className='about-description text-justify'>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+							
+To become a preferable and leading safaris company in East Africa by offering the best tours and travel and related activities at the most competitive price and providing quality services.
 							</p>
 						</Col>
 					</Row>
-					{/* <Row className='mt-3'>
+					<Row className='mt-3'>
 						<Col lg={4}>
-							<p className='sub-head-title'>corporate values</p>
+							<p className='sub-head-title'>Values</p>
 						</Col>
 						<Col lg={8}>
 							<p className='about-description'>
 								<ul>
 									<li className='about-description'>
-										Accountability and transparency
+									Respect for all
 									</li>
-									<li className='about-description'>Member orientation</li>
+									<li className='about-description'>
+Honest
+									</li>
+									<li className='about-description'>
+Knowledge
+									</li>
+									<li className='about-description'>
+
+Integrity
+									</li>
 								</ul>
 							</p>
 						</Col>
-					</Row> */}
-					{/* <Row className='mt-5'>
-						<video controls={true} width='100%' height='auto'>
-							<source
-								src={REACT_APP_ABOUT_VIDEO}
-								playsInline={true}
-								type='video/mp4'
-							/>
-							Your browser does not support the video tag.
-						</video>
-					</Row> */}
+					</Row>
 				</Container>
 			</section>
 			<section
@@ -143,11 +150,11 @@ export const About = () => {
 												src={index.image}
 												className='img-fluid'
 											/>
-											<p className='name mt-4 text-center mb-0'>
+											<p className='h2 font-weight-bold text-light mt-4 text-center mb-0'>
 												{index.names}
 											</p>
-											<p className='text-center'>
-												<span className='pos'>{index.role}</span>
+											<p className='text-center text-light'>
+												<span className='text-center text-white'>{index.role}</span>
 											</p>
 										</Col>
 									))}

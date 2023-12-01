@@ -86,7 +86,7 @@ export class UsersView extends Component {
 										</Form>
 									</div>
 									<div className='card-footer'>
-										<div className='float-right'>
+										<div className=''>
 											<Button variant='danger' className='mr-2'>
 												<i className='fa fa-trash'></i> Delete
 											</Button>

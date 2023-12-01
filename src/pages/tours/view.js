@@ -12,78 +12,102 @@ import { getSingleTours } from '../../redux/actions';
 import './index.css';
 import Spinner from '../../components/spinner/Spinner';
 
-export const ToursView = props => {
-	const [loading, setLoading] = useState(true);
-	const { slug } = props.match.params;
-	const urlPath = window.location.toString();
+export const ToursView = (props) => {
+  const [loading, setLoading] = useState(true);
+  const { slug } = props.match.params;
+  const urlPath = window.location.toString();
 
-	const oneTours = useSelector(state => state.toursReducer.oneTours);
-	const theLoading = useSelector(state => state.toursReducer.loading);
+  const oneTours = useSelector((state) => state.toursReducer.oneTours);
+  const theLoading = useSelector((state) => state.toursReducer.loading);
 
-	const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-	useEffect(() => {
-		dispatch(getSingleTours(slug));
-		setLoading(!theLoading);
-	}, [dispatch, slug, theLoading]);
+  useEffect(() => {
+    dispatch(getSingleTours(slug));
+    setLoading(!theLoading);
+  }, [dispatch, slug, theLoading]);
 
-	return (
-		<AppLayout>
-			<section className='st-read-tours py-4 mt-5 mb-5'>
-				<Container>
-					<Row>
-						<Col sm={8}>
-							<Row>
-								<Col sm={12}>
-									<h2 className='mb-2'>
-										<b> {oneTours.title}</b>
-									</h2>
-									<span className='mb-2 mt-1'>
-										{moment(oneTours.createdAt).format('MMMM d, y')}
-									</span>
+  const jsonData =
+    oneTours.itenerary &&
+    oneTours.itenerary.map((jsonString) => JSON.parse(jsonString));
+  return (
+    <AppLayout>
+      <section className='st-read-tours py-4 mt-5 mb-5 bg-light'>
+        <Container>
+          <Row>
+            <Col sm={8}>
+              <Row>
+                <Col sm={12}>
+                  <h2 className='mb-2'>
+                    <b> {oneTours.title}</b>
+                  </h2>
+                  <span className='mb-2 mt-1'>
+                    {moment(oneTours.createdAt).format('MMMM d, y')}
+                  </span>
 
-									{!loading && oneTours.image ? (
-										<Image
-											alt='Travel Banner'
-											title='Travel Banner'
-											src={oneTours.image}
-											className='img-fluid mt-3 mb-2'
-											style={{ width: '100%' }}
-										/>
-									) : (
-										<Spinner />
-									)}
+                  {!loading && oneTours.image ? (
+                    <Image
+                      alt='Travel Banner'
+                      title='Travel Banner'
+                      src={oneTours.image}
+                      className='img-fluid mt-3 mb-2'
+                      style={{ width: '100%' }}
+                    />
+                  ) : (
+                    <Spinner />
+                  )}
 
-									<p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
-								</Col>
+                  <p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
+                </Col>
 
-								<Col sm={12}>
-									<Facebook solidcircle big link={urlPath} />
-									<Twitter solidcircle big link={urlPath} />
-									<Whatsapp
-										solidcircle
-										big
-										message='Share on Whatsapp'
-										link={urlPath}
-									/>
-								</Col>
-							</Row>
-							<Row>
-								<Col sm={12} className='mt-4'>
-									<CommentBox
-										oneTours={oneTours}
-										loading={theLoading}
-										slug={props.match.params}
-									/>
-								</Col>
-							</Row>
-						</Col>
-						<Col sm={4}>
-							<RightBar tweet={true} tours={true} />
-						</Col>
-					</Row>
-				</Container>
-			</section>
-		</AppLayout>
-	);
+                <Row>
+                  {jsonData && !loading ? (
+                    <>
+                      <table className='table'>
+                        <thead>
+                          <tr>
+                            <th>Day</th>
+                            <th>What we will do</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {jsonData &&
+                            jsonData.map((da, i) => (
+                              <tr key={i}>
+                                <td>Day {da.day}</td>
+                                <td>
+                                  <h6> {da.title}</h6>
+                                  <br />
+                                  {da.body}
+                                </td>
+                              </tr>
+                            ))}
+                        </tbody>
+                      </table>
+                    </>
+                  ) : (
+                    <Spinner />
+                  )}
+                </Row>
+
+                <Col sm={12}>
+                  <Facebook solidcircle big link={urlPath} />
+                  <Twitter solidcircle big link={urlPath} />
+                  <Whatsapp
+                    solidcircle
+                    big
+                    message='Share on Whatsapp'
+                    link={urlPath}
+                  />
+                </Col>
+              </Row>
+            </Col>
+            <Col sm={4}>
+              <RightBar tweet={true} tours={true} />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </AppLayout>
+  );
 };

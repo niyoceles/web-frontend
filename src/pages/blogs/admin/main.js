@@ -92,7 +92,7 @@ export const NewsMain = () => {
 												<th scope='col'>Title</th>
 												<th scope='col'>Views</th>
 												<th scope='col'>Comments</th>
-												<th scope='col'>Published_By</th>
+												{/* <th scope='col'>Published_By</th> */}
 												<th scope='col'>Published_At</th>
 												<th scope='col'></th>
 												<th scope='col'></th>
@@ -126,7 +126,7 @@ export const NewsMain = () => {
 																	{singleNews.comments.length}{' '}
 																	<i className='fa fa-comment ml-1'></i>
 																</td>
-																<td>{singleNews.author.organization}</td>
+																{/* <td>{singleNews.author.organization}</td> */}
 																<td>
 																	{moment(singleNews.createdAt).format(
 																		'MMMM d, y'

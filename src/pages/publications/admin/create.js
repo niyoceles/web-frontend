@@ -215,7 +215,7 @@ export const PublicationsCreate = props => {
 									</Row>
 								</div>
 								<div className='card-footer'>
-									<div className='float-right'>
+									<div className=''>
 										<Button
 											className='btn btn-lg'
 											variant='primary'
