@@ -62,6 +62,7 @@ import { RentCar } from './pages/rentcar/main';
 import EventForm from './components/requestform/EventFrom';
 import EventDetail from './components/Eventss/EventDetail';
 import ParticipentEvent from './components/participantRegistration/ParticipentEventPage';
+import { ParticipantMain } from './pages/participant/admin/main';
 
 export default function Routes() {
   return (
@@ -125,6 +126,7 @@ export default function Routes() {
         /> */}
 
         <AuthRoute exact path='/account/events' component={EventsMain} />
+        <AuthRoute exact path='/account/events/participant' component={ParticipantMain} />
         <AuthRoute
           exact
           path='/account/events/create'

@@ -51,6 +51,12 @@ const SideBar = () => {
               </li>
 
               <li className='nav-item '>
+                <Link to='/account/events/participant' className='nav-link'>
+                  <i className='fas fa-newspaper'></i> Participants
+                </Link>
+              </li>
+
+              <li className='nav-item '>
                 <Link to='/account/news' className='nav-link'>
                   <i className='fas fa-newspaper'></i> Blogs
                 </Link>

@@ -11,7 +11,7 @@ const CardsGroup = () => {
           <Col md={5} className="mb-4">
             <Card className="card-1">
               <Card.Body>
-                <Card.Title>Event Consultancy</Card.Title>
+                <Card.Title>Events</Card.Title>
                 <br/>
                 {/* <Card.Subtitle className="mb-2 text-muted">
                   Card Subtitle
@@ -27,7 +27,7 @@ const CardsGroup = () => {
           <Col md={5} className="mb-4">
             <Card className="card-2">
               <Card.Body>
-                <Card.Title>Event Production</Card.Title>
+                <Card.Title>Tour packages</Card.Title>
                 <br/>
                 {/* <Card.Subtitle className="mb-2 text-muted">
                   Card Subtitle
@@ -43,7 +43,7 @@ const CardsGroup = () => {
           <Col md={5} className="mb-4">
             <Card className="card-3">
               <Card.Body>
-                <Card.Title>Rental Services</Card.Title>
+                <Card.Title>Car Rental Services</Card.Title>
                 <br/>
                 {/* <Card.Subtitle className="mb-2 text-muted">
                   Card Subtitle

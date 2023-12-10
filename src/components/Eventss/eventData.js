@@ -1,9 +1,9 @@
 const eventData = [
-    {
-        id:1 ,
-        title: `Event planning`,
-  description:`The pre-event phase at GoDiscover Africa Events is crucial for aligning with client objectives. Event budget planning covers development, cost management, and analysis. Venue selection leverages industry expertise. Meticulous floor plans optimize space, and design creates a cohesive atmosphere. Tailored marketing and meticulous catering services are prioritized. GoDiscover supports event management software development for streamlined processes and analytics.`,
-        body: `<b>Event objectives:</b> <br/> The pre-event phase is a critical stage in the event planning process that sets the foundation for a successful outcome. At GoDiscover Africa events, we understand the significance of this phase in ensuring that the event   aligns with our client’s Vision and meets their specific objectives. setting clear objectives and goals during this phase is fundamental to the overall success of any event. So we help you to set your event goals, objectives and targets. 
+  {
+    id: 1,
+    title: `Event planning`,
+    description: `The pre-event phase at GoDiscover Africa Events is crucial for aligning with client objectives. Event budget planning covers development, cost management, and analysis.  Meticulous floor plans optimize space, and design creates a cohesive atmosphere.`,
+    body: `<b>Event objectives:</b> <br/> The pre-event phase is a critical stage in the event planning process that sets the foundation for a successful outcome. At GoDiscover Africa events, we understand the significance of this phase in ensuring that the event   aligns with our client’s Vision and meets their specific objectives. setting clear objectives and goals during this phase is fundamental to the overall success of any event. So we help you to set your event goals, objectives and targets. 
 
   Event budget plan: Budgeting and financial planning budgeting and financial planning are crucial components of successful event management. At GoDiscover Africa Events, we recognize the significance of these elements in ensuring that our clients’ event is not only memorable but also financially feasible and efficient. We help you to develop a comprehensive event budget, cost management and supplier negotiations, put in place financial tracking and reporting mechanisms, develop contingency plans, and finally make post event financial analysis. 
   
@@ -18,14 +18,14 @@ const eventData = [
   Catering and menu planning: Our catering services encompass meticulous menu planning and culinary arrangements to elevate the overall event experience. We collaborate with catering service suppliers to set the event menu with a special focus given on menu customization as well as quality and presentation. We manage all aspects of catering logistics from tastings to on site coordination, we ensure a seamless and enjoyable dining experience for attendees, adhering to high standards of service and efficiency.
   
   Event management software: At GoDiscover we support to develop a tailored event management system that is essential for streamlining processes, centralizing data and enhancing efficiency to manage the event and delegate. We collaborate closely with clients to understand their specific requirements, workflows and desired functionalities for the event management system. Most of the features of the system include delegate registration, registration fee payment/ticketing (if required), agenda management, resource allocation analytics, etc.  `,
-    },
+  },
 
-    {
-        id: 2,
-        title: `Events logistics Management`,
-  description:`
-  We ensure seamless venue arrangements, coordinate with vendors, and set quality standards for accountability. Managing delegate accommodation involves negotiating favorable terms, efficient reservation handling, and clear communication. Transportation coordination includes developing plans, collaborating with service providers, and communicating instructions for reliable logistics on the event day.`,
-  body: `Logistics coordination: We take charge of all logistical arrangements related to the venue, including coordinating with the venue staff, managing setups, technical requirements, seating arrangements catering services, and any other specific requirements specified by the client.
+  {
+    id: 2,
+    title: `Events logistics Management`,
+    description: `
+  We ensure seamless venue arrangements, coordinate with vendors, and set quality standards for accountability. Managing delegate accommodation involves negotiating favorable terms, efficient reservation handling, and clear communication.`,
+    body: `Logistics coordination: We take charge of all logistical arrangements related to the venue, including coordinating with the venue staff, managing setups, technical requirements, seating arrangements catering services, and any other specific requirements specified by the client.
 
   Vendor and Supplier coordination: Coordinating with vendors and suppliers is essential for the successful execution of an event. our approach involves sourcing and selection of right vendors and suppliers, logistical management through efficiently managing communication timelines, and logistics with vendors and suppliers to ensure timely delivery of services and products. We set quality assurance metrics by ensuring that all vendors and suppliers comply with quality standards to fulfill their obligations as per the agreed – up terms, maintaining consistence and liability throughout the event.
   
@@ -43,14 +43,14 @@ const eventData = [
   
   We conduct on-site transport coordination on the event day to oversee schedules, ensure timely arrivals, and address any unforeseen transportation-related issues.
   `,
-    },
+  },
 
-{
-        id: 3,
-        title: `Events delegates management`,
-  description:`
-  Managing delegate invitations and confirmations is crucial for smooth logistics and attendee engagement. At GoDiscover Events, we tailor personalized communication based on participants' roles and preferences, ensuring an engaging experience. Efficiently handling RSVPs, we manage guest lists, provide timely responses, and offer logistical support with event information. Our user-friendly registration process centralizes attendee information and special requirements. Effective communication, updates, and on-site support for check-ins contribute to a seamless delegate experience.`,
-  body: `
+  {
+    id: 3,
+    title: `Events delegates management`,
+    description: `
+   At GoDiscover Events, we tailor personalized communication based on participants' roles and preferences, ensuring an engaging experience. Efficiently handling RSVPs, we manage guest lists, provide timely responses, and offer logistical support with event information.`,
+    body: `
   Delegate invitation and confirmations: Managing invitations and participant confirmations is crucial for ensuring smooth logistics and attendee engagement. At GoDiscover Events, we help you to conduct personalized communication through tailoring invitations and communication to participants based on their roles, preferences and specify needs to ensure a personalized and engaging experience. 
 
   We handle RSVPs (Répondez s'il vous plait) and participant confirmations efficiently, providing timely responses, and managing guest lists and attendee details to streamline event logistics. We provide logistical support on this aspect including providing necessary event information, direction, schedules, and additional resources to facilitate seamless participation.
@@ -61,13 +61,13 @@ const eventData = [
 
   On-site support: We offer on-site support for check ins, managing registrations, and addressing any queries or issues to a seamless experience for delegates. 
   `,
-    },
+  },
 
-{
-        id: 4,
-        title: `Event execution & management `,
-  description:`At GoDiscover Events, we excel in content creation, collaborating with clients to produce engaging material that connects with target audiences. In venue equipment and installation, we provide top-quality audio-visual gear, managing seamless setup and offering onsite technical support. Our event production services encompass creative concept development, venue logistics management, activity coordination, multimedia integration, and world-class simultaneous translation in five languages. Our goal is to deliver captivating and well-executed events, leaving a lasting impact on attendees.`,
-  body: `Content creation: At GoDiscover events, we support our clients in content creation. With our range of professionals in various domains, we are committed to support in the ideation, creation, and distribution of content that connects your events/conference to your target audience/delegates.   We aim to create appealing and engaging content that captures the attention of your event delegates.  We work closely with our clients on this aspect to ensure the event leaves a long lasting legacy in its content delivery. 
+  {
+    id: 4,
+    title: `Event execution & management `,
+    description: `We excel in content creation, collaborating with clients to produce engaging material that connects with target audiences. In venue equipment and installation, we provide top-quality audio-visual gear, managing seamless setup and offering onsite technical support.`,
+    body: `Content creation: At GoDiscover events, we support our clients in content creation. With our range of professionals in various domains, we are committed to support in the ideation, creation, and distribution of content that connects your events/conference to your target audience/delegates.   We aim to create appealing and engaging content that captures the attention of your event delegates.  We work closely with our clients on this aspect to ensure the event leaves a long lasting legacy in its content delivery. 
 
   Venue equipment and installation: At GoDiscover events, we understand the role of having quality equipment to facilitate an event.  We help our clients to have high quality Audio-visual Equipment as we understand the importance of high-quality audio-visual elements in enhancing the overall event experience. We source and provide a wide array of top-quality audio-visual equipment, including sound systems, microphones, projectors, screens, lighting setups, and other technical gear tailored to meet the event's specific needs.
   
@@ -87,27 +87,26 @@ const eventData = [
   
   Simultaneous Translation:  Our translations services are world class with top of the notch technology and translation, equipment, our translators are some of the top of the range translators in the region and can offer 5 different language translations (French, English, Swahili, Kinyarwanda and Arabic).  
   `,
-    },
+  },
 
-{
-        id: 5,
-        title: `Post event follow up`,
-  description:`Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.`,
-  body: `Post event evaluation: Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.
+  {
+    id: 5,
+    title: `Post event follow up`,
+    description: `Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.`,
+    body: `Post event evaluation: Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.
   `,
-    },
-{
-        id: 6,
-        title: `Collecting delegate feedback`,
-  description:`We understand the importance of gathering feedback from event participants to assess their experiences and satisfaction levels. Our approach involves Implementing various feedback collection methods such as surveys, questionnaires, or feedback forms tailored to capture attendees' opinions, suggestions, and overall event impressions. We ensure Timely and prompt gathering of the feedback while the event is fresh in participants' minds to ensure accuracy and relevancy of responses. We carefully analyze collected feedback to identify key strengths, areas for improvement, attendee preferences, and suggestions for future events`,
-  body: `Preparation of Thank You notes: Expressing gratitude is crucial for building lasting relationships with clients, sponsors, partners, and attendees. Our approach involves preparations of Personalized Notes - Crafting personalized thank-you notes acknowledging the contributions, support, and participation of attendees, sponsors, speakers, and other stakeholders. We ensure Timely Delivery of thank-you notes to show appreciation and reinforce positive connections established during the event.
+  },
+  {
+    id: 6,
+    title: `Collecting delegate feedback`,
+    description: `Our approach involves Implementing various feedback collection methods such as surveys, questionnaires, or feedback forms tailored to capture attendees' opinions, suggestions, and overall event impressions.`,
+    body: `Preparation of Thank You notes: Expressing gratitude is crucial for building lasting relationships with clients, sponsors, partners, and attendees. Our approach involves preparations of Personalized Notes - Crafting personalized thank-you notes acknowledging the contributions, support, and participation of attendees, sponsors, speakers, and other stakeholders. We ensure Timely Delivery of thank-you notes to show appreciation and reinforce positive connections established during the event.
 
   Event Report: Comprehensive event reports serve as valuable documents for clients and internal use. Our approach involves Documenting Insights through Compiling detailed event reports that include an overview of the event, feedback summary, key metrics, strengths, areas for improvement, and actionable recommendations. 
   
   By offering these post-event services, GoDiscover Africa Events ensures a holistic approach to event management, leveraging feedback and insights to continually enhance event experiences and deliver maximum value to our clients. Our dedication to gathering feedback, expressing gratitude, analyzing data, conducting debriefing sessions, and preparing comprehensive reports underscores our commitment to excellence in event planning and execution.      
   `,
-    },
-
+  },
 ];
 
 export default eventData;

@@ -13,10 +13,13 @@ import HomePage from "../../pagess/HomePage";
 import "./index.css";
 import "animate.css";
 import TrackVisibility from 'react-on-screen';
+import eventData from "../Eventss/eventData";
+import { Link } from "react-router-dom";
 
 const HomeBody = () => {
   const sponsorLogos = Array(12).fill(event);
   return (
+    
     <AppLayout>
       <div className="bg-light py-3 home-container">
         <Carousel className="h-80 bg-dark " fade>
@@ -24,13 +27,17 @@ const HomeBody = () => {
             <div className="carousel-overlay"></div>
             <img src={animal001} alt="" className="carousel-image" />
             <Carousel.Caption className="carousel-caption">
-              <h3 className="text-light font-weight-bold">First slide label</h3>
+              <h3 className="text-light font-weight-bold">Events</h3>
               <p className="text-light">
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              In our experience, no single event isidentical to another, we pay full attention as if building from scratch. We carefully assess the needs of a clients’ event and offer solutions forits realisation, always with the client's
+budget in mind.
               </p>
+          
+              <Link to="/events">
               <Button className="bg-transparent border-light btn-custom-primary">
-                learn more <ArrowRightCircle />{" "}
+                Learn more <ArrowRightCircle />{" "}
               </Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={1000} className="carousel-item">
@@ -38,27 +45,31 @@ const HomeBody = () => {
             <img src={animal002} alt="" />
             <Carousel.Caption className="carousel-caption">
               <h3 className="text-light font-weight-bold">
-                Second slide label
+                Tour Packages
               </h3>
               <p className="text-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Find out some tour packages, in Rwanda top Destination and Most tourists skip through Kigali on their way to go gorilla trekking in other parts of Rwanda or nearby Uganda
               </p>
+              <Link to="/tours">
               <Button className="bg-transparent border-light btn-custom-primary">
                 learn more <ArrowRightCircle />{" "}
               </Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
             <div className="carousel-overlay"></div>
             <img src={animal003} alt="" />
             <Carousel.Caption className="carousel-caption">
-              <h3 className="text-light font-weight-bold">Third slide label</h3>
+              <h3 className="text-light font-weight-bold">Car rental services</h3>
               <p className="text-light">
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                We provide for you car rental services,
               </p>
+              <Link to="/rentcar">
               <Button className="bg-transparent border-light btn-custom-primary">
                 learn more <ArrowRightCircle />{" "}
               </Button>
+              </Link>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
