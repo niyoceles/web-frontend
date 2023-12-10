@@ -89,6 +89,16 @@ const BottomNavBar = () => {
                Request for your event
               </NavLink>
             </NavDropdown.Item>
+            <NavDropdown.Item>
+            <NavLink
+               to="/participant"
+               activeClassName="active"
+               className="sub-link"
+                onClick={() => onUpdateActiveLink("participant")}
+              >
+               participate event
+              </NavLink>
+            </NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Tours" alignLeft className="dropdown fade-up">

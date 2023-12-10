@@ -7,7 +7,7 @@ import store from './redux/store/index';
 import { SET_AUTHENTICATED } from '../src/redux/types';
 import { logoutUser } from '../src/redux/actions';
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure();
 
