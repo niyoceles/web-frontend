@@ -405,5 +405,62 @@ table tr td {
   border: 2px solid black;
 }
 
+/*Participants table styling*/
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #186645;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+  background-color: #e5e5e5;
+}
+
+/* Fonts and general styles */
+th {
+  font-weight: 700;
+  color: #e9940c !important;
+}
+.reg-header{
+  font-weight: 700;
+  color: #e9940c !important;
+}
+
+p, strong, span, small, td, li {
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #000000 !important;
+}
+
+/* Button styles */
+.button {
+  background-color: #e9940c;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #d1830b;
+}
+
+
 
   

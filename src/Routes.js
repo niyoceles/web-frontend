@@ -61,7 +61,7 @@ import TicketForm from './components/requestform/TicketForm';
 import { RentCar } from './pages/rentcar/main';
 import EventForm from './components/requestform/EventFrom';
 import EventDetail from './components/Eventss/EventDetail';
-import ParticipentEvent from './components/requestform/ParticipentEvent';
+import ParticipentEvent from './components/participantRegistration/ParticipentEventPage';
 
 export default function Routes() {
   return (
@@ -75,7 +75,7 @@ export default function Routes() {
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/events' component={EventPage} />
-        <Route exact path='/attend' component={ParticipentEvent} />
+        <Route exact path='/participant' component={ParticipentEvent} />
         <Route exact path='/events/:id' component={EventDetail} />
         <Route exact path='/previous-events' component={Events} />
         <Route exact path='/events/:slug' component={ViewEvent} />
