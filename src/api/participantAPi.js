@@ -39,7 +39,7 @@ const createParticipant = async (data, url) => {
 			'Content-Type': 'application/json; charset=utf-8',
 			token,
 		},
-		body: JSON.stringify(data.tours),
+		body: JSON.stringify(data),
 	});
 	try {
 		const response = await fetch(request);

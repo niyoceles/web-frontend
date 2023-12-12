@@ -1,7 +1,7 @@
 const servicesData = [
   {
     id: 1,
-    title: `Events`,
+    title: `Events management`,
     description: `In our experience, no single event isidentical to another, we pay full attention as if building from scratch. We carefully assess the needs of a clients’ event and offer solutions forits realisation, always with the client's
     budget in mind.`,
   },
@@ -22,20 +22,15 @@ const servicesData = [
 
   {
     id: 4,
-    title: `Event execution & management `,
+    title: `Air ticket`,
     description: `We excel in content creation, collaborating with clients to produce engaging material that connects with target audiences. In venue equipment and installation, we provide top-quality audio-visual gear, managing seamless setup and offering onsite technical support.`,
    
   },
 
   {
     id: 5,
-    title: `Post event follow up`,
+    title: `Accommodations`,
     description: `Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.`,
-  },
-  {
-    id: 6,
-    title: `Collecting delegate feedback`,
-    description: `Our approach involves Implementing various feedback collection methods such as surveys, questionnaires, or feedback forms tailored to capture attendees' opinions, suggestions, and overall event impressions.`,
   },
 ];
 

@@ -31,13 +31,14 @@ const getTours = async url => {
  */
 
 const createTours = async (data, url) => {
+	const token = localStorage.getItem('IdToken');
 	const request = new Request(baseUrl + url, {
 		method: 'POST',
 		cache: 'reload',
 		mode: 'cors',
 		headers: {
 			'Content-Type': 'application/json; charset=utf-8',
-			token,
+			token: token || '',
 		},
 		body: JSON.stringify(data.tours),
 	});

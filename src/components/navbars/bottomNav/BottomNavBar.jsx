@@ -36,71 +36,6 @@ const BottomNavBar = () => {
               Home
             </NavLink>
           </Nav.Link>
-          <Nav.Link>
-            <NavLink
-           to="/about"
-           className="sub-link"
-           activeClassName="active"
-           onClick={() => onUpdateActiveLink("who-we-are")}
-            >
-              About us
-            </NavLink>
-          </Nav.Link>
-     
-          <Nav.Link>
-            <NavLink
-              to="/services"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("services")}
-            >
-              Services
-            </NavLink>
-          </Nav.Link>
-
-
-          <NavDropdown title="Events" alignLeft className="dropdown fade-up">
-            <NavDropdown.Item>
-              <NavLink
-                to="/events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-               Events
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/previous-events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-               Our previous events
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-            <NavLink
-               to="/eventform"
-               activeClassName="active"
-               className="sub-link"
-                onClick={() => onUpdateActiveLink("eventform")}
-              >
-               Request for your event
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-            <NavLink
-               to="/participant"
-               activeClassName="active"
-               className="sub-link"
-                onClick={() => onUpdateActiveLink("participant")}
-              >
-               participate event
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown>
-
           <NavDropdown title="Tours" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
@@ -123,17 +58,91 @@ const BottomNavBar = () => {
               </NavLink>
             </NavDropdown.Item>
           </NavDropdown>
-
           <Nav.Link>
             <NavLink
-              to="/rentcar"
+              to="/airticket"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("airticket")}
+            >
+              Air Ticket
+            </NavLink>
+          </Nav.Link>
+   
+          <Nav.Link>
+            <NavLink
+              to="/rentalcar"
               activeClassName="active"
               onClick={() => onUpdateActiveLink("rentcar")}
             >
-              Car rent
+              Car rental
             </NavLink>
           </Nav.Link>
-          
+
+          <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
+            <NavDropdown.Item>
+              <NavLink
+                to="/events"
+                className="sub-link"
+                activeClassName="active"
+                onClick={() => onUpdateActiveLink("events")}
+              >
+               Events Management
+              </NavLink>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <NavLink
+                to="/previous-events"
+                className="sub-link"
+                activeClassName="active"
+                onClick={() => onUpdateActiveLink("events")}
+              >
+               Our previous events
+              </NavLink>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+            <NavLink
+               to="/eventform"
+               activeClassName="active"
+               className="sub-link"
+                onClick={() => onUpdateActiveLink("eventform")}
+              >
+               Request for event support
+              </NavLink>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+            <NavLink
+               to="/participant"
+               activeClassName="active"
+               className="sub-link"
+                onClick={() => onUpdateActiveLink("participant")}
+              >
+               participate event
+              </NavLink>
+            </NavDropdown.Item>
+          </NavDropdown>
+
+          <Nav.Link>
+            <NavLink
+              to="/accommodation"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("accommodation")}
+            >
+              Accommodation
+            </NavLink>
+          </Nav.Link>
+     
+          <Nav.Link>
+            <NavLink
+              to="/services"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("services")}
+            >
+              Services
+            </NavLink>
+          </Nav.Link>
+     
+
+       
           <NavDropdown title="Media" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
@@ -158,6 +167,16 @@ const BottomNavBar = () => {
           </NavDropdown>
           <Nav.Link>
             <NavLink
+           to="/about"
+           className="sub-link"
+           activeClassName="active"
+           onClick={() => onUpdateActiveLink("who-we-are")}
+            >
+              About us
+            </NavLink>
+          </Nav.Link>
+          <Nav.Link>
+            <NavLink
               to="/contact"
               activeClassName="active"
               onClick={() => onUpdateActiveLink("contact")}
@@ -165,24 +184,6 @@ const BottomNavBar = () => {
               Contact Us
             </NavLink>
           </Nav.Link>
-          <Nav.Link>
-            <NavLink
-              to="/faq"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("faq")}
-            >
-              FAQ
-            </NavLink>
-          </Nav.Link>
-          {/* <Form inline>
-					<Nav.Link className='ml-5 btn btn-covid'>
-						<NavLink 
-             to="/ticket"
-             activeClassName="active"
-             onClick={() => onUpdateActiveLink("ticket")}
-            ><b>Request Ticket</b></NavLink>
-					</Nav.Link>{' '}
-				</Form> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

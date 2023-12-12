@@ -3,6 +3,7 @@ import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import 'animate.css';
 import "./index.css";
+import servicesData from "../servicesData";
 
 const CardsGroup = () => {
   return (
@@ -11,64 +12,60 @@ const CardsGroup = () => {
           <Col md={5} className="mb-4">
             <Card className="card-1">
               <Card.Body>
-                <Card.Title>Events</Card.Title>
+                <Card.Title>{servicesData[0].title}</Card.Title>
                 <br/>
-                {/* <Card.Subtitle className="mb-2 text-muted">
-                  Card Subtitle
-                </Card.Subtitle> */}
                 <Card.Text className="text-light">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                {servicesData[0].description}
                 </Card.Text>
-                <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button>
+                {/* <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button> */}
               </Card.Body>
             </Card>
           </Col>
           <Col md={5} className="mb-4">
             <Card className="card-2">
               <Card.Body>
-                <Card.Title>Tour packages</Card.Title>
+                <Card.Title> {servicesData[1].title}</Card.Title>
                 <br/>
-                {/* <Card.Subtitle className="mb-2 text-muted">
-                  Card Subtitle
-                </Card.Subtitle> */}
                 <Card.Text className="text-light">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                {servicesData[1].description}
                 </Card.Text>
-                <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button>
+                {/* <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button> */}
               </Card.Body>
             </Card>
           </Col>
           <Col md={5} className="mb-4">
             <Card className="card-3">
               <Card.Body>
-                <Card.Title>Car Rental Services</Card.Title>
+                <Card.Title>{servicesData[2].title}</Card.Title>
                 <br/>
-                {/* <Card.Subtitle className="mb-2 text-muted">
-                  Card Subtitle
-                </Card.Subtitle> */}
                 <Card.Text className="text-light">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                {servicesData[2].description}
                 </Card.Text>
-                <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle className="animate__animated animate__fadeIn"/></Button>
+                {/* <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle className="animate__animated animate__fadeIn"/></Button> */}
               </Card.Body>
             </Card>
           </Col>
           <Col md={5} className="mb-4">
             <Card className="card-4">
               <Card.Body>
-                <Card.Title>Destination Management System</Card.Title>
+                <Card.Title>{servicesData[3].title}</Card.Title>
                 <br/>
-                {/* <Card.Subtitle className="mb-2 text-muted">
-                  Card Subtitle
-                </Card.Subtitle> */}
                 <Card.Text className="text-light">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
+                {servicesData[3].description}
                 </Card.Text>
-                <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button>
+                {/* <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button> */}
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={5} className="mb-4">
+            <Card className="card-1">
+              <Card.Body>
+                <Card.Title>{servicesData[4].title}</Card.Title>
+                <br/>
+                <Card.Text className="text-light">
+                {servicesData[4].description}
+                </Card.Text>
+                {/* <Button className="btn-custom-primary animate-button bg-transparent border-light">Button <ArrowRightCircle/></Button> */}
               </Card.Body>
             </Card>
           </Col>

@@ -83,13 +83,14 @@ export const resetAccount = userData => dispatch => {
 };
 
 export const setAuthorization = token => {
+	console.log(token);
 	const IdToken = token;
 	localStorage.setItem('IdToken', IdToken);
 	//seting authorization to the header axios
-	axios.defaults.headers.common['token'] = IdToken;
+	axios.defaults.headers.common['token'] = token;
 };
 
-export const logoutUser = () => dispatch => {
+export const logoutUser = async () => dispatch => {
 	// set logout on backend later
 	localStorage.removeItem('IdToken');
 	delete axios.defaults.headers.common['token'];

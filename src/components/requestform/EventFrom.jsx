@@ -17,7 +17,7 @@ const EventForm = () => {
 						content='Information about the members of Go Discover Africa'
 					/>
 				</Helmet>
-				<Header title='Make a request for your event' />
+				<Header title='Make a request for an event management support' />
 
 				<section className='mt-5 mb-5 become-member bg-light'>
 					<Container>

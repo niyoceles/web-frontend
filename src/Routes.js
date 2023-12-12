@@ -58,11 +58,11 @@ import {
   ResetAccount,
 } from './pages/users';
 import TicketForm from './components/requestform/TicketForm';
-import { RentCar } from './pages/rentcar/main';
 import EventForm from './components/requestform/EventFrom';
 import EventDetail from './components/Eventss/EventDetail';
-import ParticipentEvent from './components/participantRegistration/ParticipentEventPage';
 import { ParticipantMain } from './pages/participant/admin/main';
+import ParticipantForm from './pages/participant/ParticipantForm';
+import { Airticket, RentalCar, Accommodation } from './pages/otherpages';
 
 export default function Routes() {
   return (
@@ -71,12 +71,14 @@ export default function Routes() {
         <Route exact path='/' component={HomeBody} />
         <Route exact path='/ticket' component={TicketForm} />
         <Route exact path='/eventform' component={EventForm} />
-        <Route exact path='/rentcar' component={RentCar} />
+        <Route exact path='/accommodation' component={Accommodation} />
+        <Route exact path='/rentalcar' component={RentalCar} />
+        <Route exact path='/airticket' component={Airticket} />
         <Route exact path='/about' component={About} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/events' component={EventPage} />
-        <Route exact path='/participant' component={ParticipentEvent} />
+        <Route exact path='/participant' component={ParticipantForm} />
         <Route exact path='/events/:id' component={EventDetail} />
         <Route exact path='/previous-events' component={Events} />
         <Route exact path='/events/:slug' component={ViewEvent} />
