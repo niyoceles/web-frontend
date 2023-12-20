@@ -57,29 +57,18 @@ export const About = () => {
             </Col>
             <Col lg={8}>
               <p className='about-description text-justify'>
-                GoDiscover Africa is a premium Tours and Travel company with its
-                headquarters in Kigali Rwanda and company representatives in
-                Nairobi, Kenya operating inbound and outbound tours within the
-                region and Africa as a whole.
+              GoDiscover Africa is a premium Tours and Travel company registered and headquartered in Kigali Rwanda, primarily operating inbound and outbound tours within Rwanda, East Africa and Africa as a whole. The company has also representatives in Nairobi, Kenya. 
                 <br />
                 <br />
                 <br />
-                We specialize in creating exceptional tourism experiences and
-                our service is anchored on the root mandate which is to cater
-                for all our client travel expectations by developing and
-                facilitating tourism packages that offer adventure, mystery,
-                tranquility, excitement, education and most important safety.
+                We specialize in creating exceptional tourism experiences and our service is anchored on the root mandate which is to cater for all our client travel expectations by developing and facilitating tourism packages that offer adventure, mystery, tranquility, excitement, education and most important safety.
                 <br />
                 <br />
-                We invite you to come to join the exciting GoDiscover Africa
-                adventure as we spread our wings across the continent of Africa
-                with our professional tour operators who will guide you in
-                discovering the mystery of the African continent, explore our
-                detailed packages and itineraries which lead you to pre-arranged
-                adventures or request for customized adventures and we will
-                develop one for you that meets all your requirements. Discover
-                our beautiful continent by partnering with GoDiscover Africa- we
-                will take you there in comfort and style
+                Other services of the company include air ticketing, car rental services, events management and hotel booking services. The bookme.rw is a specialized portal owned and operated by the company and is dedicated for car rental and hotel booking services.  All our services, except air ticketing, can be booked and paid for online. The air ticketing service is done offline but you can contact us through the website, telephone or email for the service.
+
+                <br />
+                <br />
+                We invite you to come to join the exciting GoDiscover Africa adventures as we spread our wings across the continent of Africa. Explore our detailed packages and itineraries which lead you to pre-arranged adventures or request for customized adventures and we will develop one for you that meets all your requirements. GoDiscover Africa, we strive for style and comfort. 
               </p>
             </Col>
           </Row>
@@ -117,10 +106,14 @@ export const About = () => {
             <Col lg={8}>
               <p className='about-description'>
                 <ul>
-                  <li className='about-description'>Respect for all</li>
-                  <li className='about-description'>Honest</li>
-                  <li className='about-description'>Knowledge</li>
+                  <li className='about-description'>Empathy</li>
+                  <li className='about-description'>Honest</li> 
                   <li className='about-description'>Integrity</li>
+                  <li className='about-description'>Professionalism</li>
+                  <li className='about-description'>Reliability</li>
+                  <li className='about-description'>Transparent </li>
+                  <li className='about-description'>Trust</li>
+                 
                 </ul>
               </p>
             </Col>

@@ -51,25 +51,29 @@ Customer satisfaction is our top priority, and we strive to provide exceptional 
                 <i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw{' '}
                 <br />
               </p>
+              <p className='py-3'>
+              <a href='/ticket' target="_blank" rel="noopener noreferrer" className=''>
+              <Button
+                type='submit'
+                variant='outline-primary'
+                className='btn-lg'
+              >
+                <i className='fa fa-save'></i> Fill the form 
+              </Button>
+              </a>
+              </p>
             </Col>
             <Col
               sm={5}
               className='d-flex align-items-center justify-content-center'
             >
-              {/* <Button
-                type='submit'
-                variant='outline-primary'
-                className='mt-3 col-sm-6'
-              >
-                <i className='fa fa-save'></i> Go to Rental car portal
-              </Button> */}
-
                <Image
 										src={Quote}
 										className='img-fluid'
 										title='image'
 										alt='image'
 									/>
+            
             </Col>
           </Row>
         </Container>

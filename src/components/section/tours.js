@@ -45,7 +45,7 @@ export const ToursBox = () => {
 													href={`/tour/${oneTours.slug}`}
 													thumbnail={oneTours.image}
 													title={oneTours.title}
-													author={oneTours.author.organization}
+													author={`$`+ oneTours.price }
 													date={moment(oneTours.createdAt).format('MMMM d, y')}
 												/>
 											))}
@@ -61,7 +61,7 @@ export const ToursBox = () => {
 														href={`/tour/${oneTours.slug}`}
 														thumbnail={oneTours.image}
 														title={oneTours.title}
-														author={oneTours.author.organization}
+														author={`$`+ oneTours.price}
 														date={moment(oneTours.createdAt).format('MMMM d, y')}
 													/>
 												))}

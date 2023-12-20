@@ -7,7 +7,7 @@ export const TinyEditor = props => {
 	return (
 		<div>
 			<Editor
-				apiKey='vocxqksl1lger7ttak7q87j3trvipgvjttvpp4fl4dfs4ddb'
+				apiKey='rtvl5mnciwns1upf4xigvav5mqzimvy9kw68iqbbd0thtfau'
 				init={{
 					height: 300,
 					menubar: false,

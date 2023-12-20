@@ -8,3 +8,6 @@ export * from './contactTypes';
 export * from './publicationTypes';
 export * from './maillistTypes';
 export * from './toursTypes';
+export * from './clientTypes';
+export * from './orderTypes';
+export * from './proformaTypes';

@@ -36,7 +36,17 @@ const BottomNavBar = () => {
               Home
             </NavLink>
           </Nav.Link>
-          <NavDropdown title="Tours" alignLeft className="dropdown fade-up">
+          <Nav.Link>
+          <NavLink
+                to="/tours"
+                className="sub-link"
+                activeClassName="active"
+                onClick={() => onUpdateActiveLink("tours")}
+              >
+                Tours
+              </NavLink>
+          </Nav.Link>
+          {/* <NavDropdown title="Tours" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
                 to="/tours"
@@ -57,7 +67,7 @@ const BottomNavBar = () => {
                Request ticket
               </NavLink>
             </NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
           <Nav.Link>
             <NavLink
               to="/airticket"
@@ -78,7 +88,19 @@ const BottomNavBar = () => {
             </NavLink>
           </Nav.Link>
 
-          <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
+          <Nav.Link>
+          <NavLink
+                to="/events"
+                className="sub-link"
+                activeClassName="active"
+                onClick={() => onUpdateActiveLink("events")}
+              >
+               Events Management
+              </NavLink>
+          </Nav.Link>
+          
+
+          {/* <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
                 to="/events"
@@ -116,10 +138,10 @@ const BottomNavBar = () => {
                className="sub-link"
                 onClick={() => onUpdateActiveLink("participant")}
               >
-               participate event
+               Participate event
               </NavLink>
             </NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
 
           <Nav.Link>
             <NavLink

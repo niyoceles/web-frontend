@@ -64,21 +64,21 @@ export class Footer extends Component {
                   rel='noopener noreferrer'
                   aria-label='Republic of Rwanda'
                 >
-                  Republic of Rwanda
+                  Bookme
                 </a>
                 &nbsp; | &nbsp;{' '}
                 <a
-                  href='https:/www.visitrwanda.com/'
+                  href='https:/www.bookme.rw/'
                   className='ft-link'
                   target='_blank'
                   rel='noopener noreferrer'
                   aria-label='Visit Rwanda'
                 >
-                  Visit Rwanda
+                  Car rental
                 </a>
                 &nbsp; | &nbsp;{' '}
-                <a
-                  href='https://rdb.rw/'
+                {/* <a
+                  href='https:/www.carrental.bookme.rw/'
                   className='ft-link'
                   target='_blank'
                   rel='noopener noreferrer'
@@ -95,7 +95,7 @@ export class Footer extends Component {
                   aria-label='Rwandair'
                 >
                   Rwandair
-                </a>
+                </a> */}
               </Col>
             </Row>
           </Container>

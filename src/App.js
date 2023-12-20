@@ -7,6 +7,7 @@ import store from './redux/store/index';
 import { SET_AUTHENTICATED } from '../src/redux/types';
 import { logoutUser } from '../src/redux/actions';
 import { toast } from 'react-toastify';
+import { QueryClient, QueryClientProvider } from 'react-query';
 // import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure();
@@ -24,6 +25,7 @@ if (token) {
 }
 
 const App = () => {
+	const queryClient = new QueryClient();
 	useEffect(() => {
 		if (!token) {
 			window.$crisp = [];
@@ -40,9 +42,11 @@ const App = () => {
 		}
 	});
 	return (
+		<QueryClientProvider client={queryClient}>
 		<Provider store={store}>
 			<Routes />
 		</Provider>
+		</QueryClientProvider>
 	);
 };
 

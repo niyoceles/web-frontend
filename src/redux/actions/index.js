@@ -8,3 +8,6 @@ export * from './contactActions';
 export * from './publicationActions';
 export * from './maillistActions';
 export * from './toursActions';
+export * from './clientActions';
+export * from './orderActions';
+export * from './proformaActions';

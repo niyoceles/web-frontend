@@ -9,6 +9,9 @@ import contact from './contactReducer';
 import publicationReducer from './publicationReducer';
 import maillistReducer from './maillistReducer';
 import toursReducer from './toursReducer';
+import client from './clientReducer';
+import order from './orderReducer';
+import proforma from './proformaReducer';
 
 export default combineReducers({
 	auth,
@@ -18,6 +21,9 @@ export default combineReducers({
 	commentReducer,
 	eventReducer,
 	contact,
+	client,
+	order,
+	proforma,
 	publicationReducer,
 	maillistReducer,
 	toursReducer,

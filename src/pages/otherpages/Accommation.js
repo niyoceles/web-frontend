@@ -35,11 +35,13 @@ export const Accommodation = () => {
               <h1 className='text-title text-bold mt-3 py-4'>Accommation</h1>
               <p className='mt-4'>
                 <br />
-                Discover a home away from home! Our cozy accommodations provide comfort and convenience for your stay. Whether you're traveling for business or leisure, our well-appointed spaces offer a perfect blend of style and functionality. Book your stay with us and experience hospitality at its finest. 
-                <br />– Welcome to your new home on the road!
+                Discover a home away from home! Our cozy accommodations provide comfort and convenience for your stay. We partner with all sort of accommodation facilities, budget, mid-range and high end town hotels, resorts as well as luxury lodges. We offer a good range of apartment hotels, serviced apartments, motels, guesthouses and tented camps. Whether you're traveling for business or leisure, our carefully selected partners will offer you a perfect blend of style and comfort. Book your stay with us and experience hospitality at its finest. For booking visit our hotel booking dedicated portal bookme.rw.  
+                <br/>
+                <br />– Book with us!
               </p>
               <p className='mt-4'>
-                <i className='fa fa-phone mr-2'></i> ‎+250 791 349 744 <br />
+                <i className='fa fa-website mr-2'></i>www.bookme.rw <br />
+                <i className='fa fa-phone mr-2'></i>+250 791 349 744 <br />
                 <i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw{' '}
                 <br />
               </p>

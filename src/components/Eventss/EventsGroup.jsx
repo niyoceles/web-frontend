@@ -23,7 +23,12 @@ const EventsGroup = () => {
           event and offer solutions for its realisation, always with the
           client’s budget in mind.
         </p>
-        <Button className="btn-custom-primary">let's handle it for you </Button>
+        <a href='/eventform' 
+        // target="_blank" 
+        rel="noopener noreferrer" 
+        className=''>
+        <Button className="btn-custom-primary">Request for event support </Button>
+        </a>
       </div>
     </div>
         <Container fluid>

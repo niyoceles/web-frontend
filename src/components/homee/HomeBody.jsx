@@ -68,15 +68,15 @@ const HomeBody = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <div className="w-100 px-5 py-3 danger text-light">
+        <div className="w-100 px-5 py-5 danger text-light">
           <Row>
-            <Col sm={12} md={6}>
-              <h1 className="text-light font-weight-bold ">Why It's Worth It</h1>
-              <p className="px-18 text-light">
+            <Col sm={12} md={12}>
+              <h1 className="text-light font-weight-bold justify-content-center text-center py-3">Why It's Worth It</h1>
+              <p className="px-18 text-light justify-content-center text-center">
               Most tourists skip through Kigali on their way to go gorilla trekking in other parts of Rwanda or nearby Uganda, but if you have the time, Kigali is an incredible, vibrant, and beautiful city known as the Singapore of Africa. With a thriving arts scene and social conscience that includes the banning of plastic bags and monthly community city cleanups, Kigali is leading the way for many other cities in Africa and, indeed, around the world. —Helen Davies
               </p>
             </Col>
-            <Col sm={12} md={6}>
+            {/* <Col sm={12} md={6}>
               <iframe
                 src="https://www.youtube.com/watch?v=EPCKma4e37Y"
                 title="YouTube video player"
@@ -84,7 +84,7 @@ const HomeBody = () => {
                 allowFullScreen
                 className="youtube-iframe"
               ></iframe>
-            </Col>
+            </Col> */}
           </Row>
         </div>
         <div className="px-5">

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 import { Twitter, Facebook, Whatsapp } from 'react-social-sharing';
 import moment from 'moment';
 import ReactHtmlParser from 'react-html-parser';
@@ -11,6 +11,8 @@ import { getSingleTours } from '../../redux/actions';
 
 import './index.css';
 import Spinner from '../../components/spinner/Spinner';
+import PaymentForm from '../../components/payment/PaymentForm';
+import { Booking } from '../booking/main';
 
 export const ToursView = (props) => {
   const [loading, setLoading] = useState(true);
@@ -27,6 +29,11 @@ export const ToursView = (props) => {
     setLoading(!theLoading);
   }, [dispatch, slug, theLoading]);
 
+  const setBooking=(amount, id)=>{
+    localStorage.setItem('amount', amount);
+    localStorage.setItem('bookingID',id);
+  }
+
   const jsonData =
     oneTours.itenerary &&
     oneTours.itenerary.map((jsonString) => JSON.parse(jsonString));
@@ -40,7 +47,7 @@ export const ToursView = (props) => {
                 <Col sm={12}>
                   <h2 className='mb-2'>
                     <b> {oneTours.title}</b>
-                  </h2>
+                  </h2>         
                   <span className='mb-2 mt-1'>
                     {moment(oneTours.createdAt).format('MMMM d, y')}
                   </span>
@@ -59,9 +66,12 @@ export const ToursView = (props) => {
 
                   <p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
                 </Col>
-
+                <h2 className='mb-2 py-3'>
+                    <b> ${oneTours.price}</b>
+                  </h2>
+                  
                 <Row>
-                  {jsonData && !loading ? (
+                  {jsonData && !loading && jsonData.length >0 ? (
                     <>
                       <table className='table'>
                         <thead>
@@ -86,7 +96,9 @@ export const ToursView = (props) => {
                       </table>
                     </>
                   ) : (
-                    <Spinner />
+                  <div>
+                   {loading ? (<Spinner />):''} 
+                   </div>
                   )}
                 </Row>
 
@@ -103,7 +115,7 @@ export const ToursView = (props) => {
               </Row>
             </Col>
             <Col sm={4}>
-              <RightBar tweet={true} tours={true} />
+               <Booking amount={oneTours.price} id={oneTours.id} />
             </Col>
           </Row>
         </Container>
