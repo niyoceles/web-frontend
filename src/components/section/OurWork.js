@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
-export const GalaDinner = () => {
+export const OurWork = () => {
 	return (
 		<section
 			id={'gala-dinner'}

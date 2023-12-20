@@ -15,7 +15,7 @@ const EventsGroup = () => {
     <div fluid className="bg-light py-4 ">
         <div className="event-container">
       <div >
-        <h1 className="text-light">Events</h1>
+        <h1 className="text-light">Events Management</h1>
         <p className="text-light">
           In our experience, no single event is identical to another, that’s why
           we treat every event as if it were new and we pay full attention as if

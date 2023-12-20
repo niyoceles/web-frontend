@@ -6,7 +6,7 @@ const baseUrl = process.env.REACT_APP_BACKEND;
  * @param {object} reponse for news
  * @returns {object} server response
  */
-const getNews = async url => {
+const getParticipants = async url => {
 	const request = new Request(baseUrl + url, {
 		method: 'get',
 		mode: 'cors',
@@ -30,16 +30,16 @@ const getNews = async url => {
  * @returns {object} server response
  */
 
-const createNews = async (data, url) => {
+const createParticipant = async (data, url) => {
 	const request = new Request(baseUrl + url, {
 		method: 'POST',
 		cache: 'reload',
 		mode: 'cors',
 		headers: {
 			'Content-Type': 'application/json; charset=utf-8',
-			token: token || '',
+			token,
 		},
-		body: JSON.stringify(data.news),
+		body: JSON.stringify(data),
 	});
 	try {
 		const response = await fetch(request);
@@ -49,4 +49,4 @@ const createNews = async (data, url) => {
 	}
 };
 
-export { getNews, createNews };
+export { getParticipants, createParticipant };

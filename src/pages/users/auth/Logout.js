@@ -22,7 +22,7 @@ const Logout = () => {
 
 	return (
 		<div>
-			<Link className='nav-link' onClick={toggle}>
+			<Link className='nav-link text-danger' onClick={toggle}>
 				<i className='fas fa-newspaper'></i> Logout
 			</Link>
 			<Modal show={modal} onHide={toggle}>
