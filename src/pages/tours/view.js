@@ -34,9 +34,9 @@ export const ToursView = (props) => {
     localStorage.setItem('bookingID',id);
   }
 
-  const jsonData =
-    oneTours.itenerary &&
-    oneTours.itenerary.map((jsonString) => JSON.parse(jsonString));
+  // const jsonData =
+  //   oneTours.itenerary &&
+  //   oneTours.itenerary.map((jsonString) => JSON.parse(jsonString));
   return (
     <AppLayout>
       <section className='st-read-tours py-4 mt-5 mb-5 bg-light'>
@@ -45,7 +45,7 @@ export const ToursView = (props) => {
             <Col sm={8}>
               <Row>
                 <Col sm={12}>
-                  <h2 className='mb-2'>
+                   <h2 className='mb-2'>
                     <b> {oneTours.title}</b>
                   </h2>         
                   <span className='mb-2 mt-1'>
@@ -70,7 +70,7 @@ export const ToursView = (props) => {
                     <b> ${oneTours.price}</b>
                   </h2>
                   
-                <Row>
+                {/* <Row>
                   {jsonData && !loading && jsonData.length >0 ? (
                     <>
                       <table className='table'>
@@ -100,7 +100,7 @@ export const ToursView = (props) => {
                    {loading ? (<Spinner />):''} 
                    </div>
                   )}
-                </Row>
+                </Row> */}
 
                 <Col sm={12}>
                   <Facebook solidcircle big link={urlPath} />
