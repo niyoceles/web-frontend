@@ -16,18 +16,29 @@ const ViewOrder = (props) => {
   const history = useHistory();
   const myprofroma = useSelector((state) => state.order.orderItem.oneorder);
   const items = useSelector((state) => state.order.orderItem.orderItems);
-
+  const item = useSelector((state) => state.order.orderItem.oneorder);
+  let amountToPay;
   const dispatch = useDispatch();
   useEffect(() => {
     const lastPath = window.location.pathname;
     const id = lastPath.split('/');
     dispatch(getSingleOrder(id[2]));
+   
   }, [dispatch]);
 
   const handleClickOpen = () => {
     let path = `/account/supplier/orders`;
     history.push(path);
   };
+
+  const handlePayOpen = (amountToPay) => {
+		localStorage.setItem("amountToPay", amountToPay);
+		window.location.href = `${process.env.REACT_APP_FRONTEND}/pay`;
+	};
+  
+  if(item !== undefined){
+    amountToPay = item.amount;
+  }
 
   return (
     <Container className="mt-4">
@@ -78,46 +89,17 @@ const ViewOrder = (props) => {
           ) : null}
         </Col>
         <Col xs={12} sm={4} md={4}>
+
+          <h2>Total: {amountToPay}</h2>
           {/* <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-              </tr>
-            </thead>
             <tbody>
-              {items !== undefined ? (
-                items.map((item) => (
-                  <tr key={item.key}>
-                    <td>{item.itemName}</td>
-                    <td>${item.itemPrice} </td>
-                    <td>{item.itemNumber}</td>
-                    <td>{item.itemNumber * item.itemPrice}</td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan="4" className="text-center">
-                    Oops! You haven't requested anything yet!
-                  </td>
-                </tr>
-              )}
               <tr>
                 <td colSpan="3">
                   <strong>Total</strong>
                 </td>
                 <td>
                   <strong>
-                    {items &&
-                      (() => {
-                        let sum = 0;
-                        items.forEach((item) => {
-                          sum += item.itemNumber * item.itemPrice;
-                        });
-                        return sum;
-                      })()}
+                    {myprofroma.amount !=''? myprofroma.amount : 0}
                   </strong>
                 </td>
               </tr>
@@ -136,11 +118,20 @@ const ViewOrder = (props) => {
 
           {myprofroma !== undefined && !props.isAdmin && myprofroma.status !== 'PAID' && (
             <div>
-              <PaymentForm
+              {/* <PaymentForm
                 bookingEmail={'niyoceles3@gmail.com'}
                 bookingID={myprofroma.id}
                 amountToPay={4}
-              />
+              /> */}
+
+          <Button
+              variant="success"
+              size="md"
+              className="mt-3"
+              onClick={() => handlePayOpen(myprofroma.amount)}
+            >
+              Pay now
+            </Button>
             </div>
           )}
         </Col>

@@ -1,17 +1,15 @@
 import 'dotenv/config';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Twitter, Facebook, Whatsapp } from 'react-social-sharing';
 import moment from 'moment';
 import ReactHtmlParser from 'react-html-parser';
 import { AppLayout } from '../../layouts';
-import { RightBar, CommentBox } from '../../components/section';
 import { getSingleTours } from '../../redux/actions';
 
 import './index.css';
 import Spinner from '../../components/spinner/Spinner';
-import PaymentForm from '../../components/payment/PaymentForm';
 import { Booking } from '../booking/main';
 
 export const ToursView = (props) => {
@@ -28,11 +26,6 @@ export const ToursView = (props) => {
     dispatch(getSingleTours(slug));
     setLoading(!theLoading);
   }, [dispatch, slug, theLoading]);
-
-  const setBooking=(amount, id)=>{
-    localStorage.setItem('amount', amount);
-    localStorage.setItem('bookingID',id);
-  }
 
   // const jsonData =
   //   oneTours.itenerary &&

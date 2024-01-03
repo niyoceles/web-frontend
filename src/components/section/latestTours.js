@@ -46,7 +46,7 @@ export const LatestTours = () => {
                       .slice(2, 5)
                       .map((singleTours, i) => (
                         <Col lg={4} md={4} sm={12} xs={12} key={i}>
-                          <Link to={`/blog/${singleTours.slug}`}>
+                          <Link to={`/tour/${singleTours.slug}`}>
                             <div className='events-box background-white-light'>
                               <img
                                 src={singleTours.image}

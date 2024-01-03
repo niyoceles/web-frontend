@@ -94,14 +94,14 @@ const PaymentForm = ({ amountToPay, bookingID, bookingEmail }) => {
   return (
     <>
       {/* load mastercard payment javascript */}
-      {/* <script
+      <script
         src="https://ap-gateway.mastercard.com/checkout/version/61/checkout.js"
         data-error="errorCallback"
         data-cancel="cancelCallback"
         data-complete="completeCallback"
       />
 
-      <script src="/public/script.js" /> */}
+      <script src="/public/script.js" />
 
       <div className="flex flex-col gap-2">
         <p className="text-co-black font-bold text-base">

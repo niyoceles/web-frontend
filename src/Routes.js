@@ -64,6 +64,7 @@ import { ParticipantMain } from './pages/participant/admin/main';
 import ParticipantForm from './pages/participant/ParticipantForm';
 import { Airticket, RentalCar, Accommodation } from './pages/otherpages';
 import ViewOrder from './pagess/ViewOrder';
+import Pay from './components/payment/pay';
 
 export default function Routes() {
   return (
@@ -76,6 +77,7 @@ export default function Routes() {
         <Route exact path='/rentalcar' component={RentalCar} />
         <Route exact path='/airticket' component={Airticket} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/pay' component={Pay} />
         <Route exact path='/services' component={ServicesPage} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/events' component={EventPage} />

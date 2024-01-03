@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import event1 from "../../assets/assetss/event1.jpg";
+import event1 from "../../assets/assetss/event-bg.png";
 import "animate.css";
 import EventsWelcome from "../Eventss/EventsWelcome";
 import { Link } from "react-router-dom";
