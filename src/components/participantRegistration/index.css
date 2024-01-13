@@ -1,16 +1,16 @@
 /*this is for the whole form page*/
 .intro-col{
-    background-color: #186645;
+    background-color: #558a54;
     text-align: center;
     padding:5px;
 }
 .second-intro{
     border: 15px solid #e9940c;
     text-align: center;
-    color: #186645;
+    color: #558a54;
 }
 .para002{
-    color: #186645;
+    color: #558a54;
     font-style: italic;
 }
 
@@ -23,7 +23,7 @@
   
   .form-label {
     font-weight: bold;
-    color: #186645;
+    color: #558a54;
   }
   
   .form-control-lg {
@@ -31,5 +31,5 @@
   }
   .additional-text {
     margin-top: 20px;
-    color: #186645;
+    color: #558a54;
   }

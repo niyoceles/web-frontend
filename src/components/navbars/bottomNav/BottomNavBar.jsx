@@ -37,6 +37,15 @@ const BottomNavBar = () => {
             </NavLink>
           </Nav.Link>
           <Nav.Link>
+            <NavLink
+              to="/services"
+              activeClassName="active"
+              onClick={() => onUpdateActiveLink("services")}
+            >
+              Services
+            </NavLink>
+          </Nav.Link>
+          <Nav.Link>
           <NavLink
                 to="/tours"
                 className="sub-link"
@@ -152,18 +161,6 @@ const BottomNavBar = () => {
               Accommodation
             </NavLink>
           </Nav.Link>
-     
-          <Nav.Link>
-            <NavLink
-              to="/services"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("services")}
-            >
-              Services
-            </NavLink>
-          </Nav.Link>
-     
-
        
           <NavDropdown title="Media" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>

@@ -20,7 +20,7 @@ export const Terms = () => {
 			</Helmet>
 			<Header title='Terms & Conditions' />
 
-			<section className='mt-5 mb-5 terms'>
+			<section className='mt-5 mb-5 terms bg-light'>
 				<Container>
 					<Row>
 						<Col sm={10}>

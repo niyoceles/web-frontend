@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav, Form, FormControl } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
 import search from "../../../assets/assetss/search-icon.svg";
 import facebook from "../../../assets/assetss/facebook-icon.svg";
 import tweeter from "../../../assets/assetss/twitter-icon.svg";
@@ -41,38 +43,35 @@ const TopNavBar = () => {
       ) : (
         <Navbar className={`top-nav`} expand="md">
           <Container>
-            {/* <Nav className="mr-auto">
-              {searchVisible && (
-                <Form inline className="">
-                  <FormControl
-                    type="text"
-                    placeholder="Search"
-                    className="search mr-sm-2 "
-                    value={searchInput}
-                    onChange={handleInputChange}
-                  />
-                </Form>
-              )}
-            </Nav> */}
-            <Nav className="icon-nav ">
-              <div className="social-icon">
-                <a href="#">
+          <Nav className="ml-auto">
+          <Navbar.Brand as={Link} to="/terms-and-conditions">
+          <span className="text-light"  style={{color:'white'}}>
+              +250 791 349 744
+            </span>
+        </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/terms-and-conditions">
+        <span className="text-light" style={{color:'white',textTransform: 'lowercase'}}>
+              <i className="fas fa-envelope" style={{ marginBottom: '-8px' }}></i> info@godiscoverafrica.rw
+            </span>
+        </Navbar.Brand>
+           
+            </Nav>
+            <Nav className="icon-nav">
+              <div className="social-icon" style={{width: '250px'}}>
+                <a href="https://www.facebook.com/godiscoverafricarw">
                   <img src={facebook} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/GodiscoverA">
                   <img src={tweeter} alt="" />
                 </a>
-                <a href="#">
+                {/* <a href="#">
                   <img src={youtube} alt="" />
-                </a>
-                <a href="#">
+                </a> */}
+                <a href="https://www.linkedin.com/in/godiscover-africa-your-tour-and-travel-partner-002207278">
                   <img src={linkedin} alt="" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/godiscoverafricarw/">
                   <img src={instagram} alt="" />
-                </a>
-                <a href="#">
-                  <img src={flickr} alt="" />
                 </a>
               </div>
             </Nav>

@@ -235,7 +235,7 @@ table tr td {
 }
 :global(nav.navbar.scrolled) {
   padding: 0px 0;
-  background-color: #186645;
+  background-color: #558a54;
   position: fixed;
   width: 100vw;
   z-index: 1000;
@@ -397,7 +397,7 @@ table tr td {
   border-bottom: 1px solid white;
 }
 .footer {
-  background-color: #186645;
+  background-color: #558a54;
   color: white;
 }
 
@@ -418,7 +418,7 @@ th, td {
 }
 
 thead {
-  background-color: #186645;
+  background-color: #558a54;
   color: white;
 }
 

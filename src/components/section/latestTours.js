@@ -36,7 +36,7 @@ export const LatestTours = () => {
       <Container>
         <Row>
           <Col sm={12}>
-            <h4 className='col-sm-12'>Related Tours</h4>
+            {/* <h4 className='col-sm-12'>Related Tours</h4> */}
             <Row>
               {data && !loading ? (
                 <>

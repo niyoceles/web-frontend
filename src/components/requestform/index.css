@@ -1,5 +1,5 @@
 .form-column {
-    background-color: #186645;
+    background-color: #558a54;
     color: white;
     gap: 30px;
     text-align: center; /* Align text in the center */
@@ -26,7 +26,7 @@ h3{
     border-radius: 8px;
   }
   .btn-ticket{
-    background-color: #186645;
+    background-color: #558a54;
     color: white;
     border-radius: 20px;
     display: flex;

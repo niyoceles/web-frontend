@@ -15,7 +15,7 @@ import Loading from '../../utils/Loading';
 import './index.css';
 
 export const RentalCar = () => {
-  const bookmeUrl = 'https://bookme.rw/';
+  const bookmeUrl = 'https://carrental.bookme.rw/';
   return (
     <AppLayout>
       <Helmet>
