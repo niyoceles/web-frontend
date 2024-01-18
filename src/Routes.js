@@ -74,7 +74,7 @@ export default function Routes() {
         <Route exact path='/ticket' component={TicketForm} />
         <Route exact path='/eventform' component={EventForm} />
         <Route exact path='/accommodation' component={Accommodation} />
-        <Route exact path='/rentalcar' component={RentalCar} />
+        <Route exact path='/carrental' component={RentalCar} />
         <Route exact path='/airticket' component={Airticket} />
         <Route exact path='/about' component={About} />
         <Route exact path='/pay' component={Pay} />

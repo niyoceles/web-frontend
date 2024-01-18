@@ -138,9 +138,9 @@ export const ViewEvent = props => {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-12'>
-							<h2 className='color-black text-capitalize title'>
+							{/* <h2 className='color-black text-capitalize title'>
 								Related Events
-							</h2>
+							</h2> */}
 						</div>
 					</div>
 

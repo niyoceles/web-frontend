@@ -392,9 +392,9 @@ table tr td {
   margin-left: auto;
 }
 .navbar a.active {
-  color: #2d8952 !important;
+  color: #07d258 !important;
   font-weight: bold;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 .footer {
   background-color: #558a54;

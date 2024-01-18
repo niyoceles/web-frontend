@@ -5,6 +5,8 @@ import event from "../../assets/assetss/godiscover.jpeg";
 import animal001 from "../../assets/assetss/Akagera-Hippos.jpg";
 import animal002 from "../../assets/assetss/Akagera-zebra.jpg";
 import animal003 from "../../assets/assetss/giraffe.jpg";
+import airplane from "../../assets/assetss/pascal-meier-UYiesSO4FiM-unsplash.jpg";
+import convention from "../../assets/assetss/convention.jpeg";
 import { AppLayout } from "../../layouts";
 import "./index.css";
 import "animate.css";
@@ -54,13 +56,31 @@ const HomeBody = () => {
           </Carousel.Item>
           <Carousel.Item className="carousel-item">
             <div className="carousel-overlay"></div>
-            <img src={animal003} alt="" />
+            <img src={airplane} alt="" />
             <Carousel.Caption className="carousel-caption">
-              <h3 className="text-light font-weight-bold">{servicesData[2].title}</h3>
+              <h3 className="text-light font-weight-bold">{servicesData[1].title}</h3>
               <p className="text-light">
-                {servicesData[2].description}
+                {servicesData[1].description}
               </p>
-              <Link to="/rentalcar">
+              <Link to="/airticket">
+              <Button className="bg-transparent border-light btn-custom-primary">
+                learn more <ArrowRightCircle />{" "}
+              </Button>
+              </Link>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-item">
+            <div className="carousel-overlay"></div>
+            <img src={convention} alt="" />
+            <Carousel.Caption className="carousel-caption">
+              <h3 className="text-light font-weight-bold">{servicesData[4].title +' and '+ servicesData[3].title }</h3>
+              <p className="text-light">
+                {servicesData[4].description}
+              </p>
+              <p className="text-light">
+                {servicesData[3].description}
+              </p>
+              <Link to="/services">
               <Button className="bg-transparent border-light btn-custom-primary">
                 learn more <ArrowRightCircle />{" "}
               </Button>

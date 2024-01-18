@@ -9,9 +9,11 @@ import {
   Form,
   Alert,
   Button,
+  Image
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Loading from '../../utils/Loading';
+import accom from '../../../src/assets/assetss/accomodations.avif';
 
 import './index.css';
 
@@ -45,12 +47,8 @@ export const Accommodation = () => {
                 <i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw{' '}
                 <br />
               </p>
-            </Col>
-            <Col
-              sm={5}
-              className='d-flex align-items-center justify-content-center'
-            >
-            <a href={bookmeUrl} target="_blank" rel="noopener noreferrer" className=''>
+              <p>
+              <a href={bookmeUrl} target="_blank" rel="noopener noreferrer" className=''>
               <Button
                 type='submit'
                 variant='outline-primary'
@@ -59,6 +57,20 @@ export const Accommodation = () => {
                 <i className='fa fa-save'></i> Go to Bookme portal
               </Button>
             </a>
+              </p>
+
+            </Col>
+            <Col
+              sm={5}
+              className='d-flex align-items-center justify-content-center'
+            >
+               <Image
+										src={accom}
+										className='img-fluid'
+										title='image'
+										alt='image'
+									/>
+                 
             </Col>
           </Row>
         </Container>

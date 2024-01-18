@@ -89,7 +89,7 @@ const BottomNavBar = () => {
    
           <Nav.Link>
             <NavLink
-              to="/rentalcar"
+              to="/carrental"
               activeClassName="active"
               onClick={() => onUpdateActiveLink("rentcar")}
             >

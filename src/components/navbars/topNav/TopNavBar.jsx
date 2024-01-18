@@ -45,14 +45,14 @@ const TopNavBar = () => {
           <Container>
           <Nav className="ml-auto">
           <Navbar.Brand as={Link} to="/terms-and-conditions">
-          <span className="text-light"  style={{color:'white'}}>
+          <span className="text-light"  style={{color:'white',textTransform: 'lowercase'}}>
               +250 791 349 744
-            </span>
+          </span>
         </Navbar.Brand>
         <Navbar.Brand as={Link} to="/terms-and-conditions">
         <span className="text-light" style={{color:'white',textTransform: 'lowercase'}}>
-              <i className="fas fa-envelope" style={{ marginBottom: '-8px' }}></i> info@godiscoverafrica.rw
-            </span>
+              info@godiscoverafrica.rw
+        </span>
         </Navbar.Brand>
            
             </Nav>

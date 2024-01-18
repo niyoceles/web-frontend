@@ -8,9 +8,11 @@ import {
   Form,
   Alert,
   Button,
+  Image
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Loading from '../../utils/Loading';
+import cars from '../../../src/assets/assetss/cars.jpeg';
 
 import './index.css';
 
@@ -21,7 +23,7 @@ export const RentalCar = () => {
       <Helmet>
         <meta charSet='utf-8' />
         <title>RentCar | Go Discover Africa</title>
-        <link rel='canonical' href='https://godiscoverafrica.rw/rentalcar' />
+        <link rel='canonical' href='https://godiscoverafrica.rw/carrental' />
         <meta
           name='description'
           content='RentCar Go Discover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
@@ -31,7 +33,7 @@ export const RentalCar = () => {
         <Container>
           <Row className='justify-content-center'>
             <Col sm={7}>
-              <h1 className='text-title text-bold mt-3 py-4'>Rental car</h1>
+              <h1 className='text-title text-bold mt-3 py-4'>Car rental</h1>
               <p className='mt-4'>
                 <br />
                 Discover convenience and freedom with our premier car rental
@@ -45,20 +47,30 @@ export const RentalCar = () => {
                 <i className='fa fa-inbox mr-2'></i> info@godiscoverafrica.rw{' '}
                 <br />
               </p>
-            </Col>
-            <Col
-              sm={5}
-              className='d-flex align-items-center justify-content-center'
-            >
-               <a href={bookmeUrl} target="_blank" rel="noopener noreferrer" className=''>
+              <p>
+              <a href={bookmeUrl} target="_blank" rel="noopener noreferrer" className=''>
               <Button
                 type='submit'
                 variant='outline-primary'
                 className='btn-lg'
               >
-                <i className='fa fa-save'></i> Go to Rental car portal
+                <i className='fa fa-save'></i> Go to Car rental portal
               </Button>
               </a>
+              </p>
+            </Col>
+            <Col
+              sm={5}
+              className='d-flex align-items-center justify-content-center'
+            >
+                 <Image
+										src={cars}
+										className='img-fluid'
+										title='image'
+										alt='image'
+									/>
+                 
+           
             </Col>
           </Row>
         </Container>

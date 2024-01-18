@@ -1,7 +1,13 @@
+import planning from "../../assets/assetss/planning.jpg";
+import logistical from "../../assets/assetss/logistic.jpg";
+import delegate from "../../assets/assetss/delegate.jpg";
+import execution from "../../assets/assetss/execution.jpg";
+import followup from "../../assets/assetss/followup.jpg";
 const eventData = [
   {
     id: 1,
     title: `Event planning`,
+    imageUrl: planning,
     description: `The pre-event phase at GoDiscover Africa Events is crucial for aligning with client objectives. Event budget planning covers development, cost management, and analysis.  Meticulous floor plans optimize space, and design creates a cohesive atmosphere.`,
     body:[
       {
@@ -85,6 +91,7 @@ const eventData = [
   {
     id: 2,
     title: `Event logistics Management`,
+    imageUrl: logistical,
     description: `
   We ensure seamless venue arrangements, coordinate with vendors, and set quality standards for accountability. Managing delegate accommodation involves negotiating favorable terms, efficient reservation handling, and clear communication.`,
     body: 
@@ -151,6 +158,7 @@ const eventData = [
   {
     id: 3,
     title: `Event delegates management`,
+  imageUrl: delegate,
     description: `
    At GoDiscover Events, we tailor personalized communication based on participants' roles and preferences, ensuring an engaging experience. Efficiently handling RSVPs, we manage guest lists, provide timely responses, and offer logistical support with event information.`,
     body: [
@@ -191,6 +199,7 @@ const eventData = [
   {
     id: 4,
     title: `Event execution & management`,
+  imageUrl: execution,
     description: `We excel in content creation, collaborating with clients to produce engaging material that connects with target audiences. In venue equipment and installation, we provide top-quality audio-visual gear, managing seamless setup and offering onsite technical support.`,
     body:
     [
@@ -262,6 +271,7 @@ const eventData = [
   {
     id: 5,
     title: `Post event follow up`,
+  imageUrl: followup,
     description:`Conducting post-event evaluations and analysis of the event
     production to gather feedback, identify areas of improvement, and ensure continuous
     enhancement of future events.`,

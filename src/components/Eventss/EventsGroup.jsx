@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import event1 from "../../assets/assetss/event-bg.png";
+// import event1 from "../../assets/assetss/event-bg.png";
 import "animate.css";
 import EventsWelcome from "../Eventss/EventsWelcome";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const EventsGroup = () => {
         return (
           <Col md={4} className="mb-4">
   <Card>
-    <Card.Img variant="top" src={event1} />
+    <Card.Img variant="top" src={event.imageUrl} />
     <Card.Body>
       <Card.Title>{event.title}</Card.Title>
       <Card.Text>{event.description}</Card.Text>
