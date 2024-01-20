@@ -34,6 +34,7 @@ const NavBar = () => {
 
 				<Navbar.Collapse id='navBarMenu'>
 					<Nav className='mr-auto'></Nav>
+
 					<Nav className='ml-auto mr-4'>
 						<NavDropdown
 							title='My account'
@@ -42,14 +43,13 @@ const NavBar = () => {
 							onMouseOver={handleNavMenuOpen}
 							onMouseLeave={handleNavMenuClose}
 							show={isHovered}
-							style={{ backgroundColor: 'green' }}
+							style={{ 
+								backgroundColor: 'green'
+							 }}
 						>
-							{/* <NavDropdown.Item style={{ backgroundColor: 'grey' }}>
-								<Link to='#'>
-									{decodedToken && decodedToken.lastName +' ' +decodedToken.firstName}
-								</Link>
-							</NavDropdown.Item> */}
-							<NavDropdown.Item style={{ backgroundColor: 'grey' }}>
+							<NavDropdown.Item style={{ 
+								backgroundColor: 'grey'
+								 }}>
 								<Logout />
 							</NavDropdown.Item>
 						</NavDropdown>
