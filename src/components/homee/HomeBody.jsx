@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Card, Button, Carousel } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import event from "../../assets/assetss/godiscover.jpeg";
-import animal001 from "../../assets/assetss/Akagera-Hippos.jpg";
+import animal001 from "../../assets/assetss/gorillas.png";
 import animal002 from "../../assets/assetss/Akagera-zebra.jpg";
 import animal003 from "../../assets/assetss/giraffe.jpg";
 import airplane from "../../assets/assetss/pascal-meier-UYiesSO4FiM-unsplash.jpg";
@@ -73,10 +73,8 @@ const HomeBody = () => {
             <div className="carousel-overlay"></div>
             <img src={convention} alt="" />
             <Carousel.Caption className="carousel-caption">
-              <h3 className="text-light font-weight-bold">{servicesData[4].title +' and '+ servicesData[3].title }</h3>
-              <p className="text-light">
-                {servicesData[4].description}
-              </p>
+              <h3 className="text-light font-weight-bold">{servicesData[3].title }</h3>
+           
               <p className="text-light">
                 {servicesData[3].description}
               </p>
@@ -166,7 +164,7 @@ const HomeBody = () => {
               </Card>
             </Col>
             <Col sm={12} md={3}>
-              <Card className="ev-1">
+              <Card className="ev-5">
                 <Card.Body>
                   <Card.Title>{servicesData[4].title}</Card.Title>
                   {/* <Card.Subtitle className="mb-2">Consultancy</Card.Subtitle> */}

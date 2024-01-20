@@ -34,7 +34,7 @@
 }
 .ev-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../../assets/assetss/event003.jpg");
+    url("../../assets/assetss/gorillas.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@
 }
 .ev-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../../assets/assetss/event004.jpeg");
+    url("../../assets/assetss/pascal-meier-UYiesSO4FiM-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@
 }
 .ev-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../../assets/assetss/event0005.jpeg");
+    url("../../assets/assetss/cars.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,16 @@
 }
 .ev-4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-    url("../../assets/assetss/event006.jpeg");
+    url("../../assets/assetss/convention.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-radius: 10px;
+}
+.ev-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("../../assets/assetss/accomodations.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

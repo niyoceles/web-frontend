@@ -105,7 +105,7 @@ export class Footer extends Component {
             <div className='py-4 border-top'>
               <Row>
                 <Col lg={10}>
-                  Copyright- Go Discover Africa &copy;{' '}
+                  Copyright- GoDiscover Africa &copy;{' '}
                   {new Date().getFullYear()}
                   &nbsp; | &nbsp;{' '}
                   <Link to='/' className='ft-link'>

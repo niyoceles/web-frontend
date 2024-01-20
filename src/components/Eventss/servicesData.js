@@ -3,12 +3,12 @@ const servicesData = [
   {
     id: 2,
     title: `Tour Packages`,
-    description: ` Find out some tour packages, in Rwanda top Destination and Most tourists skip through Kigali on their way to go gorilla trekking in other parts of Rwanda or nearby Uganda`,
+    description: `Find out about our tour packages. Our packages range from one-day trip to about two weeks trip in Rwanda. They are flexible and can be tailor made to suit your needs with the advice from our professional tour consultants.`,
   },
   {
     id: 4,
     title: `Air ticket`,
-    description: `We excel in content creation, collaborating with clients to produce engaging material that connects with target audiences. In venue equipment and installation, we provide top-quality audio-visual gear, managing seamless setup and offering onsite technical support.`,
+    description: `We are a full-service travel agency dedicated to providing our clients with personalized travel services that cater to their unique needs and preferences. Our travel consultants are there to advise on various travel alternatives to suit your demands.`,
    
   },
   {
@@ -21,8 +21,7 @@ const servicesData = [
   {
     id: 1,
     title: `Events management`,
-    description: `In our experience, no single event isidentical to another, we pay full attention as if building from scratch. We carefully assess the needs of a clients’ event and offer solutions forits realisation, always with the client's
-    budget in mind.`,
+    description: `Check out our fully dedicated events management function. We assist you in planning your events, right from the planning stage to execution stage. Rwanda has recently taken a great milestone in the MICE business and so we are, to support the industry continue to become professional and internationally competitive.`,
   },
  
 
@@ -30,8 +29,8 @@ const servicesData = [
 
   {
     id: 5,
-    title: `Accommodations`,
-    description: `Conducting post-event evaluations and analysis of the event production to gather feedback, identify areas of improvement, and ensure continuous enhancement of future events.`,
+    title: `Accommodation`,
+    description: `The accommodation function is dedicated to booking hotels for travelers visiting Rwanda. Through our dedicated platform bookme.rw, hotels and other accommodation establishments can list their hotels on the platform. The platform can also be tailor made to serve specialized demands like hotel bookings for conference participants, etc`,
   },
 ];
 

@@ -11,11 +11,11 @@ export class MemberInfo extends Component {
 			<AppLayout>
 				<Helmet>
 					<meta charSet='utf-8' />
-					<title>About our members | Go Discover Africa</title>
+					<title>About our members | GoDiscover Africa</title>
 					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 					<meta
 						name='description'
-						content='Information about the members of Go Discover Africa'
+						content='Information about the members of GoDiscover Africa'
 					/>
 				</Helmet>
 				<Header title='Become a Member' />

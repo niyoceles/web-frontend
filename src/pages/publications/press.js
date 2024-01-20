@@ -11,11 +11,11 @@ export const PressView = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Press Release | Go Discover Africa</title>
+				<title>Press Release | GoDiscover Africa</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 				<meta
 					name='description'
-					content='Press Release of Go Discover Africa'
+					content='Press Release of GoDiscover Africa'
 				/>
 			</Helmet>
 			<section>

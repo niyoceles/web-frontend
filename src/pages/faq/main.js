@@ -91,11 +91,11 @@ export const Faq = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>FAQ | Go Discover Africa</title>
+				<title>FAQ | GoDiscover Africa</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw//faq' />
 				<meta
 					name='description'
-					content='Go Discover Africa Frequently Asked Questions (FAQs)'
+					content='GoDiscover Africa Frequently Asked Questions (FAQs)'
 				/>
 			</Helmet>
 			<br />

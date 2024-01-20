@@ -12,11 +12,11 @@ export class Policy extends Component {
 			<AppLayout>
 				<Helmet>
 					<meta charSet='utf-8' />
-					<title>Privacy and Policy | Go Discover Africa</title>
+					<title>Privacy and Policy | GoDiscover Africa</title>
 					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 					<meta
 						name='description'
-						content='Privacy and Policy of Go Discover Africa'
+						content='Privacy and Policy of GoDiscover Africa'
 					/>
 				</Helmet>
 				<Header title='Privacy Policy' />
@@ -27,7 +27,7 @@ export class Policy extends Component {
 							<Col sm={10}>
 								<h1 className='text-title text-bold mt-3 py-4'>Privacy Commitment</h1>
 								<p>
-									Go Discover Africa Inc. (“GODISCOVER,” “we,” or “us”) knows
+									GoDiscover Africa Inc. (“GODISCOVER,” “we,” or “us”) knows
 									your personal data privacy is important. We are committed to
 									respecting your privacy, and we take the responsibility of
 									protecting your privacy seriously.

@@ -38,11 +38,11 @@ export const ViewEvent = props => {
 		<AppLayout>
 			{/* <Helmet>
 				<meta charSet='utf-8' />
-				<title>event | {event.title} | Go Discover Africa</title>
+				<title>event | {event.title} | GoDiscover Africa</title>
 				<link rel='canonical' href={`https://godiscoverafrica.rw//events/${event.slug}`} />
 				<meta
 					name='description'
-					content={`Go Discover Africa Event | ${event.title}`}
+					content={`GoDiscover Africa Event | ${event.title}`}
 				/>
 			</Helmet> */}
 			<div className='events-header'></div>

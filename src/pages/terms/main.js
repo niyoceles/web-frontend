@@ -11,11 +11,11 @@ export const Terms = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Terms & Conditions | Go Discover Africa</title>
+				<title>Terms & Conditions | GoDiscover Africa</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 				<meta
 					name='description'
-					content='Terms & Conditions of Go Discover Africa'
+					content='Terms & Conditions of GoDiscover Africa'
 				/>
 			</Helmet>
 			<Header title='Terms & Conditions' />
@@ -26,7 +26,7 @@ export const Terms = () => {
 						<Col sm={10}>
 							<h1 className='text-title text-bold mt-3 py-4'>Terms Commitment</h1>
 							<p>
-								Go Discover Africa Inc. (“we,” or “us”) knows your
+								GoDiscover Africa Inc. (“we,” or “us”) knows your
 								personal data privacy is important. We are committed to
 								respecting your privacy, and we take the responsibility of
 								protecting your privacy seriously.
@@ -87,7 +87,7 @@ export const Terms = () => {
 							</p>
 							<ul>
 								<li>
-									<span className='bold'>Survey Data: </span> The Go Discover Africa occasionally conducts industry and customer surveys. Your
+									<span className='bold'>Survey Data: </span> The GoDiscover Africa occasionally conducts industry and customer surveys. Your
 									survey responses are linked to an IP address and ID number.
 									When survey results are reported, they are always aggregated
 									meaning survey results are combined and presented as a group.
@@ -124,7 +124,7 @@ export const Terms = () => {
 								More About Cookies and Cookie Equivalents
 							</h4>
 							<p>
-							Go Discover Africa reserves the right to use cookies and the technological
+							GoDiscover Africa reserves the right to use cookies and the technological
 								equivalents of cookies, including social media pixels and HTML5
 								Web Storage (also known as ‘Web Storage’). We use cookies to
 								personalize content and ads, to provide social media features

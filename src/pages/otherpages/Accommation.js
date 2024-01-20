@@ -23,11 +23,11 @@ export const Accommodation = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Accommodation | Go Discover Africa</title>
+        <title>Accommodation | GoDiscover Africa</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//contact' />
         <meta
           name='description'
-          content='Accommodation Go Discover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
+          content='Accommodation GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
       <section className='contact bg-light pt-4'>
@@ -37,7 +37,7 @@ export const Accommodation = () => {
               <h1 className='text-title text-bold mt-3 py-4'>Accommation</h1>
               <p className='mt-4'>
                 <br />
-                Discover a home away from home! Our cozy accommodations provide comfort and convenience for your stay. We partner with all sort of accommodation facilities, budget, mid-range and high end town hotels, resorts as well as luxury lodges. We offer a good range of apartment hotels, serviced apartments, motels, guesthouses and tented camps. Whether you're traveling for business or leisure, our carefully selected partners will offer you a perfect blend of style and comfort. Book your stay with us and experience hospitality at its finest. For booking visit our hotel booking dedicated portal bookme.rw.  
+                Discover a home away from home! Our cozy accommodation provide comfort and convenience for your stay. We partner with all sort of accommodation facilities, budget, mid-range and high end town hotels, resorts as well as luxury lodges. We offer a good range of apartment hotels, serviced apartments, motels, guesthouses and tented camps. Whether you're traveling for business or leisure, our carefully selected partners will offer you a perfect blend of style and comfort. Book your stay with us and experience hospitality at its finest. For booking visit our hotel booking dedicated portal bookme.rw.  
                 <br/>
                 <br />– Book with us!
               </p>

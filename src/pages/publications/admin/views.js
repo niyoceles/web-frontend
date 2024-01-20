@@ -146,7 +146,7 @@ export const PublicationsView = props => {
 					<Col sm={10}>
 						<div className='page-header'>
 							<h2 className='pageheader-title'>
-								GO DISCOVER  Document | {publication.title}
+								GoDiscover  Document | {publication.title}
 							</h2>
 							<div className='page-breadcrumb'>
 								<nav aria-label='breadcrumb'>
@@ -161,7 +161,7 @@ export const PublicationsView = props => {
 												to='/account/publications'
 												className='breadcrumb-link'
 											>
-												GO DISCOVER  Documents
+												GoDiscover  Documents
 											</Link>
 										</li>
 										<li className='breadcrumb-item'>View</li>

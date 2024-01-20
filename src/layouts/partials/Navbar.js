@@ -21,8 +21,8 @@ const NavBar = () => {
 				<Navbar.Brand>
 					<Link to='/'>
 						<Image
-							alt='Go Discover Africa Logo'
-							title='Go Discover Africa Logo'
+							alt='GoDiscover Africa Logo'
+							title='GoDiscover Africa Logo'
 							src='https://res.cloudinary.com/dfsai53mw/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
 							width='30%'
 							className='img-fluid d-inline-block align-top ml-2 logo'
@@ -38,17 +38,18 @@ const NavBar = () => {
 						<NavDropdown
 							title='My account'
 							alignLeft
-							className='dropdown fade-up'
+							className='dropdow fade-up'
 							onMouseOver={handleNavMenuOpen}
 							onMouseLeave={handleNavMenuClose}
 							show={isHovered}
+							style={{ backgroundColor: 'green' }}
 						>
-							<NavDropdown.Item>
+							{/* <NavDropdown.Item style={{ backgroundColor: 'grey' }}>
 								<Link to='#'>
-									{decodedToken && decodedToken.lastName}
+									{decodedToken && decodedToken.lastName +' ' +decodedToken.firstName}
 								</Link>
-							</NavDropdown.Item>
-							<NavDropdown.Item>
+							</NavDropdown.Item> */}
+							<NavDropdown.Item style={{ backgroundColor: 'grey' }}>
 								<Logout />
 							</NavDropdown.Item>
 						</NavDropdown>

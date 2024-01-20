@@ -25,12 +25,12 @@ export const Home = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Home | Go Discover Africa</title>
+				<title>Home | GoDiscover Africa</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw/' />
 			</Helmet>
 			<section className='video-screen'>
 				{/* <div className='content text-left' style={{ top: 160 }}>
-					<p className='content-top'>Go Discover Africa</p>
+					<p className='content-top'>GoDiscover Africa</p>
 					<p className='content-bottom'>Effective advocacy for tourism</p>
 				</div> */}
 			<h1>SLIDE SHOW IMAGES</h1>
@@ -39,7 +39,7 @@ export const Home = () => {
 			<div className='phone-responsive-welcome'>
 				<p>Welcome to </p>
 				<h2>Rwanda</h2>
-				<h2>Go Discover Africa</h2>
+				<h2>GoDiscover Africa</h2>
 			</div>
 
 			<section className='about-screen mt-0'>
@@ -47,13 +47,13 @@ export const Home = () => {
 					<Row className='py-2 border-top'>
 						<Col lg={6} md={5} sm={12} xs={12}>
 							<h1 className='title'>
-							Go Discover <br />
+							GoDiscover <br />
 							Africa
 							</h1>
 						</Col>
 						<Col lg={6} md={7} sm={12} xs={12}>
 							<p className='description'>
-								Go Discover Africa was established in 2006, with a
+								GoDiscover Africa was established in 2006, with a
 								mandate of enhancing business opportunities through effective
 								lobbying and advocacy for the tourism and hospitality industry
 								in Rwanda.

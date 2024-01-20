@@ -38,9 +38,9 @@ export const About = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>About | Go Discover Africa</title>
+        <title>About | GoDiscover Africa</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//about' />
-        <meta name='description' content='Go Discover Africa' />
+        <meta name='description' content='GoDiscover Africa' />
       </Helmet>
       <section className='st-about-head' id={'who-we-are'}>
         <br />
@@ -80,7 +80,7 @@ export const About = () => {
               <p className='about-description text-justify'>
                 GoDiscover Africa undertakes to provide our valued clients with
                 top range exclusive service and end to end travel solutions
-                right from airport pickups, transportation, accommodations,
+                right from airport pickups, transportation, accommodation,
                 tours and all other aspects of your travel to ensure your peace
                 and your comfort
               </p>

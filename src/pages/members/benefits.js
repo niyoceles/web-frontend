@@ -11,11 +11,11 @@ export class MemberBenefits extends Component {
 			<AppLayout>
 				<Helmet>
 					<meta charSet='utf-8' />
-					<title>Benefits of being a member | Go Discover Africa</title>
+					<title>Benefits of being a member | GoDiscover Africa</title>
 					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 					<meta
 						name='description'
-						content='Benefits of being a member of Go Discover Africa'
+						content='Benefits of being a member of GoDiscover Africa'
 					/>
 				</Helmet>
 			

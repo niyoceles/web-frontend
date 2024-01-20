@@ -11,7 +11,7 @@ const EventForm = () => {
     <AppLayout>
 				<Helmet>
 					<meta charSet='utf-8' />
-					<title>Make a request for an event management support | Go Discover Africa</title>
+					<title>Make a request for an event management support | GoDiscover Africa</title>
 					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 					<meta
 						name='description'

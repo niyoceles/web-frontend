@@ -1,7 +1,7 @@
 import planning from "../../assets/assetss/planning.jpg";
-import logistical from "../../assets/assetss/logistic.jpg";
+import logistical from "../../assets/assetss/bernd-dittrich-yGGYZfzbqnQ-unsplash.jpg";
 import delegate from "../../assets/assetss/delegate.jpg";
-import execution from "../../assets/assetss/execution.jpg";
+import execution from "../../assets/assetss/eventex.jpeg";
 import followup from "../../assets/assetss/followup.jpg";
 const eventData = [
   {
@@ -37,7 +37,7 @@ const eventData = [
         for the event. Leveraging our industry expertise and network, we conduct extensive
         research to identify a range of potential venues that align with client’s criteria by
         considering factors such as the venue’s capacity, layout, amenities, technological
-        capabilities, parking facilities and proximity to transportation and accommodations`
+        capabilities, parking facilities and proximity to transportation and accommodation`
       },
       {
         title:`Production of events floor plans`,
@@ -123,7 +123,7 @@ const eventData = [
         comfortable and suitable accommodation for event attendees. With our experience in
         high caliber handling international events, we understand the importance of delegate
         accommodation. At GoDiscover events, we help you to do identify suitable
-        accommodations based on the clients’ preferences, budget, and proximity to the event
+        accommodation based on the clients’ preferences, budget, and proximity to the event
         venue. we negotiate and secure the best rates and terms for accommodation that align
         with the needs of attendees. We book the rooms through blocking and reserve them
         with client’s alignment to ensure availability and convenience. We manage reservations,

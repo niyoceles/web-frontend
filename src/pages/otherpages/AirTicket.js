@@ -50,7 +50,7 @@ export const Airticket = () => {
     const htmlContent = `
       <h3 style="color: #333;">Hello   ${formData.fullName}</h3>
 
-      <h1 style="color: #333;">Air Ticket Reservation Created</h1>
+      <h1 style="color: #333;">Air Ticket Inquiry Created</h1>
 
        <p><strong>Full Name:</strong> ${formData.fullName}</p>
        <p><strong>Email:</strong> ${formData.email}</p>
@@ -89,17 +89,17 @@ export const Airticket = () => {
           },
           body: JSON.stringify({
             sendTo: formData.email, // Replace with the actual recipient email
-            subject: 'Air Ticket Reservation',
+            subject: 'Air Ticket Inquiry',
             html: htmlContent,
           }),
         },
       );
 
       if (response.ok) {
-        toast.success('Air Ticket Reservation sent successfully!');
+        toast.success('Air Ticket sent successfully!');
         console.log('Email sent successfully!');
       } else {
-        toast.error('Air Ticket Reservation failed, try again later!');
+        toast.error('Air Ticket failed, try again later!');
         console.error('Failed to send email:', response.statusText);
       }
     } catch (error) {
@@ -114,11 +114,11 @@ export const Airticket = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Airticket | Go Discover Africa</title>
+        <title>Airticket | GoDiscover Africa</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//contact' />
         <meta
           name='description'
-          content='Airticket Go Discover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
+          content='Airticket GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
       <section className='contact bg-light pt-4'>
@@ -139,7 +139,7 @@ export const Airticket = () => {
                 <br />
                 <br />
                 We offer a wide range of travel services, including but not
-                limited to flight bookings, hotel accommodations and car
+                limited to flight bookings, hotel accommodation and car
                 rentals. We work with a variety of reputable travel suppliers to
                 ensure our clients receive the best possible pricing and
                 experiences.
@@ -177,7 +177,7 @@ export const Airticket = () => {
                   </Button>
                   <Modal show={showModal} onHide={handleClose}>
                     <Modal.Header closeButton>
-                      <Modal.Title>Air Ticket Reservation</Modal.Title>
+                      <Modal.Title>Inquire about air ticket</Modal.Title>
                     </Modal.Header>
                     <Modal.Body
                       style={{
