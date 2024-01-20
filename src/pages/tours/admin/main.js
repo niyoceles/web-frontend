@@ -50,7 +50,7 @@ export const ToursMain = () => {
         <Row>
           <Col sm={10}>
             <div className='page-header'>
-              <h2 className='pageheader-title'>Blogs</h2>
+              <h2 className='pageheader-title'>Tours</h2>
               <div className='page-breadcrumb'>
                 <nav aria-label='breadcrumb'>
                   <ol className='breadcrumb'>
@@ -60,7 +60,7 @@ export const ToursMain = () => {
                       </Link>
                     </li>
                     <li className='breadcrumb-item active' aria-current='page'>
-                      Blogs
+                      Tours
                     </li>
                   </ol>
                 </nav>

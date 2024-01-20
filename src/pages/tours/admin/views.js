@@ -14,7 +14,6 @@ import {
 	Alert,
 } from 'react-bootstrap';
 import { useDropzone } from 'react-dropzone';
-import Axios from 'axios';
 import { Editor } from '@tinymce/tinymce-react';
 import {
 	getSingleTours,
@@ -42,6 +41,7 @@ export const ToursAdminView = props => {
 	const [variables, setVariables] = useState({
 		title: '',
 		toursBody: '',
+		price: '',
 		authorId: '',
 		image: '',
 	});
@@ -120,6 +120,7 @@ export const ToursAdminView = props => {
 			title: oneTours.title,
 			toursBody: oneTours.toursBody,
 			authorId: oneTours.authorId,
+			price: oneTours.price,
 			image: oneTours.image,
 		});
 		if (slug) {
@@ -130,15 +131,7 @@ export const ToursAdminView = props => {
 			setIsImageChoosed(true);
 		}
 		dispatch(getSingleTours(slug));
-	}, [
-		dispatch,
-		files,
-		oneTours.authorId,
-		oneTours.image,
-		oneTours.toursBody,
-		oneTours.title,
-		slug,
-	]);
+	}, [dispatch, files, oneTours.authorId, oneTours.image, oneTours.title, oneTours.price, slug, oneTours.toursBody]);
 
 	const data = {
 		tours: {
@@ -208,6 +201,15 @@ export const ToursAdminView = props => {
 												type='text'
 												name='title'
 												value={variables.title}
+												onChange={onChange}
+											/>
+										</Form.Group>
+										<Form.Group>
+											<Form.Label>price</Form.Label>
+											<Form.Control
+												type='number'
+												name='price'
+												value={variables.price}
 												onChange={onChange}
 											/>
 										</Form.Group>

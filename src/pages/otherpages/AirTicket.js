@@ -9,6 +9,7 @@ import {
   Button,
   Image,
   Modal,
+  Spinner,
 } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Quote from '../../../src/assets/assetss/willy-wo-pXnMG0FfSwA-unsplash.jpg';
@@ -32,6 +33,7 @@ export const Airticket = () => {
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,7 +45,7 @@ export const Airticket = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     // Create HTML content from form data
     const htmlContent = `
       <h3 style="color: #333;">Hello   ${formData.fullName}</h3>
@@ -102,9 +104,11 @@ export const Airticket = () => {
       }
     } catch (error) {
       console.error('Error sending email:', error.message);
+    } finally {
+      setLoading(false);
+      setFormData('');
+      handleClose();
     }
-
-    handleClose();
   };
   return (
     <AppLayout>
@@ -310,8 +314,19 @@ export const Airticket = () => {
                             onChange={handleChange}
                           />
                         </div>
-                        <Button variant='primary' type='submit'>
-                          Submit
+                        <Button
+                          variant='primary'
+                          type='submit'
+                          disabled={loading}
+                        >
+                          {loading ? (
+                            <>
+                              <Spinner />
+                              Submitting...
+                            </>
+                          ) : (
+                            'Submit'
+                          )}
                         </Button>
                       </form>
                     </Modal.Body>

@@ -60,7 +60,7 @@ export const ToursView = (props) => {
                   <p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
                 </Col>
                 <h2 className='mb-2 py-3'>
-                    <b> ${oneTours.price}</b>
+                  {oneTours.price !==0?(<b> ${ oneTours.price}</b>):''}  
                   </h2>
                   
                 {/* <Row>
