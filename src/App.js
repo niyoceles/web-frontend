@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import jwtDecode from 'jwt-decode';
+import TawkMessengerReactUmd from '@tawk.to/tawk-messenger-react';
 import axios from 'axios';
 import Routes from './Routes';
 import store from './redux/store/index';
@@ -14,40 +15,29 @@ toast.configure();
 
 const token = localStorage.IdToken;
 if (token) {
-	const decodedToken = jwtDecode(token);
-	if (decodedToken.exp * 1000 < Date.now()) {
-		store.dispatch(logoutUser());
-		window.location.href = '/auth/login';
-	} else {
-		store.dispatch({ type: SET_AUTHENTICATED });
-		axios.defaults.headers.common['token'] = token;
-	}
+  const decodedToken = jwtDecode(token);
+  if (decodedToken.exp * 1000 < Date.now()) {
+    store.dispatch(logoutUser());
+    window.location.href = '/auth/login';
+  } else {
+    store.dispatch({ type: SET_AUTHENTICATED });
+    axios.defaults.headers.common['token'] = token;
+  }
 }
 
 const App = () => {
-	const queryClient = new QueryClient();
-	useEffect(() => {
-		if (!token) {
-			window.$crisp = [];
-			window.CRISP_WEBSITE_ID = process.env.REACT_APP_CHAT_ID;
-
-			(function () {
-				let d = document;
-				let s = d.createElement('script');
-
-				s.src = process.env.REACT_APP_CHAT_URL;
-				s.async = 1;
-				d.getElementsByTagName('head')[0].appendChild(s);
-			})();
-		}
-	});
-	return (
-		<QueryClientProvider client={queryClient}>
-		<Provider store={store}>
-			<Routes />
-		</Provider>
-		</QueryClientProvider>
-	);
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TawkMessengerReactUmd
+        propertyId='65ae20320ff6374032c3348e'
+        widgetId='1hko2rihp'
+      />
+      <Provider store={store}>
+        <Routes />
+      </Provider>
+    </QueryClientProvider>
+  );
 };
 
 export default App;

@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Image, NavDropdown } from 'react-bootstrap';
-import jwtDecode from 'jwt-decode';
 import Logout from '../../pages/users/auth/Logout';
 
 const NavBar = () => {
 	const [isHovered, setHovered] = useState(false);
-	const token = localStorage.IdToken;
-	const decodedToken = jwtDecode(token);
 
 	const handleNavMenuOpen = () => {
 		setHovered(true);
