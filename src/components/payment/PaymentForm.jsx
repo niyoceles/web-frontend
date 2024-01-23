@@ -119,7 +119,9 @@ const PaymentForm = ({ amountToPay, bookingID, bookingEmail }) => {
         <Button
           disabled={isLoading || !selectedPaymentMethod}
           onClick={mutate}
-          className="mt-5 bg-co-blue text-white hover:bg-blue-700 border-0"
+          variant="success"
+          size="md"
+          className="mt-3"
         >
           {isLoading ? "Loading..." : "Pay now"}
         </Button>
