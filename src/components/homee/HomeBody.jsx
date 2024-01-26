@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row, Card, Button, Carousel } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import event from "../../assets/assetss/godiscover.jpeg";
+import cars from "../../assets/assetss/cars.jpeg";
 import animal001 from "../../assets/assetss/gorillas.png";
 import animal002 from "../../assets/assetss/Akagera-zebra.jpg";
 import animal003 from "../../assets/assetss/giraffe.jpg";
@@ -21,26 +22,10 @@ const HomeBody = () => {
     <AppLayout>
       <div className="bg-light py-3 home-container">
         <Carousel className="h-80 bg-dark " fade>
-        <Carousel.Item interval={1000} className="carousel-item">
-            <div className="carousel-overlay"></div>
-            <img src={animal002} alt="" />
-            <Carousel.Caption className="carousel-caption">
-              <h3 className="text-light font-weight-bold">
-                {servicesData[1].title}
-              </h3>
-              <p className="text-light">
-              {servicesData[1].description}
-              </p>
-              <Link to="/tours">
-              <Button className="bg-transparent border-light btn-custom-primary">
-                learn more <ArrowRightCircle />{" "}
-              </Button>
-              </Link>
-            </Carousel.Caption>
-          </Carousel.Item>
+       
           <Carousel.Item interval={1500} className="carousel-item">
             <div className="carousel-overlay"></div>
-            <img src={animal001} alt="" className="carousel-image" />
+            <img src={animal003} alt="" className="carousel-image" />
             <Carousel.Caption className="carousel-caption">
               <h3 className="text-light font-weight-bold">{servicesData[0].title}</h3>
               <p className="text-light">
@@ -79,6 +64,23 @@ const HomeBody = () => {
                 {servicesData[3].description}
               </p>
               <Link to="/services">
+              <Button className="bg-transparent border-light btn-custom-primary">
+                learn more <ArrowRightCircle />{" "}
+              </Button>
+              </Link>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={1000} className="carousel-item">
+            <div className="carousel-overlay"></div>
+            <img src={cars} alt="" />
+            <Carousel.Caption className="carousel-caption">
+              <h3 className="text-light font-weight-bold">
+                {servicesData[2].title}
+              </h3>
+              <p className="text-light">
+              {servicesData[2].description}
+              </p>
+              <Link to="/tours">
               <Button className="bg-transparent border-light btn-custom-primary">
                 learn more <ArrowRightCircle />{" "}
               </Button>
