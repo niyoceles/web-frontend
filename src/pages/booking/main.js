@@ -34,7 +34,7 @@ export const Booking = (props) => {
     phoneNumber: '',
     address: '',
     location: '',
-    appUrl: process.env.REACT_APP_FRONTEND
+    appUrl: process.env.REACT_APP_FRONTEND,
   });
 
   const dispatch = useDispatch();
@@ -85,10 +85,10 @@ export const Booking = (props) => {
 
   return (
     <>
-    <br/>
-    <br/>
-    {props.amount !=null?<h3>Total price: $ {props.amount}</h3>:''}
-    <br/>
+      <br />
+      <br />
+      {props.amount != null ? <h3>Total price: $ {props.amount}</h3> : ''}
+      <br />
       <Form noValidate>
         <Form.Group>
           <Form.Label>Full Name </Form.Label>
@@ -206,20 +206,18 @@ export const Booking = (props) => {
                 </Form.Group> */}
 
         <Button
-          //   type='submit'
-          onClick={() => handlePayLater(true)}
-          variant='outline-primary'
-          className='mt-3 col-sm-6'
-        >
-          <i className='fa fa-save'></i> Book now
-        </Button>
-        <Button
-          //   type='submit'
           onClick={() => handlePayLater(false)}
           variant='outline-primary'
           className='mt-3 col-sm-6'
         >
           <i className='fa fa-save'></i> Pay now
+        </Button>
+        <Button
+          onClick={() => handlePayLater(true)}
+          variant='outline-primary'
+          className='mt-3 col-sm-6'
+        >
+          <i className='fa fa-save'></i> Pay later
         </Button>
       </Form>
     </>
