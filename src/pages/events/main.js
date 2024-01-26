@@ -104,7 +104,7 @@ export const Events = () => {
 														))}
 											</Row>
 										</>
-									) : (
+									) : events.length === 0 || events === null || events === undefined?(<div>{<h4>No previous events avalaible</h4>}</div>): (
 										<Spinner />
 									)}
 								</Col>

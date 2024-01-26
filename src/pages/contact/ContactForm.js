@@ -17,7 +17,9 @@ export const ContactForm = () => {
     names: '',
     email: '',
     subject: '',
+    phone:'',
     message: '',
+
   });
   const loading = useSelector((state) => state.contact.contactData);
   const contactFailed = useSelector((state) => state.contact.contactFailure);
@@ -46,6 +48,7 @@ export const ContactForm = () => {
           email: '',
           subject: '',
           message: '',
+          phone:''
         });
         setValidated(false);
       }, 1500);
@@ -97,6 +100,21 @@ export const ContactForm = () => {
           />
           <Form.Control.Feedback type='invalid'>
             Subject is required
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Phone</Form.Label>
+          <Form.Control
+            type='number'
+            placeholder='Type your phone'
+            required
+            name='phone'
+            value={user.phone}
+            className='form-control-lg'
+            onChange={handleChange}
+          />
+          <Form.Control.Feedback type='invalid'>
+            Phone is required
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group>

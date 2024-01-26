@@ -97,7 +97,7 @@ const BottomNavBar = () => {
             </NavLink>
           </Nav.Link>
 
-          <Nav.Link>
+          {/* <Nav.Link>
           <NavLink
                 to="/events"
                 className="sub-link"
@@ -106,10 +106,10 @@ const BottomNavBar = () => {
               >
                Events Management
               </NavLink>
-          </Nav.Link>
+          </Nav.Link> */}
           
 
-          {/* <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
+          <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
             <NavDropdown.Item>
               <NavLink
                 to="/events"
@@ -127,7 +127,7 @@ const BottomNavBar = () => {
                 activeClassName="active"
                 onClick={() => onUpdateActiveLink("events")}
               >
-               Our previous events
+               Previous events
               </NavLink>
             </NavDropdown.Item>
             <NavDropdown.Item>
@@ -140,7 +140,7 @@ const BottomNavBar = () => {
                Request for event support
               </NavLink>
             </NavDropdown.Item>
-            <NavDropdown.Item>
+            {/* <NavDropdown.Item>
             <NavLink
                to="/participant"
                activeClassName="active"
@@ -149,8 +149,8 @@ const BottomNavBar = () => {
               >
                Participate event
               </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown> */}
+            </NavDropdown.Item> */}
+          </NavDropdown>
 
           <Nav.Link>
             <NavLink

@@ -1,5 +1,6 @@
 /* eslint-disable react/style-prop-object */
 import React, { useState, useEffect } from 'react';
+import 'dotenv/config';
 import { AppLayout } from '../../layouts';
 import { Container, Row, Col, Form, Alert, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
@@ -33,6 +34,7 @@ export const Booking = (props) => {
     phoneNumber: '',
     address: '',
     location: '',
+    appUrl: process.env.REACT_APP_FRONTEND
   });
 
   const dispatch = useDispatch();

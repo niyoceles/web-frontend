@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Twitter, Facebook, Whatsapp } from 'react-social-sharing';
-import moment from 'moment';
 import ReactHtmlParser from 'react-html-parser';
 import { AppLayout } from '../../layouts';
 import { getSingleTours } from '../../redux/actions';
@@ -41,9 +40,9 @@ export const ToursView = (props) => {
                    <h2 className='mb-2'>
                     <b> {oneTours.title}</b>
                   </h2>         
-                  <span className='mb-2 mt-1'>
-                    {moment(oneTours.createdAt).format('MMMM d, y')}
-                  </span>
+                  {/* <span className='mb-2 mt-1'>
+                    {//moment(oneTours.createdAt).format('MMMM d, y')}
+                  </span> */}
 
                   {!loading && oneTours.image ? (
                     <Image
