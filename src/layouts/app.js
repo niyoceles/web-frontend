@@ -1,18 +1,44 @@
-import React, { useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import NavBarPage from '../pagess/navPage/NavBarPage';
-import './index.css';
-import {Footer} from '../components/footer';
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import NavBarPage from "../pagess/navPage/NavBarPage";
+import "./index.css";
+import { Footer } from "../components/footer";
 import ScrollToTop from "react-scroll-to-top";
+import { getPublications } from "../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
-export const AppLayout = props => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+export const AppLayout = (props) => {
+  const [publicationOpen, setPublicationOpen] = useState(true);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-	return (
-		<div className='home-styles'>
-			{/* <div
+  const publications = useSelector(
+    (state) => state.publicationReducer.publications,
+  );
+  // const error = useSelector(state => state.publicationReducer.error);
+
+  const dispatch = useDispatch();
+  const isPublicationPage = window.location.pathname.includes("/publications");
+
+  const firstPublication =
+    publications &&
+    publications.find(
+      (publication) =>
+        publication.status === true && publication.category === "publication",
+    );
+
+  useEffect(() => {
+    dispatch(getPublications());
+  }, [dispatch]);
+
+  const togglePublication = () => {
+    setPublicationOpen(!publicationOpen);
+  };
+
+  return (
+    <div className="home-styles">
+      {/* <div
 				className='top-bar-navbar'
 				style={{ backgroundColor: 'red', color: '#fff' }}
 			>
@@ -84,13 +110,66 @@ export const AppLayout = props => {
 					</Row>
 				</Container>
 			</div> */}
-			<ScrollToTop smooth color="#fff" style={{backgroundColor:"#186645"}}/>
-			<NavBarPage />
+      <ScrollToTop smooth color="#fff" style={{ backgroundColor: "#186645" }} />
+      <NavBarPage />
 
-			<main>{props.children}</main>
+      {!isPublicationPage && !firstPublication && (
+        <div
+          className="publication"
+          style={{
+            backgroundColor: "white",
+            position: "fixed",
+            width: "250px",
+            padding: "20px",
+            boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+            zIndex: "1000",
+            marginTop: "180px",
+            right: "0",
+            transition: "transform 0.3s ease-in-out",
+            transform: publicationOpen ? "translateX(0)" : "translateX(100%)",
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-square"
+            viewBox="0 0 16 16"
+			onClick={togglePublication}
+			style={{cursor: "pointer"}}
+          >
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+          </svg>
+          <ul>
+            <li>
+              <p>
+                Any time you reorder things with grid layout – or with flexbox –
+                you only perform visual reordering. The underlying source is
+                what controls things like text to speech, and the tab order of
+                the document. You can see how this works with a very simple{" "}
+                <span onClick={togglePublication}>X</span>
+              </p>
+              <i className="fa fa-chevron-right mr-2"></i>
+              <b>
+                {/* <a
+                        href={firstPublication.pubDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={firstPublication.title}
+                    >
+                        {firstPublication.title}
+                    </a> */}
+              </b>
+            </li>
+          </ul>
+        </div>
+      )}
+      <main>{props.children}</main>
 
-			{/* <Partner /> */}
-			<Footer />
-		</div>
-	);
+      {/* <Partner /> */}
+      <Footer />
+    </div>
+  );
 };
