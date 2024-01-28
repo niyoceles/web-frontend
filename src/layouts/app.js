@@ -153,14 +153,14 @@ export const AppLayout = (props) => {
               </p>
               <i className="fa fa-chevron-right mr-2"></i>
               <b>
-                {/* <a
+                <a
                         href={firstPublication.pubDocument}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={firstPublication.title}
                     >
                         {firstPublication.title}
-                    </a> */}
+                    </a>
               </b>
             </li>
           </ul>
