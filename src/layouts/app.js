@@ -114,7 +114,7 @@ export const AppLayout = (props) => {
       <ScrollToTop smooth color="#fff" style={{ backgroundColor: "#186645" }} />
       <NavBarPage />
 
-      {!isPublicationPage && !firstPublication && (
+      {!isPublicationPage && (
         <div
           className="publication"
           style={{
