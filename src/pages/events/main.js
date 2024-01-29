@@ -115,7 +115,7 @@ export const Events = () => {
               </Row>
             </Col>
             <Col sm={4}>
-              <RightBar tweet={true} news={true} />
+              {/* <RightBar tweet={true} news={true} /> */}
             </Col>
           </Row>
         </Container>
