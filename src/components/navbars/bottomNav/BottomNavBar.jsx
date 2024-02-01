@@ -140,7 +140,7 @@ const BottomNavBar = () => {
                Request for event support
               </NavLink>
             </NavDropdown.Item>
-            {/* <NavDropdown.Item>
+            <NavDropdown.Item>
             <NavLink
                to="/participant"
                activeClassName="active"
@@ -149,7 +149,7 @@ const BottomNavBar = () => {
               >
                Participate event
               </NavLink>
-            </NavDropdown.Item> */}
+            </NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link>

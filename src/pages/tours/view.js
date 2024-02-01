@@ -37,9 +37,9 @@ export const ToursView = (props) => {
             <Col sm={8}>
               <Row>
                 <Col sm={12}>
-                   <h2 className='mb-2'>
+                  <h2 className='mb-2'>
                     <b> {oneTours.title}</b>
-                  </h2>         
+                  </h2>
                   {/* <span className='mb-2 mt-1'>
                     {//moment(oneTours.createdAt).format('MMMM d, y')}
                   </span> */}
@@ -58,10 +58,53 @@ export const ToursView = (props) => {
 
                   <p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
                 </Col>
-                <h2 className='mb-2 py-3'>
-                  {oneTours.price !==0?(<b> ${ oneTours.price}</b>):''}  
-                  </h2>
-                  
+
+                <Col sm={12}>
+                <div className='py-2' style={{ marginBottom: '10px' }}>
+                  {oneTours.price1 !== 0 ? (
+                    <b> ${oneTours.price1} for 1 Person</b>
+                  ) : (
+                    ''
+                  )}
+                </div>
+                </Col>
+                <Col sm={12}>
+                <div className='py-2' style={{ marginBottom: '10px' }}>
+                  {oneTours.price2 !== 0 ? (
+                    <b> ${oneTours.price2} for 2 Person</b>
+                  ) : (
+                    ''
+                  )}
+                </div>
+                </Col>
+                <Col sm={12}>
+                <div className='py-2' style={{ marginBottom: '10px' }}>
+                  {oneTours.price3 !== 0 ? (
+                    <b> ${oneTours.price3} for 3 Person</b>
+                  ) : (
+                    ''
+                  )}
+                </div>
+                </Col>
+
+                <Col sm={12}>
+                <div className='py-2' style={{ marginBottom: '10px' }}>
+                  {oneTours.price4 !== 0 ? (
+                    <b> ${oneTours.price4} for 4 Person</b>
+                  ) : (
+                    ''
+                  )}
+                </div>
+                </Col>
+                <Col sm={12}>
+                <div className='py-2' style={{ marginBottom: '10px' }}>
+                  {oneTours.price5 !== 0 ? (
+                    <b> ${oneTours.price5} for 5 Person</b>
+                  ) : (
+                    ''
+                  )}
+                </div>
+                </Col>
                 {/* <Row>
                   {jsonData && !loading && jsonData.length >0 ? (
                     <>
@@ -107,7 +150,14 @@ export const ToursView = (props) => {
               </Row>
             </Col>
             <Col sm={4}>
-               <Booking amount={oneTours.price} id={oneTours.id} />
+              <Booking
+                price1={oneTours.price1}
+                price2={oneTours.price2}
+                price3={oneTours.price3}
+                price4={oneTours.price4}
+                price5={oneTours.price5}
+                id={oneTours.id}
+              />
             </Col>
           </Row>
         </Container>

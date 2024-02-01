@@ -15,6 +15,7 @@ const ParticipantForm = () => {
     titleMrs: false,
     titleDr: false,
     titleProf: false,
+    eventName: '',
     familyName: '',
     firstName: '',
     position: '',
@@ -63,7 +64,7 @@ const ParticipantForm = () => {
      title1 = 'Mr.';
     }
     const data = {
-      eventId:"1",
+      eventName:formData.eventName,
       title: title1,
       familyName: formData.familyName,
       firstName:formData.firstName,
@@ -83,7 +84,7 @@ console.log(data);
    
 	try {
     const createAttendance = await API.createParticipant(data, '/api/participant/create');
-		const createdTours = await createAttendance.json();
+		const created = await createAttendance.json();
 		console.log('response here', createAttendance);
 	
 
@@ -94,7 +95,7 @@ console.log(data);
 		if (createAttendance.status === 201) {
       console.log('Created here',createAttendance);
 
-			toast.success(createdTours.message);
+			toast.success(created.message);
 			window.location.href = `/participant`;
 		}
 	} catch (error) {
@@ -259,6 +260,20 @@ console.log(data);
                       onChange={handleInputChange}
                     />
                   </div>
+                </Form.Group>
+              </Col>
+              <Col lg={12} sm={12}>
+                <Form.Group>
+                  <Form.Label>Event:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="enter event name"
+                    required
+                    name="address"
+                    className="form-control-lg"
+                    value={formData.eventName}
+                    onChange={handleInputChange}
+                  />
                 </Form.Group>
               </Col>
               <Col lg={12} sm={12}>
