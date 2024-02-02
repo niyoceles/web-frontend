@@ -269,7 +269,7 @@ console.log(data);
                     type="text"
                     placeholder="enter event name"
                     required
-                    name="address"
+                    name="eventName"
                     className="form-control-lg"
                     value={formData.eventName}
                     onChange={handleInputChange}
