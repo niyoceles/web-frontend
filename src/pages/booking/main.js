@@ -101,12 +101,15 @@ export const Booking = (props) => {
       <Form noValidate>
       <Form.Group>
         <Form.Label>Select Number of People</Form.Label>
+        <p><span class="text-danger font-italic">NB:</span> If you are in more than 5 people, please contact us</p>
+
         <Form.Control
           as='select'
           name='amount'
-          value={amount}
+          defaultValue={props.price1} 
           onChange={(e)=>onChange(e)}
         >
+          <option>select price</option>
           <option value={props.price1}>1 Person {props.price1}</option>
           <option value={props.price2}>2 People {props.price2}</option>
           <option value={props.price3}>3 People {props.price3}</option>

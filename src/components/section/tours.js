@@ -11,6 +11,7 @@ export const ToursBox = () => {
 	const [loading, setLoading] = useState(true);
 
 	const tours = useSelector(state => state.toursReducer.fiveTours);
+	console.log("tours", tours)
 	const fiveLoading = useSelector(state => state.toursReducer.loading);
 	const error = useSelector(state => state.toursReducer.error);
 
@@ -45,8 +46,8 @@ export const ToursBox = () => {
 													href={`/tour/${oneTours.slug}`}
 													thumbnail={oneTours.image}
 													title={oneTours.title}
-													author={ oneTours.price !==0?`$`+ oneTours.price:'' }
-													date={moment(oneTours.createdAt).format('MMMM d, y')}
+													author={ oneTours.price1 !==0?`$`+ oneTours.price1:"" }
+													// date={moment(oneTours.createdAt).format('MMMM d, y')}
 												/>
 											))}
 								</Col>
@@ -61,8 +62,8 @@ export const ToursBox = () => {
 														href={`/tour/${oneTours.slug}`}
 														thumbnail={oneTours.image}
 														title={oneTours.title}
-														author={oneTours.price !==0?`$`+ oneTours.price:'' }
-														date={moment(oneTours.createdAt).format('MMMM d, y')}
+														author={oneTours.price1 !==0?`$`+ oneTours.price1:"" }
+														// date={moment(oneTours.createdAt).format('MMMM d, y')}
 													/>
 												))}
 									</div>
@@ -78,7 +79,7 @@ export const ToursBox = () => {
 														thumbnail={oneTours.image}
 														title={oneTours.title}
 														author={oneTours.author.organization}
-														date={moment(oneTours.createdAt).format('MMMM d, y')}
+														// date={moment(oneTours.createdAt).format('MMMM d, y')}
 													/>
 												))}
 									</div>
