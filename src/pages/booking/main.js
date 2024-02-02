@@ -24,6 +24,7 @@ export const Booking = (props) => {
   const now = new Date();
   // get the current date and time as a string
   const currentDateTime = now.toLocaleString();
+  const [amount, setAmount] = useState(0);
 
   const [open, setOpen] = useState(false);
   const [orderInfo, setOrderInfo] = useState({
@@ -66,14 +67,20 @@ export const Booking = (props) => {
   const handleSuccessBooking = (id) => setBookingId(id);
 
   const handlePayLater = async (isLater) => {
-    const bookInfo = {
-      ...orderInfo,
-      itemsArray: [{ id: props.id, itemNumber: 1 }],
-      amount: props.amount,
-    };
-    setSubmitted(true);
-    await dispatch(createOrder(bookInfo, isLater));
-    setOpen(!open);
+    if(amount !==0){
+      const bookInfo = {
+        ...orderInfo,
+        itemsArray: [{ id: props.id, itemNumber: 1 }],
+        amount: amount,
+      };
+      setSubmitted(true);
+      await dispatch(createOrder(bookInfo, isLater));
+      setOpen(!open);
+     
+    }else{
+      alert(`Selected price : ${amount} is not allowed`);
+    }
+ 
   };
 
   const handleCancelOrder = () => {
@@ -83,13 +90,39 @@ export const Booking = (props) => {
     setOpen(!open);
   };
 
+  const onChange = (e) => {
+    setAmount(parseInt(e.target.value, 10));
+  };
+
   return (
     <>
       <br />
       <br />
-      {props.amount != null ? <h3>Total price: $ {props.amount}</h3> : ''}
-      <br />
       <Form noValidate>
+      <Form.Group>
+        <Form.Label>Select Number of People</Form.Label>
+        <Form.Control
+          as='select'
+          name='amount'
+          value={amount}
+          onChange={(e)=>onChange(e)}
+        >
+          <option value={props.price1}>1 Person {props.price1}</option>
+          <option value={props.price2}>2 People {props.price2}</option>
+          <option value={props.price3}>3 People {props.price3}</option>
+          <option value={props.price4}>4 People {props.price4}</option>
+          <option value={props.price5}>5 People {props.price5}</option>
+        </Form.Control>
+      </Form.Group>
+      <br />
+      <Form.Group>
+        <Form.Label>Selected Option</Form.Label>
+        <Form.Control
+          type="number"
+          value={amount}
+          readOnly
+        />
+      </Form.Group>
         <Form.Group>
           <Form.Label>Full Name </Form.Label>
           <Form.Control
