@@ -59,7 +59,7 @@ export const ToursView = (props) => {
                   <p className='mt-4'> {ReactHtmlParser(oneTours.toursBody)}</p>
                 </Col>
 
-                <Col sm={12}>
+                {/* <Col sm={12}>
                 <div className='py-2' style={{ marginBottom: '10px' }}>
                   {oneTours.price1 !== 0 ? (
                     <b> ${oneTours.price1} for 1 Person</b>
@@ -104,7 +104,7 @@ export const ToursView = (props) => {
                     ''
                   )}
                 </div>
-                </Col>
+                </Col> */}
                 {/* <Row>
                   {jsonData && !loading && jsonData.length >0 ? (
                     <>

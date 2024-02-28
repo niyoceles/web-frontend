@@ -120,7 +120,7 @@ const BottomNavBar = () => {
                Events Management
               </NavLink>
             </NavDropdown.Item>
-            <NavDropdown.Item>
+            {/* <NavDropdown.Item>
               <NavLink
                 to="/previous-events"
                 className="sub-link"
@@ -129,7 +129,7 @@ const BottomNavBar = () => {
               >
                Previous events
               </NavLink>
-            </NavDropdown.Item>
+            </NavDropdown.Item> */}
             <NavDropdown.Item>
             <NavLink
                to="/eventform"
@@ -140,16 +140,16 @@ const BottomNavBar = () => {
                Request for event support
               </NavLink>
             </NavDropdown.Item>
-            {/* <NavDropdown.Item>
+            <NavDropdown.Item>
             <NavLink
                to="/participant"
                activeClassName="active"
                className="sub-link"
                 onClick={() => onUpdateActiveLink("participant")}
               >
-               Participate event
+               Register to an event
               </NavLink>
-            </NavDropdown.Item> */}
+            </NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link>
