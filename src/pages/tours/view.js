@@ -157,6 +157,7 @@ export const ToursView = (props) => {
                 price4={oneTours.price4}
                 price5={oneTours.price5}
                 id={oneTours.id}
+                itemType={'tour'}
               />
             </Col>
           </Row>

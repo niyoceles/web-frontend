@@ -55,7 +55,7 @@ export const Events = () => {
                             .slice(0, 4)
                             .map((event, idx) => (
                               <Col lg={6} md={6} sm={12} xs={12} key={idx}>
-                                <Link to={`/events/${event.slug}`}>
+                                <Link to={`/event/${event.slug}`}>
                                   <div className="events-box background-white-light mb-5">
                                     <div className="event-img-box">
                                       <img
@@ -74,7 +74,7 @@ export const Events = () => {
                                     <div className="events-status-box">
                                       <span className="price-event">
                                         {event.price
-                                          ? event.price + " Rwf"
+                                          ? event.price + " $"
                                           : "Free entry"}
                                       </span>
                                     </div>

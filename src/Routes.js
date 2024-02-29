@@ -84,7 +84,7 @@ export default function Routes() {
         <Route exact path='/participant' component={ParticipantForm} />
         <Route exact path='/events/:id' component={EventDetail} />
         <Route exact path='/previous-events' component={Events} />
-        <Route exact path='/events/:slug' component={ViewEvent} />
+        <Route exact path='/event/:slug' component={ViewEvent} />
         <Route exact path='/myorder/:id' component={ViewOrder} />
 
         <Route exact path='/blogs' component={News} />
