@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import { useMemo, useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
@@ -15,8 +16,10 @@ import countryList from 'react-select-country-list';
 import * as API from '../../api/index';
 import { AppLayout } from '../../layouts';
 import { useDispatch, useSelector } from 'react-redux';
+import moment from 'moment';
 import { getEvents } from '../../redux/actions';
 import Spinner from '../../components/spinner/Spinner';
+import { createOrder } from '../../redux/actions';
 
 const ParticipantForm = () => {
   const options = useMemo(() => countryList().getData(), []);
@@ -24,6 +27,9 @@ const ParticipantForm = () => {
   const events = useSelector((state) => state.eventReducer.events);
   const error = useSelector((state) => state.eventReducer.error);
   const theLoading = useSelector((state) => state.eventReducer.loading);
+
+  const now = new Date();
+  const currentDateTime = now.toLocaleString();
 
   const dispatch = useDispatch();
 
@@ -36,11 +42,13 @@ const ParticipantForm = () => {
 
   // State to manage form data
   const [formData, setFormData] = useState({
+    needDate: moment(currentDateTime).format('YYYY-MM-DD HH:mm:ss'),
+    deadline: moment(currentDateTime).format('YYYY-MM-DD HH:mm:ss'),
     titleMs: false,
     titleMrs: false,
     titleDr: false,
     titleProf: false,
-    eventName: '',
+    eventName: {},
     familyName: '',
     firstName: '',
     position: '',
@@ -54,7 +62,6 @@ const ParticipantForm = () => {
     diet: '',
     specificDietCheckbox: false,
   });
-
   // Event handler to update form data on input changes
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -75,6 +82,8 @@ const ParticipantForm = () => {
   // Event handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('kkkkkkkkjjjjj', JSON.parse(formData.eventName));
+console.log('sssssssPPPPP', formData.eventName);
 
     let title1 = '';
     if (formData.titleMs) {
@@ -88,8 +97,9 @@ const ParticipantForm = () => {
     } else {
       title1 = 'Mr.';
     }
+ const event = JSON.parse(formData.eventName);
     const data = {
-      eventName: formData.eventName,
+      eventName: event.title,
       title: title1,
       familyName: formData.familyName,
       firstName: formData.firstName,
@@ -102,32 +112,55 @@ const ParticipantForm = () => {
       phone: formData.telephone,
       email: formData.email,
       dietRequirements: formData.diet,
-      amount: '100.00',
+      amount: event.price,
       dataProtection: formData.specificDietCheckbox,
     };
-    console.log(data);
+    console.log('ddddddssssssss',data);
+
+    const book ={
+      needDate: formData.needDate,
+      deadline: formData.deadline,
+      names: formData.familyName + ' ' + formData.firstName,
+      email: formData.email,
+      phoneNumber: formData.telephone,
+      address: formData.address,
+      location: 'Rwanda',
+      appUrl: process.env.REACT_APP_FRONTEND,
+      itemType: 'event',
+    }
 
     try {
-      const createAttendance = await API.createParticipant(
-        data,
-        '/api/participant/create',
-      );
-      const created = await createAttendance.json();
-      console.log('response here', createAttendance);
+      if (event.price !== 0) {
+        const bookInfo = {
+          ...book,
+          itemsArray: [{ id: event.id, itemNumber: 1 }],
+          amount: event.price,
+        };
 
-      if (createAttendance.status === 400) {
-        toast.error('Missing data');
-      }
+        await dispatch(createOrder(bookInfo, false));
 
-      if (createAttendance.status === 201) {
-        console.log('Created here', createAttendance);
+        const createAttendance = await API.createParticipant(
+          data,
+          '/api/participant/create',
+        );
+        const created = await createAttendance.json();
+        console.log('response here', createAttendance);
 
-        toast.success(created.message);
-        window.location.href = `/participant`;
+        if (createAttendance.status === 400) {
+          toast.error('Missing data');
+        }
+
+        if (createAttendance.status === 201) {
+          console.log('Created here', createAttendance);
+
+          toast.success(created.message);
+          // window.location.href = `/participant`;
+        }
+      } else {
+        alert(`Selected price : ${event.price} is not allowed`);
       }
     } catch (error) {
-      console.log(error);
-      console.clear();
+      console.log('errrlr: ', error);
     }
   };
 
@@ -291,19 +324,15 @@ const ParticipantForm = () => {
                   <Col lg={12} sm={12}>
                     <Form.Group>
                       <Form.Label>Event:</Form.Label>
+
                       <Form.Control
-                        type='text'
-                        placeholder='enter event name'
-                        required
-                        name='eventName'
-                        className='form-control-lg'
-                        value={formData.eventName}
+                        as='select'
                         onChange={handleInputChange}
-                      />
-                      <Form.Control as='select' onChange={handleInputChange}>
+                        name='eventName'
+                      >
                         <option value=''>Select an event...</option>
                         {events.map((event) => (
-                          <option key={event.id} value={event.title}>
+                          <option key={event.id} value={JSON.stringify(event)}>
                             {event.title}
                           </option>
                         ))}
@@ -411,7 +440,7 @@ const ParticipantForm = () => {
                   </Col>
                 </Row>
                 <Button type='submit' className='button'>
-                  Submit
+                  Pay now
                 </Button>
               </Form>
               <p>
