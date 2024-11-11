@@ -8,11 +8,11 @@ export const MemberList = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Members  | GoDiscover Africa</title>
+				<title>Members  | GoDiscover Safaris</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 				<meta
 					name='description'
-					content='Members of Rwand GoDiscover Africa'
+					content='Members of Rwand GoDiscover Safaris'
 				/>
 			</Helmet>
 			

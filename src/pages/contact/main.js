@@ -60,14 +60,15 @@ export const Contact = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Contact | GoDiscover Africa</title>
+				<title>Contact | GoDiscover Safaris</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw//contact' />
 				<meta
 					name='description'
-					content='Contact GoDiscover Africa on the following address: email: +250 791 349 744, email: info@godiscoverafrica.rw '
+					content='Contact GoDiscover Safaris on the following address: email: +250 791 349 744, email: info@godiscoverafrica.rw '
 				/>
 			</Helmet>
-			{/* <Contactinfo/> */}
+			<div className="home-body"></div>
+			<Contactinfo/>
 		</AppLayout>
 	);
 };

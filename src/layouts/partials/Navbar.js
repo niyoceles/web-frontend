@@ -18,8 +18,8 @@ const NavBar = () => {
 				<Navbar.Brand>
 					<Link to='/'>
 						<Image
-							alt='GoDiscover Africa Logo'
-							title='GoDiscover Africa Logo'
+							alt='GoDiscover Safaris Logo'
+							title='GoDiscover Safaris Logo'
 							src='https://res.cloudinary.com/dfsai53mw1/image/upload/v1700398863/WEBS/godiscover/Godiscover_ystvkb.png'
 							width='30%'
 							className='img-fluid d-inline-block align-top ml-2 logo'
@@ -41,7 +41,7 @@ const NavBar = () => {
 							onMouseLeave={handleNavMenuClose}
 							show={isHovered}
 							style={{ 
-								backgroundColor: 'green'
+								backgroundColor: '#065952'
 							 }}
 						>
 							<NavDropdown.Item style={{ 

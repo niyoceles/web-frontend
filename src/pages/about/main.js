@@ -6,6 +6,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { OurWork } from '../../components/section';
 
 import './index.css';
+import Contactinfo from '../contact/contactinfo';
 // const { REACT_APP_ABOUT_VIDEO } = process.env;
 export const About = () => {
   const boards = [
@@ -38,11 +39,12 @@ export const About = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>About | GoDiscover Africa</title>
+        <title>About | GoDiscover Safaris</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//about' />
-        <meta name='description' content='GoDiscover Africa' />
+        <meta name='description' content='GoDiscover Safaris' />
       </Helmet>
-      <section className='st-about-head' id={'who-we-are'}>
+      <div className="home-body"></div>
+      <section className='st-about-head pt-5 py-5 m-5 rounded-top' id={'who-we-are'}>
         <br />
         <br />
         <Container>
@@ -57,7 +59,7 @@ export const About = () => {
             </Col>
             <Col lg={8}>
               <p className='about-description text-justify'>
-              GoDiscover Africa is a premium Tours and Travel company registered and headquartered in Kigali Rwanda, primarily operating inbound and outbound tours within Rwanda, East Africa and Africa as a whole. The company has also representatives in Nairobi, Kenya. 
+              GoDiscover Safaris is a premium Tours and Travel company registered and headquartered in Kigali Rwanda, primarily operating inbound and outbound tours within Rwanda, East Safaris and Africa as a whole. The company has also representatives in Nairobi, Kenya. 
                 <br />
                 <br />
                 <br />
@@ -78,7 +80,7 @@ export const About = () => {
             </Col>
             <Col lg={8}>
               <p className='about-description text-justify'>
-                GoDiscover Africa undertakes to provide our valued clients with
+                GoDiscover Safaris undertakes to provide our valued clients with
                 top range exclusive service and end to end travel solutions
                 right from airport pickups, transportation, accommodation,
                 tours and all other aspects of your travel to ensure your peace
@@ -93,7 +95,7 @@ export const About = () => {
             <Col lg={8}>
               <p className='about-description text-justify'>
                 To become a preferable and leading safaris company in East
-                Africa by offering the best tours and travel and related
+                Safaris by offering the best tours and travel and related
                 activities at the most competitive price and providing quality
                 services.
               </p>
@@ -120,42 +122,8 @@ export const About = () => {
           </Row>
         </Container>
       </section>
-      {/* <section
-				className='st-about-body pt-2 background-white'
-				id={'team'}
-			>
-				<Container className=''>
-				 <Row className='st-about-team pt-3'>
-						<Container>
-							<Row>
-								<Col sm={12}>
-									<p className='title text-center text-light'>Our Team</p>
-								</Col>
-							</Row>
-							<Row className='mt-0 pt-1'>
-								{boards &&
-									boards.map(index => (
-										<Col sm={3} className='mt-3 py-4'>
-											<Image
-												alt={index.names}
-												title={index.names}
-												src={index.image}
-												className='img-fluid'
-											/>
-											<p className='h2 font-weight-bold text-light mt-4 text-center mb-0'>
-												{index.names}
-											</p>
-											<p className='text-center text-light'>
-												<span className='text-center text-white'>{index.role}</span>
-											</p>
-										</Col>
-									))}
-							</Row>
-						</Container>
-					</Row>
-				</Container>
-			</section> */}
-      {/* <OurWork /> */}
+      <br/>
+			<Contactinfo/>
     </AppLayout>
   );
 };

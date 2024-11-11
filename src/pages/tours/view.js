@@ -31,6 +31,7 @@ export const ToursView = (props) => {
   //   oneTours.itenerary.map((jsonString) => JSON.parse(jsonString));
   return (
     <AppLayout>
+      <div className='home-body'></div>
       <section className='st-read-tours py-4 mt-5 mb-5 bg-light'>
         <Container>
           <Row>

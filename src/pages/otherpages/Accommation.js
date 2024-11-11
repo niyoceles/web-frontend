@@ -23,11 +23,11 @@ export const Accommodation = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Accommodation | GoDiscover Africa</title>
+        <title>Accommodation | GoDiscover Safaris</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//contact' />
         <meta
           name='description'
-          content='Accommodation GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
+          content='Accommodation GoDiscover Safaris on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
       <section className='contact bg-light pt-4'>

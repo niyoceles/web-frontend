@@ -29,9 +29,9 @@ export const Events = () => {
     <AppLayout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Events | GoDiscover Africa</title>
+        <title>Events | GoDiscover Safaris</title>
         <link rel="canonical" href="https://godiscoverafrica.rw//events" />
-        <meta name="description" content="GoDiscover Africa Events" />
+        <meta name="description" content="GoDiscover Safaris Events" />
       </Helmet>
       <section className="bg-light">
         <Container className="mt-2">

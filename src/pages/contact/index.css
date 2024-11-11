@@ -40,3 +40,20 @@
   height: 45px;
   transition: all 0.6s ease;
 }
+
+
+.social-icon-img {
+  filter: invert(32%) sepia(94%) saturate(1509%) hue-rotate(138deg) brightness(92%) contrast(85%);
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+}
+
+.social-icon a {
+  display: inline-block;
+  padding-right: 10px !important;
+
+}
+.social-icons-container {
+  display: flex;
+  gap: 40px; /* Adjust the spacing as needed */
+}

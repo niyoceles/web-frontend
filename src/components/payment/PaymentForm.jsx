@@ -56,7 +56,7 @@ const PaymentForm = ({ amountToPay, bookingID, bookingEmail }) => {
       order: {
         amount: amountToPay,
         currency: "USD",
-        description: `Payment for booking with GoDiscoverAfrica via bookme.rw for amount ${amountToPay}`,
+        description: `Payment for booking with GoDiscoverSafaris via bookme.rw for amount ${amountToPay}`,
         id: uid,
         reference: uid,
       },

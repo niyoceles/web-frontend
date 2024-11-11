@@ -40,7 +40,7 @@ export const Subscribe = () => {
       >
        <div style={{ display: 'flex', alignItems: 'center' }}>
     <Form.Group className='form-group' style={{ margin: '0', flex: '1' }}>
-        <Form.Label className='text-title'>
+        <Form.Label className='text-title text-light'>
             <b>Email address</b>
         </Form.Label>
         <Form.Control
@@ -57,7 +57,7 @@ export const Subscribe = () => {
     <Button
         type='submit'
         variant='default'
-        className='btn btn-custom-primary'
+        className='btn btn-custom-primary text-light'
         style={{ marginLeft: '10px', height: '40px', marginTop: '30px' }} 
     >
         <i className='fa fa-paper-plane'></i> Subscribe

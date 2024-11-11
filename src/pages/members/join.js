@@ -10,11 +10,11 @@ export class MemberJoin extends Component {
 			<AppLayout>
 				<Helmet>
 					<meta charSet='utf-8' />
-					<title>Apply for membership | GoDiscover Africa</title>
+					<title>Apply for membership | GoDiscover Safaris</title>
 					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 					<meta
 						name='description'
-						content='Apply to become a member of GoDiscover Africa'
+						content='Apply to become a member of GoDiscover Safaris'
 					/>
 				</Helmet>
 				

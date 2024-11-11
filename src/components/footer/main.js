@@ -12,7 +12,7 @@ export class Footer extends Component {
         <Partner />
         <div className='ft-top py-2'>
         <Container className='py-4'>
-            <Row className='border-top'>
+            <Row className=''>
               <Col
                 lg={6}
                 md={6}
@@ -23,7 +23,7 @@ export class Footer extends Component {
                 <p className='text-normal'>
                   <p className=' title'>Contacts</p>
                   <p className='py-2'>
-                    <i className='fa fa-phone mr-2'></i> ‎+250 791 349 744{' '}
+                    <i className='fa fa-phone mr-2'></i>+250 791 349 744{' '}
                     <br />
                     <i className='fa fa-inbox mr-2'></i>{' '}
                     info@godiscoverafrica.rw <br />
@@ -37,7 +37,7 @@ export class Footer extends Component {
                 <Link to='/contact'>
                   <Button
                     variant='default'
-                    className='btn btn-custom-primary mt-3'
+                    className='btn btn-custom-primary mt-3 text-light'
                   >
                     Contact us
                   </Button>
@@ -55,7 +55,7 @@ export class Footer extends Component {
           <Container fluid className='pl-5 pr-5'>
             <Row className='py-3 justify-content-center text-center'>
               <h2 className='mb-4 mt-3'>Useful Links</h2>
-              <Col lg={12}>
+              <Col lg={12} className='text-light'>
                 <a
                   href='https:/gov.rw/'
                   className='ft-link'
@@ -75,26 +75,6 @@ export class Footer extends Component {
                 >
                   Car rental
                 </a>
-                &nbsp; | &nbsp;{' '}
-                {/* <a
-                  href='https:/www.carrental.bookme.rw/'
-                  className='ft-link'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='Rwanda Development Board'
-                >
-                  Rwanda Development Board
-                </a>
-                &nbsp; | &nbsp;{' '}
-                <a
-                  href='https://www.rwandair.com/'
-                  className='ft-link'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  aria-label='Rwandair'
-                >
-                  Rwandair
-                </a> */}
               </Col>
             </Row>
           </Container>
@@ -104,7 +84,7 @@ export class Footer extends Component {
             <div className='py-4 border-top'>
               <Row>
                 <Col lg={10}>
-                  Copyright- GoDiscover Africa &copy;{' '}
+                  Copyright- GoDiscover Safaris &copy;{' '}
                   {new Date().getFullYear()}
                   &nbsp; | &nbsp;{' '}
                   <Link to='/' className='ft-link'>

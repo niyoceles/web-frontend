@@ -31,7 +31,7 @@ function completeCallback(resultIndicator,sessionVersion) {
       appUrl:'https://www.godiscoverafrica.rw'
     })
   }).then((res)=> {
-    alert("Payment completed! Thank you for booking with GoDiscoverAfrica.");
+    alert("Payment completed! Thank you for booking with GoDiscoverSafaris.");
   }).catch((_)=>{
     alert("Payment failed! Try again")
   });

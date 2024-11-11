@@ -114,13 +114,14 @@ export const Airticket = () => {
     <AppLayout>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Airticket | GoDiscover Africa</title>
+        <title>Airticket | GoDiscover Safaris</title>
         <link rel='canonical' href='https://godiscoverafrica.rw//contact' />
         <meta
           name='description'
           content='Airticket GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
+      <div className="home-body"></div>
       <section className='contact bg-light pt-4'>
         <Container>
           <Row className='justify-content-center'>

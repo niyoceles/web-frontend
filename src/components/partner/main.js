@@ -7,9 +7,8 @@ export class Partner extends Component {
   render() {
     return (
       <>
-        <Contactinfo />
         <section className='pt-block pt-5 pb-3'>
-          <h3 className='pb-4 text-center'>Partners</h3>
+          <h2 className='pb-4 text-center'>Partners</h2>
           <Container fluid className='p-3'>
             <Row className='py-3'>
               <Col>

@@ -12,12 +12,13 @@ const EventForm = () => {
 				<Helmet>
 					<meta charSet='utf-8' />
 					<title>Make a request for an event management support | GoDiscover Africa</title>
-					<link rel='canonical' href='https://godiscoverafrica.rw/list' />
+					<link rel='canonical' href='https://godiscoversafaris.com' />
 					<meta
 						name='description'
 						content='Make a request for an event management support'
 					/>
 				</Helmet>
+				<div className="home-body"></div>
 				<Header title='Make a request for an event management support' />
 
 				<section className='mt-5 mb-5 become-member bg-light'>
