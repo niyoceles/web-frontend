@@ -118,7 +118,7 @@ export const Airticket = () => {
         <link rel='canonical' href='https://godiscoverafrica.rw//contact' />
         <meta
           name='description'
-          content='Airticket GoDiscover Africa on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
+          content='Airticket GoDiscover Safaris on the following address: email: ‎+250 791 349 744, email: info@godiscoverafrica.rw '
         />
       </Helmet>
       <div className="home-body"></div>
@@ -128,7 +128,7 @@ export const Airticket = () => {
             <Col sm={7}>
               <h1 className='text-title text-bold mt-3 py-4'>AirTicket</h1>
               <h4 className='text-title text-bold mt-3 py-4'>
-                Welcome to GoDiscover Africa air ticket services
+                Welcome to GoDiscover Safaris air ticket services
               </h4>
               <p className='mt-1'>
                 <br />
@@ -146,7 +146,7 @@ export const Airticket = () => {
                 experiences.
                 <br />
                 <br />
-                At GoDiscover Africa, we understand that your travel plans may
+                At GoDiscover Safaris, we understand that your travel plans may
                 change unexpectedly, which is why we offer flexible cancellation
                 policies on most bookings. We also provide travel insurance
                 options to ensure that you are fully protected and covered in

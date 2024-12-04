@@ -1,204 +1,101 @@
-import React, { useState } from "react";
-import { Navbar, Nav, NavDropdown, Form } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-import "./index.css";
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { NavLink, useLocation } from 'react-router-dom';
+import './index.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllNews } from '../../../redux/actions';
 
 const BottomNavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
   const [expanded, setExpanded] = useState(false);
+  const location = useLocation(); // Get current location
+  const data = useSelector((state) => state.newsReducer.news);
+  const error = useSelector((state) => state.newsReducer.error);
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-    setExpanded(false);
-  };
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllNews());
+  }, [dispatch]);
+
+  if (error) {
+    console.error('Error fetching news:', error);
+  }
+
+  const isDestinationsActive = location.pathname.startsWith('/destinations') || 
+    (data && data.some((newsItem) => location.pathname === `/destination/${newsItem.slug}`));
 
   return (
     <Navbar
-      className="custom-navbar"
-      // collapseOnSelect
-      sticky="top"
-      expand="md"
+      className='custom-navbar'
+      sticky='top'
+      expand='md'
       expanded={expanded}
     >
       <Navbar.Toggle
-        aria-controls="basic-navbar-nav"
+        aria-controls='basic-navbar-nav'
         onClick={() => setExpanded(!expanded)}
-        className=""
       />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="md-auto">
+      <Navbar.Collapse id='basic-navbar-nav'>
+        <Nav className='md-auto'>
           <Nav.Link>
             <NavLink
-              to="/"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("home")}
+              to='/'
+              activeClassName='active'
+              // onClick={() => onUpdateActiveLink('home')}
             >
               Home
             </NavLink>
           </Nav.Link>
           <Nav.Link>
             <NavLink
-              to="/services"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("services")}
+              to='/services'
+              activeClassName='active'
             >
               Services
             </NavLink>
           </Nav.Link>
-          <Nav.Link>
-          <NavLink
-                to="/tours"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("tours")}
-              >
-                Destinations
-              </NavLink>
-          </Nav.Link>
-          {/* <NavDropdown title="Tours" alignLeft className="dropdown fade-up">
+          <NavDropdown
+            title='Destinations'
+            alignLeft
+            className={`dropdown fade-up ${isDestinationsActive ? 'active' : ''}`} // Dynamically add active class
+          >
             <NavDropdown.Item>
               <NavLink
-                to="/tours"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("tours")}
+                to='/destinations'
+                className='sub-link'
+                activeClassName='active'
               >
-                Tours
+                All Destinations
               </NavLink>
             </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-               to="/ticket"
-               activeClassName="active"
-               className="sub-link"
-                onClick={() => onUpdateActiveLink("ticket")}
-              >
-               Request ticket
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown> */}
-          {/* <Nav.Link>
-            <NavLink
-              to="/airticket"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("airticket")}
-            >
-              Air Ticket
-            </NavLink>
-          </Nav.Link> */}
-   
-          {/* <Nav.Link>
-            <NavLink
-              to="/carrental"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("rentcar")}
-            >
-              Car rental
-            </NavLink>
-          </Nav.Link> */}
-
-          {/* <Nav.Link>
-          <NavLink
-                to="/events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-               Events
-              </NavLink>
-          </Nav.Link> */}
-          
-
-          {/* <NavDropdown title="Events Management" alignLeft className="dropdown fade-up">
-            <NavDropdown.Item>
-              <NavLink
-                to="/events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-               Events Management
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/previous-events"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("events")}
-              >
-               Previous events
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-            <NavLink
-               to="/eventform"
-               activeClassName="active"
-               className="sub-link"
-                onClick={() => onUpdateActiveLink("eventform")}
-              >
-               Request for event support
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-            <NavLink
-               to="/participant"
-               activeClassName="active"
-               className="sub-link"
-                onClick={() => onUpdateActiveLink("participant")}
-              >
-               Register to an event
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown> */}
-{/* 
+            {data && data.length > 0
+              ? data
+                  .filter((newsItem) => newsItem.isPublished === true)
+                  .map((newsItem, index) => (
+                    <NavDropdown.Item key={index}>
+                      <NavLink
+                        to={`/destination/${newsItem.slug}`}
+                        className='sub-link'
+                        activeClassName='active'
+                      >
+                        {newsItem.title}
+                      </NavLink>
+                    </NavDropdown.Item>
+                  ))
+              : ''}
+          </NavDropdown>
           <Nav.Link>
             <NavLink
-              to="/accommodation"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("accommodation")}
-            >
-              Accommodation
-            </NavLink>
-          </Nav.Link> */}
-       
-          {/* <NavDropdown title="Media" alignLeft className="dropdown fade-up">
-            <NavDropdown.Item>
-              <NavLink
-                to="/publications"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("publications")}
-              >
-                Advertisement
-              </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item>
-              <NavLink
-                to="/blogs"
-                className="sub-link"
-                activeClassName="active"
-                onClick={() => onUpdateActiveLink("blogs")}
-              >
-                Blogs
-              </NavLink>
-            </NavDropdown.Item>
-          </NavDropdown> */}
-          <Nav.Link>
-            <NavLink
-           to="/about"
-           className="sub-link"
-           activeClassName="active"
-           onClick={() => onUpdateActiveLink("who-we-are")}
+              to='/about'
+              activeClassName='active'
             >
               About us
             </NavLink>
           </Nav.Link>
           <Nav.Link>
             <NavLink
-              to="/contact"
-              activeClassName="active"
-              onClick={() => onUpdateActiveLink("contact")}
+              to='/contact'
+              activeClassName='active'
             >
               Contact Us
             </NavLink>

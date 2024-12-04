@@ -59,7 +59,7 @@ export const About = () => {
             </Col>
             <Col lg={8}>
               <p className='about-description text-justify'>
-              GoDiscover Safaris is a premium Tours and Travel company registered and headquartered in Kigali Rwanda, primarily operating inbound and outbound tours within Rwanda, East Safaris and Africa as a whole. The company has also representatives in Nairobi, Kenya. 
+              GoDiscover Safaris is a premium Tours and Travel company registered and headquartered in Kigali Rwanda, primarily operating inbound and outbound tours within Rwanda, East Safaris and Safaris as a whole. The company has also representatives in Nairobi, Kenya. 
                 <br />
                 <br />
                 <br />
@@ -70,7 +70,7 @@ export const About = () => {
 
                 <br />
                 <br />
-                We invite you to come to join the exciting GoDiscover Africa adventures as we spread our wings across the continent of Africa. Explore our detailed packages and itineraries which lead you to pre-arranged adventures or request for customized adventures and we will develop one for you that meets all your requirements. GoDiscover Africa, we strive for style and comfort. 
+                We invite you to come to join the exciting GoDiscover Safaris adventures as we spread our wings across the continent of Safaris. Explore our detailed packages and itineraries which lead you to pre-arranged adventures or request for customized adventures and we will develop one for you that meets all your requirements. GoDiscover Safaris, we strive for style and comfort. 
               </p>
             </Col>
           </Row>

@@ -27,11 +27,27 @@ export const getAllNews = () => async dispatch => {
 
 	try {
 		const allNewsList = await allNews.json();
+		
+		console.log('jsjsjsjsjsjsj',allNewsList);
 		if (allNews.status === 200) {
 			dispatch({
 				type: types.FETCH_NEWS_REQUEST,
 				data: allNewsList.news,
 			});
+		}
+	} catch (error) {
+		console.log(error);
+		console.clear();
+	}
+};
+
+export const getAllDestinations = () => async dispatch => {
+	const allNews = await API.getNews('/api/news');
+
+	try {
+		const allNewsList = await allNews.json();
+		if (allNews.status === 200) {
+		return allNewsList.news;
 		}
 	} catch (error) {
 		console.log(error);

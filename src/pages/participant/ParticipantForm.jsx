@@ -177,7 +177,7 @@ console.log('sssssssPPPPP', formData.eventName);
                     <tr>
                       <th className='text-light'>#</th>
                       <th className='text-light'>Rwandans</th>
-                      <th className='text-light'>Africans</th>
+                      <th className='text-light'>Safarisns</th>
                       <th className='text-light'>Internationals</th>
                     </tr>
                   </thead>

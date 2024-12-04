@@ -11,11 +11,11 @@ export const Publication = () => {
 		<AppLayout>
 			<Helmet>
 				<meta charSet='utf-8' />
-				<title>Publications | GoDiscover Africa</title>
+				<title>Publications | GoDiscover Safaris</title>
 				<link rel='canonical' href='https://godiscoverafrica.rw/list' />
 				<meta
 					name='description'
-					content='Publications of GoDiscover Africa'
+					content='Publications of GoDiscover Safaris'
 				/>
 			</Helmet>
 			<section className='about-screen'>

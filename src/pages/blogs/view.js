@@ -6,13 +6,13 @@ import { Twitter, Facebook, Whatsapp } from 'react-social-sharing';
 import moment from 'moment';
 import ReactHtmlParser from 'react-html-parser';
 import { AppLayout } from '../../layouts';
-import { RightBar, CommentBox } from '../../components/section';
+// import { RightBar, CommentBox } from '../../components/section';
 import { getSingleNews } from '../../redux/actions';
 
 import './index.css';
 import Spinner from '../../components/spinner/Spinner';
 
-export const NewsView = (props) => {
+export const DestionationView = (props) => {
   const [loading, setLoading] = useState(true);
   const { slug } = props.match.params;
   const urlPath = window.location.toString();
@@ -29,10 +29,16 @@ export const NewsView = (props) => {
 
   return (
     <AppLayout>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <section className='st-read-news bg-light py-4 mt-5 mb-5'>
         <Container>
           <Row>
-            <Col sm={8}>
+            <Col sm={12}>
               <Row>
                 <Col sm={12}>
                   <h2 className='mb-2'>
@@ -78,9 +84,9 @@ export const NewsView = (props) => {
 								</Col>
 							</Row> */}
             </Col>
-            <Col sm={4}>
+            {/* <Col sm={4}>
               <RightBar tweet={true} news={true} />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </section>

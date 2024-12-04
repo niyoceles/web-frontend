@@ -97,7 +97,7 @@ function Contactinfo() {
         </Row>
       </Container>
       <iframe
-        src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.79002985189!2d30.1072021!3d-1.9752916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca736cdf65d67%3A0x46ea187ff265ebe1!2sGoDiscover%20Africa%20Ltd!5e0!3m2!1sen!2srw!4v1703686577031!5m2!1sen!2srw'
+        src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.79002985189!2d30.1072021!3d-1.9752916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca736cdf65d67%3A0x46ea187ff265ebe1!2sGoDiscover%20Safaris%20Ltd!5e0!3m2!1sen!2srw!4v1703686577031!5m2!1sen!2srw'
         width='100%'
         height='450'
         style={{ border: '0' }}

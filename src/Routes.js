@@ -23,6 +23,8 @@ import {
   NewsCreate,
   NewsAdminView,
   NewsComment,
+  Destinations,
+  DestionationView,
 } from './pages/blogs';
 
 import {
@@ -66,11 +68,13 @@ import { Airticket, RentalCar, Accommodation } from './pages/otherpages';
 import ViewOrder from './pagess/ViewOrder';
 import Pay from './components/payment/pay';
 import { TourBookings } from './pages/toursBookings/main';
+import ScrollToTop from './Scrolltop';
 
 
 export default function Routes() {
   return (
     <Router>
+         <ScrollToTop />
       <Switch>
         <Route exact path='/' component={HomeBody} />
         <Route exact path='/ticket' component={TicketForm} />
@@ -89,11 +93,11 @@ export default function Routes() {
         <Route exact path='/event/:slug' component={ViewEvent} />
         <Route exact path='/myorder/:id' component={ViewOrder} />
 
-        <Route exact path='/blogs' component={News} />
+        <Route exact path='/destinations' component={Destinations} />
         <Route exact path='/tours' component={Tours} />
         <Route exact path='/tour/:slug' component={ToursView} />
         <Route exact path='/tour/:slug' component={ToursView} />
-        <Route exact path='/blog/:slug' component={NewsView} />
+        <Route exact path='/destination/:slug' component={DestionationView} />
 
         <Route exact path='/tours' component={Tours} />
         <Route exact path='/tour/:slug' component={ToursView} />

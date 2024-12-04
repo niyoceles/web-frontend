@@ -8,12 +8,12 @@ const eventData = [
     id: 1,
     title: `Event planning`,
     imageUrl: planning,
-    description: `The pre-event phase at GoDiscover Africa Events is crucial for aligning with client objectives. Event budget planning covers development, cost management, and analysis.  Meticulous floor plans optimize space, and design creates a cohesive atmosphere.`,
+    description: `The pre-event phase at GoDiscover Safaris Events is crucial for aligning with client objectives. Event budget planning covers development, cost management, and analysis.  Meticulous floor plans optimize space, and design creates a cohesive atmosphere.`,
     body:[
       {
         title: `Event objectives`,
         description:`The pre-event phase is a critical stage in the event planning process
-        that sets the foundation for a successful outcome. At GoDiscover Africa events, we
+        that sets the foundation for a successful outcome. At GoDiscover Safaris events, we
         understand the significance of this phase in ensuring that the event aligns with our
         client’s Vision and meets their specific objectives. setting clear objectives and goals
         during this phase is fundamental to the overall success of any event. So we help you to
@@ -22,7 +22,7 @@ const eventData = [
       {
         title: `Event budget plan`,
         description:`Budgeting and financial planning budgeting and financial planning
-        are crucial components of successful event management. At GoDiscover Africa Events,
+        are crucial components of successful event management. At GoDiscover Safaris Events,
         we recognize the significance of these elements in ensuring that our clients’ event is not
         only memorable but also financially feasible and efficient. We help you to develop a
         comprehensive event budget, cost management and supplier negotiations, put in place
@@ -32,7 +32,7 @@ const eventData = [
       {
         title: `Venue Selection`,
         description:`Venue and selection and booking are integral parts of event planning
-        and coordinating offered by GoDiscover Africa Events. We discuss with our clients to
+        and coordinating offered by GoDiscover Safaris Events. We discuss with our clients to
         determine event venue considerations and assist in search and secure the right venue
         for the event. Leveraging our industry expertise and network, we conduct extensive
         research to identify a range of potential venues that align with client’s criteria by
@@ -308,7 +308,7 @@ const eventData = [
         event reports that include an overview of the event, feedback summary, key metrics,
         strengths, areas for improvement, and actionable recommendations.
         <br/>
-        By offering these post-event services, GoDiscover Africa Events ensures a holistic
+        By offering these post-event services, GoDiscover Safaris Events ensures a holistic
         approach to event management, leveraging feedback and insights to continually
         enhance event experiences and deliver maximum value to our clients. Our dedication to
         gathering feedback, expressing gratitude, analyzing data, conducting debriefing
@@ -323,7 +323,7 @@ const eventData = [
         event reports that include an overview of the event, feedback summary, key metrics,
         strengths, areas for improvement, and actionable recommendations.
         <br/>
-        By offering these post-event services, GoDiscover Africa Events ensures a holistic
+        By offering these post-event services, GoDiscover Safaris Events ensures a holistic
         approach to event management, leveraging feedback and insights to continually
         enhance event experiences and deliver maximum value to our clients. Our dedication to
         gathering feedback, expressing gratitude, analyzing data, conducting debriefing

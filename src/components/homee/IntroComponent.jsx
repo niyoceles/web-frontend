@@ -41,7 +41,7 @@ const IntroComponent = () => {
             Experience Africa’s Wildlife Like Never Before!
           </h1>
           <h4 className='text-fade py-4 px-18 text-dark text-center fade-in-text'>
-            At Go Discover Africa, we specialize in creating personalized and
+            At Go Discover Safaris, we specialize in creating personalized and
             unforgettable travel experiences across the continent. Whether
             you're seeking thrilling wildlife safaris, cultural immersion, or
             breathtaking landscapes, our expert local guides ensure every

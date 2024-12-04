@@ -32,8 +32,7 @@ export const LatestNews = () => {
   }
 
   return (
-    <section className='st-news bg-light p-5'>
-      <Container fluid className=''>
+    <section className='bg-light p-5 py-5 px-5'>
         <Row>
           <Col sm={12}>
             <Row>
@@ -42,10 +41,9 @@ export const LatestNews = () => {
                   {data &&
                     data
                       .filter((singleNews) => singleNews.isPublished === true)
-                      .slice(2, 5)
                       .map((singleNews, i) => (
                         <Col lg={4} md={4} sm={12} xs={12} key={i}>
-                          <Link to={`/blog/${singleNews.slug}`}>
+                          <Link to={`/destination/${singleNews.slug}`}>
                             <div className='events-box background-white-light'>
                               <img
                                 src={singleNews.image}
@@ -82,7 +80,6 @@ export const LatestNews = () => {
             </Row>
           </Col>
         </Row>
-      </Container>
     </section>
   );
 };
