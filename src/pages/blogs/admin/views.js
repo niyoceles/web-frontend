@@ -162,7 +162,7 @@ export const NewsAdminView = (props) => {
         <Row>
           <Col sm={8}>
             <div className='page-header'>
-              <h2 className='pageheader-title'>Blogs | {oneNews.title}</h2>
+              <h2 className='pageheader-title'>Destinations |{oneNews.title}</h2>
               <div className='page-breadcrumb'>
                 <nav aria-label='breadcrumb'>
                   <ol className='breadcrumb'>
@@ -172,8 +172,8 @@ export const NewsAdminView = (props) => {
                       </Link>
                     </li>
                     <li className='breadcrumb-item'>
-                      <Link to='/account/news' className='breadcrumb-link'>
-                        Blogs
+                      <Link to='/account/destinations' className='breadcrumb-link'>
+                        Destinations
                       </Link>
                     </li>
                     <li className='breadcrumb-item'>View</li>
@@ -187,14 +187,14 @@ export const NewsAdminView = (props) => {
           </Col>
           {/* <Col sm={2}>
             <Link
-              to={`/account/news/comment/${slug}`}
+              to={`/account/destinations/comment/${slug}`}
               className='btn btn-block btn-light'
             >
               <i className='fa fa-comment mr-1'></i>Comments
             </Link>
           </Col> */}
           <Col sm={2}>
-            <Link to='/account/news' className='btn btn-block btn-light'>
+            <Link to='/account/destinations' className='btn btn-block btn-light'>
               <i className='fa fa-arrow-left mr-1'></i> Go Back
             </Link>
           </Col>

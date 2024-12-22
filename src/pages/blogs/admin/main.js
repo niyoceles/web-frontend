@@ -51,7 +51,7 @@ export const NewsMain = () => {
 				<Row>
 					<Col sm={10}>
 						<div className='page-header'>
-							<h2 className='pageheader-title'>Blogs</h2>
+							<h2 className='pageheader-title'>Destinations</h2>
 							<div className='page-breadcrumb'>
 								<nav aria-label='breadcrumb'>
 									<ol className='breadcrumb'>
@@ -61,7 +61,7 @@ export const NewsMain = () => {
 											</Link>
 										</li>
 										<li className='breadcrumb-item active' aria-current='page'>
-											Blogs
+											Destinations
 										</li>
 									</ol>
 								</nav>
@@ -69,7 +69,7 @@ export const NewsMain = () => {
 						</div>
 					</Col>
 					<Col sm={2}>
-						<Link to='/account/news/create' className='btn btn-block btn-light'>
+						<Link to='/account/destinations/create' className='btn btn-block btn-light'>
 							<i className='fa fa-plus-circle mr-1'></i> Add New
 						</Link>
 					</Col>
@@ -171,7 +171,7 @@ export const NewsMain = () => {
 																</td>
 																<td>
 																	<Link
-																		to={`/account/news/view/${singleNews.slug}`}
+																		to={`/account/destinations/view/${singleNews.slug}`}
 																		className='btn btn-primary btn-xs'
 																	>
 																		<i className='fa fa-tasks mr-1'></i> Action

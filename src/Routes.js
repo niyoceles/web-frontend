@@ -152,16 +152,16 @@ export default function Routes() {
           component={EventsView}
         />
 
-        <AuthRoute exact path='/account/news' component={NewsMain} />
-        <AuthRoute exact path='/account/news/create' component={NewsCreate} />
+        <AuthRoute exact path='/account/destinations' component={NewsMain} />
+        <AuthRoute exact path='/account/destinations/create' component={NewsCreate} />
         <AuthRoute
           exact
-          path='/account/news/view/:slug'
+          path='/account/destinations/view/:slug'
           component={NewsAdminView}
         />
         <AuthRoute
           exact
-          path='/account/news/comment/:slug'
+          path='/account/destinations/comment/:slug'
           component={NewsComment}
         />
 

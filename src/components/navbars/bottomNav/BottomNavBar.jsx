@@ -7,15 +7,20 @@ import { getAllNews } from '../../../redux/actions';
 
 const BottomNavBar = () => {
   const [expanded, setExpanded] = useState(false);
+    const [loading, setLoading] = useState(true);
   const location = useLocation(); // Get current location
   const data = useSelector((state) => state.newsReducer.news);
+  const theLoading = useSelector((state) => state.newsReducer.loading);
   const error = useSelector((state) => state.newsReducer.error);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getAllNews());
-  }, [dispatch]);
+    setTimeout(function () {
+      setLoading(!theLoading);
+    }, 500);
+  }, [dispatch, theLoading]);
 
   if (error) {
     console.error('Error fetching news:', error);

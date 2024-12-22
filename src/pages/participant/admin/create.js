@@ -112,7 +112,7 @@ export const NewsCreate = () => {
 				<Row>
 					<Col sm={10}>
 						<div className='page-header'>
-							<h2 className='pageheader-title'>Blogs | Create</h2>
+							<h2 className='pageheader-title'>Destinations |Create</h2>
 							<div className='page-breadcrumb'>
 								<nav aria-label='breadcrumb'>
 									<ol className='breadcrumb'>
@@ -122,8 +122,8 @@ export const NewsCreate = () => {
 											</Link>
 										</li>
 										<li className='breadcrumb-item'>
-											<Link to='/account/news' className='breadcrumb-link'>
-												Blogs
+											<Link to='/account/destinations' className='breadcrumb-link'>
+												Destinations
 											</Link>
 										</li>
 										<li className='breadcrumb-item active' aria-current='page'>
@@ -135,7 +135,7 @@ export const NewsCreate = () => {
 						</div>
 					</Col>
 					<Col sm={2}>
-						<Link to='/account/news' className='btn btn-block btn-light'>
+						<Link to='/account/destinations' className='btn btn-block btn-light'>
 							<i className='fa fa-arrow-left mr-1'></i> Go Back
 						</Link>
 					</Col>

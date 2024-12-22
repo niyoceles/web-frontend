@@ -57,7 +57,7 @@ export const ToursComment = props => {
 				<Row>
 					<Col sm={10}>
 						<div className='page-header'>
-							<h2 className='pageheader-title'>Blogs</h2>
+							<h2 className='pageheader-title'>Destinations</h2>
 							<div className='page-breadcrumb'>
 								<nav aria-label='breadcrumb'>
 									<ol className='breadcrumb'>
@@ -67,14 +67,14 @@ export const ToursComment = props => {
 											</Link>
 										</li>
 										<li className='breadcrumb-item'>
-											<Link to='/account/news' className='breadcrumb-link'>
-												Blogs
+											<Link to='/account/destinations' className='breadcrumb-link'>
+												Destinations
 											</Link>
 										</li>
 										<li className='breadcrumb-item'>View</li>
 										<li className='breadcrumb-item'>
 											<Link
-												to={`/account/news/view/${slug}`}
+												to={`/account/destinations/view/${slug}`}
 												className='breadcrumb-link'
 											>
 												{slug}
@@ -90,7 +90,7 @@ export const ToursComment = props => {
 					</Col>
 					<Col sm={2}>
 						<Link
-							to={`/account/news/view/${slug}`}
+							to={`/account/destinations/view/${slug}`}
 							className='btn btn-block btn-light'
 						>
 							<i className='fa fa-arrow-left mr-1'></i> Go Back

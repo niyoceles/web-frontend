@@ -85,7 +85,7 @@ export const Dashboard = () => {
             <Col lg={3} md={6} sm={12} xs={12}>
               <div className='card border-3 border-top border-top-primary'>
                 <div className='card-body'>
-                  <h5 className='text-muted'>Blogs</h5>
+                  <h5 className='text-muted'>Destinations</h5>
                   <div className='metric-value d-inline-block'>
                     <h1 className='mb-1'>{data && data.length}</h1>
                   </div>

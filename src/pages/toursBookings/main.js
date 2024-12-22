@@ -96,7 +96,7 @@ export const TourBookings = () => {
             </div>
           </Col>
           {/* <Col sm={2}>
-            <Link to='/account/news/create' className='btn btn-block btn-light'>
+            <Link to='/account/destinations/create' className='btn btn-block btn-light'>
               <i className='fa fa-plus-circle mr-1'></i> Add New
             </Link>
           </Col> */}

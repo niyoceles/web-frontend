@@ -105,16 +105,16 @@ export const Home = () => {
 				>
 					<Row className='mt-0'>
 						<Col lg={4} md={4} sm={4} xs={12}>
-							<Link to='/blogs'>
+							<Link to='/Destinations'>
 								<div className='news-block text-center mb-3'>
-									<p>BLOGS</p>
+									<p>Destinations</p>
 								</div>
 							</Link>
 						</Col>
 						<Col lg={4} md={4} sm={4} xs={12}>
-							<Link to='/blogs'>
+							<Link to='/Destinations'>
 								<div className='news-block text-center mb-3'>
-									<p>BLOGS</p>
+									<p>Destinations</p>
 								</div>
 							</Link>
 						</Col>

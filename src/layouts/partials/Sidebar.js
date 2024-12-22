@@ -57,8 +57,8 @@ const SideBar = () => {
               </li>
 
               <li className="nav-item ">
-                <Link to="/account/news" className="nav-link">
-                  <i className="fas fa-newspaper"></i> Blogs
+                <Link to="/account/destinations" className="nav-link">
+                  <i className="fas fa-newspaper"></i> Destinations
                 </Link>
               </li>
 

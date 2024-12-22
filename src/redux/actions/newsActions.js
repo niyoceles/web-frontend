@@ -27,8 +27,6 @@ export const getAllNews = () => async dispatch => {
 
 	try {
 		const allNewsList = await allNews.json();
-		
-		console.log('jsjsjsjsjsjsj',allNewsList);
 		if (allNews.status === 200) {
 			dispatch({
 				type: types.FETCH_NEWS_REQUEST,
@@ -92,7 +90,7 @@ export const createOneNews = data => async dispatch => {
 				message: createdNews.message,
 			});
 			toast.success(createdNews.message);
-			window.location.href = `/account/news`;
+			window.location.href = `/account/destinations`;
 		}
 	} catch (error) {
 		console.log(error);
@@ -110,7 +108,7 @@ export const deleteNews = (slug, history) => async dispatch => {
 			});
 			toast.success(res.data.message);
 			setTimeout(function () {
-				history.push(`/account/news`);
+				history.push(`/account/destinations`);
 			}, 1000);
 		})
 		.catch(error => {
@@ -131,7 +129,7 @@ export const changeNewsStatus = (slug, data) => async dispatch => {
 			});
 			toast.success(res.data.message);
 			setTimeout(function () {
-				window.location.href = `/account/news`;
+				window.location.href = `/account/destinations`;
 			}, 500);
 		})
 		.catch(error => {
@@ -152,7 +150,7 @@ export const updateOneNews = (slug, data, history) => async dispatch => {
 			});
 			toast.success(res.data.message);
 			setTimeout(function () {
-				history.push(`/account/news`);
+				history.push(`/account/`);
 			}, 1000);
 		})
 		.catch(error => {

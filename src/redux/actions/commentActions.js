@@ -73,7 +73,7 @@ export const changeCommentStatus = (id, data, slug) => async dispatch => {
 			});
 			toast.success(res.data.message);
 			setTimeout(function () {
-				window.location.href = `/account/news/comment/${slug}`;
+				window.location.href = `/account/destinations/comment/${slug}`;
 			}, 1000);
 		})
 		.catch(error => {
@@ -92,7 +92,7 @@ export const deleteComment = (id, slug) => async dispatch => {
 			});
 			toast.success(res.data.message);
 			setTimeout(function () {
-				window.location.href = `/account/news/comment/${slug}`;
+				window.location.href = `/account/destinations/comment/${slug}`;
 			}, 1000);
 		})
 		.catch(error => {
